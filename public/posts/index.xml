@@ -7,7 +7,7 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
     <copyright>©2024 maiden1969</copyright>
-    <lastBuildDate>Wed, 29 Jan 2025 07:29:50 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jan 2025 07:48:32 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>进站必看</title>
@@ -15,6 +15,14 @@
       <pubDate>Wed, 29 Jan 2025 01:29:44 +0800</pubDate>
       <guid>http://localhost:1313/posts/%E8%BF%9B%E7%AB%99%E5%BF%85%E7%9C%8B/</guid>
       <description>&lt;h2 id=&#34;若数学公式图片显示有误系网络问题请等待一会或者刷新页面如果还不行请下载pdf版&#34;&gt;若数学公式、图片显示有误，系网络问题，请等待一会或者刷新页面。如果还不行，请下载PDF版。&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/%E9%9B%86%E8%90%83/%E9%9B%86%E8%90%83_1/</link>
+      <pubDate>Wed, 29 Jan 2025 07:48:32 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E9%9B%86%E8%90%83/%E9%9B%86%E8%90%83_1/</guid>
+      <description>&lt;h2 id=&#34;题1&#34;&gt;题1&lt;/h2&gt;
+&lt;p&gt;定义：三维欧氏空间中的点称为整点，当且仅当x,y,z坐标都是整数，例如(1,1,2)，(-2,6,-2)。从空间中任取$n$个整点$P_1,P_2,P_3,...P_n$，再从它们之中任取两个不同的点$P_i,P_j(i \neq j)$，$P_i,P_j$的中点&lt;strong&gt;不会&lt;/strong&gt;是整点。问：$n$的最大值为$\underline{}\underline{}\underline{}\underline{}\underline{}$&lt;/p&gt;</description>
     </item>
     <item>
       <title>高二上学期命题参考卷(自编）</title>
