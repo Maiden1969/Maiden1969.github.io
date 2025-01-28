@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>数列 on Math1969</title>
+    <link>http://localhost:1313/tags/%E6%95%B0%E5%88%97/</link>
+    <description>Recent content in 数列 on Math1969</description>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>zh</language>
+    <copyright>©2024 maiden1969</copyright>
+    <lastBuildDate>Wed, 29 Jan 2025 00:08:34 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%95%B0%E5%88%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数列大纲</title>
+      <link>http://localhost:1313/posts/%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/%E6%95%B0%E5%88%97%E5%A4%A7%E7%BA%B2/</link>
+      <pubDate>Wed, 29 Jan 2025 00:08:34 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/%E6%95%B0%E5%88%97%E5%A4%A7%E7%BA%B2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.hostize.com/zh/v/KlJPRx6zDw&#34;&gt;下载PDF &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1概念&#34;&gt;1.概念&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;数列：&lt;/strong&gt; 顾名思义，就是一列数 $a_1,a_2,a_3,... a_n ...$ ，用 $\{a_n\}$ 表示。注意以下几点：&lt;/p&gt;
+
+
+  &lt;blockquote class=&#34;alert-blockquote alert-caution&#34;&gt;
+    &lt;p class=&#34;alert-heading&#34;&gt;
+      &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34; height=&#34;16&#34;&gt;
+        &lt;path d=&#34;M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z&#34;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+      &lt;span&gt;Caution&lt;/span&gt;
+    &lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

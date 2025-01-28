@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>公告 on Math1969</title>
+    <link>http://localhost:1313/categories/%E5%85%AC%E5%91%8A/</link>
+    <description>Recent content in 公告 on Math1969</description>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>zh</language>
+    <copyright>©2024 maiden1969</copyright>
+    <lastBuildDate>Wed, 29 Jan 2025 01:29:44 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>进站必看</title>
+      <link>http://localhost:1313/posts/%E8%BF%9B%E7%AB%99%E5%BF%85%E7%9C%8B/</link>
+      <pubDate>Wed, 29 Jan 2025 01:29:44 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E8%BF%9B%E7%AB%99%E5%BF%85%E7%9C%8B/</guid>
+      <description>&lt;h2 id=&#34;若数学公式图片显示有误系网络问题请等待一会或者刷新页面如果还不行请下载pdf版&#34;&gt;若数学公式、图片显示有误，系网络问题，请等待一会或者刷新页面。如果还不行，请下载PDF版。&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>
