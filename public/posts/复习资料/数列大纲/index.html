@@ -187,7 +187,7 @@ code.has-jax {
 
   <blockquote class="alert-blockquote alert-caution">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Caution</span>
@@ -203,42 +203,84 @@ code.has-jax {
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 $$
 a_n = S_n-S_{n-1}
@@ -249,7 +291,7 @@ $$<p>
 
   <blockquote class="alert-blockquote alert-caution">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Caution</span>
@@ -264,42 +306,84 @@ $$<p>
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <p><strong>递推公式：</strong> 如果 $a_n$ 能写成 $a_n = f(a_1,a_2,a_3,...a_{n-1})$ 的形式（其中 $f(a_1,a_2,a_3,...a_{n-1})$ 是一个关于 $a_1,a_2,a_3,...a_{n-1}$ 的表达式），那么 $f(a_1,a_2,a_3,...a_{n-1})$ 就称为数列 $\{a_n\}$ 的递推公式。简单来
 说，就是数列中的任意一项 $a_n$ 都能通过它之前的 $n-1$ 项求出来。注意以下几点：</p>
@@ -307,7 +391,7 @@ $$<p>
 
   <blockquote class="alert-blockquote alert-caution">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Caution</span>
@@ -320,42 +404,84 @@ $$<p>
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <ol start="2">
 <li>根据递推公式也不一定能求出通项公式，例如 $a_{n+1} = \sin{a_n} + a_n$ 。</li>
@@ -368,7 +494,7 @@ $$<p>
 
   <blockquote class="alert-blockquote alert-question">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Question</span>
@@ -379,42 +505,84 @@ $$<p>
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <p>利用斐波那契数列的递推公式，我们可以算出 $a_{20} = 6765$ ，另一方面利用斐波那契数列的通项公式，我们可以得到 $a_{20} = \frac{1}{\sqrt{5}}[(\frac{\sqrt{5}+1}{2})^{20} - (\frac{1-\sqrt{5}}{2})^{20}]$ 。 所以 $(\frac{\sqrt{5}+1}{2})^{20}=6765\sqrt{5}+(\frac{1-\sqrt{5}}{2})^{20}$,由于$6765\sqrt{5}\approx 15126.9$ ， $|\frac{1-\sqrt{5}}{2}|<0.7$ ， $(\frac{1-\sqrt{5}}{2})^{20}$ 小到可以忽略不计 ，故答案就是 $15126$ 。</p>
 </blockquote>
@@ -514,7 +682,7 @@ $$
 
   <blockquote class="alert-blockquote alert-example">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Example</span>
@@ -529,42 +697,84 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 $$
 \frac{1}{n(n+1)(n+2)} = \frac{\lambda_1}{n} + \frac{\lambda_2}{n+1} + \frac{\lambda_3}{n+2}
@@ -636,7 +846,7 @@ P_1=0,\quad P_2=1,\quad P_{n+2}=2P_{n+1}+P_n
 
   <blockquote class="alert-blockquote alert-tip">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path>
       </svg>
       <span>Tip</span>
@@ -647,42 +857,84 @@ P_1=0,\quad P_2=1,\quad P_{n+2}=2P_{n+1}+P_n
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <h2 id="4数列求和">4.数列求和<a hidden class="anchor" aria-hidden="true" href="#4数列求和">#</a></h2>
 <p>数列求和是最古老的数列问题之一。</p>
@@ -749,7 +1001,7 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
   <blockquote class="alert-blockquote alert-example">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Example</span>
@@ -760,42 +1012,84 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <p>首先需要指出，本题与数论有关。数论是一门研究整数的数学分支，虽然高中书本上没有介绍，但现在的高考有意将其引入，尤其是与数列相结合作为压轴题，一般难度较大。</p>
 <p>从数论的角度来看，数列 $\{3n-2\}$ 中的项都有这样的性质：除以 $3$ 余 $1$ ，称为“ 模 $3$ 余 $1$ ”。而数列 $\{6n+1\}$ 中的项都是“ 模 $6$ 余 $1$ ” 的。因此它们的公共项是既模 $3$ 余 $1$ 又模 $6$ 余 $1$ 的。</p>
@@ -805,7 +1099,7 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
   <blockquote class="alert-blockquote alert-note">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Note</span>
@@ -816,42 +1110,84 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <p>这个结论的证明需要数论的知识，略过。使用这个结论来做本题，我们马上能得到 $\{a_n\}$ 是公差为 $12$ 的等差数列。但除了公差，我们还需要知道首项 $a_1$ ，这个简单，只需要把两个数列 $\{3n-2\}$ 和 $\{6n+1\}$ 的前几项写出来，找出它们第一个公共项就行了，很快就能得到 $a_1=7$ ，于是 $a_n$ 就能求出来了。</p>
 <p>再来看下一个例子：</p>
@@ -859,7 +1195,7 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
   <blockquote class="alert-blockquote alert-example">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Example</span>
@@ -870,42 +1206,84 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <p>首先，$\{a_n\}$ 的通项公式应该是 $pn+q$ ( $p$ 为正整数且 $p>1$ ，$q$ 为整数) 形式的。</p>
 <p>现在，$520$ 和 $1314$ 都是 $\{a_n\}$ 中的项，假设 $520 + kp = 1314$，则 $p=\frac{794}{k}$ ，这说明模数（或者说公差）$p$ 应该是 $794$ 的一个因子。假设 $2025$ 是 $\{a_n\}$ 中的项，$1314 + mp = 2025$，则 $p=\frac{711}{m}$ ，这说明模数 $p$ 应该是 $711$ 的一个因子。于是 $p$ 应该是 $794$ 和 $711$ 的公因子。通过质因数分解，可以得到 $794=2*397$，$711=3^2*79$，其中 $397$ 和 $79$ 都是质数，因此 $794$ 和 $711$ 的公因子只有 $1$，但是题目说公差大于 $1$ ，从而 $2025$ 不可能是 $\{a_n\}$ 中的项。</p>
@@ -917,7 +1295,7 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
   <blockquote class="alert-blockquote alert-note">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Note</span>
@@ -928,48 +1306,90 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-note">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Note</span>
@@ -980,48 +1400,90 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-note">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Note</span>
@@ -1032,48 +1494,90 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-note">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Note</span>
@@ -1090,48 +1594,90 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-note">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Note</span>
@@ -1149,48 +1695,90 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-note">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Note</span>
@@ -1202,48 +1790,90 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-note">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Note</span>
@@ -1257,49 +1887,91 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <p>下面，介绍数论中最基本的一个定理：</p>
 
 
   <blockquote class="alert-blockquote alert-note">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
       </svg>
       <span>Note</span>
@@ -1310,42 +1982,84 @@ $S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <p>例如 $120$ 的质因子为 $2,3,5$ ，它可以被分解为 $2^3 \cdot 3 \cdot 5$ ，这种分解是唯一的。</p>
 <p>下面举几例数列中的数论问题。提前说明一下，有些解答我使用了数学归纳法，你可以查阅教材来了解这种方法。（虽然打了星号，但我认为非常有必要掌握）</p>
@@ -1373,7 +2087,7 @@ $$
 
   <blockquote class="alert-blockquote alert-success">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Success</span>
@@ -1396,48 +2110,90 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-question">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Question</span>
@@ -1448,48 +2204,90 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-success">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Success</span>
@@ -1504,48 +2302,90 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-question">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Question</span>
@@ -1556,48 +2396,90 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-success">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Success</span>
@@ -1610,42 +2492,84 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <h2 id="6其它数列问题举隅">6.其它数列问题举隅<a hidden class="anchor" aria-hidden="true" href="#6其它数列问题举隅">#</a></h2>
 <p>本节介绍除了数论外的其它类型问题，有时会出现新定义。这类问题更加没有章法，
@@ -1654,7 +2578,7 @@ $$
 
   <blockquote class="alert-blockquote alert-question">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Question</span>
@@ -1665,48 +2589,90 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-success">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Success</span>
@@ -1720,48 +2686,90 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-question">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Question</span>
@@ -1775,48 +2783,90 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-success">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Success</span>
@@ -1837,42 +2887,84 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <blockquote>
 $$
@@ -1894,7 +2986,7 @@ $$
 
   <blockquote class="alert-blockquote alert-question">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Question</span>
@@ -1905,48 +2997,90 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
   <blockquote class="alert-blockquote alert-success">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Success</span>
@@ -1971,42 +3105,84 @@ $$
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <h2 id="7new-horizons">7.New Horizons<a hidden class="anchor" aria-hidden="true" href="#7new-horizons">#</a></h2>
 <p>下面介绍三个与数列相关的著名问题，它们常常作为题目的背景。</p>
@@ -2039,7 +3215,7 @@ $$<p>
 
   <blockquote class="alert-blockquote alert-question">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Question</span>
@@ -2050,42 +3226,84 @@ $$<p>
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <p>不难看出，$a_n=n$</p>
 <h4 id="斐波那契数列">斐波那契数列<a hidden class="anchor" aria-hidden="true" href="#斐波那契数列">#</a></h4>
@@ -2100,7 +3318,7 @@ $$<p>
 
   <blockquote class="alert-blockquote alert-example">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Example</span>
@@ -2118,42 +3336,84 @@ $$<p>
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 $$
 \begin{align*}
@@ -2190,7 +3450,7 @@ $$<p>
 
   <blockquote class="alert-blockquote alert-question">
     <p class="alert-heading">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         
       </svg>
       <span>Question</span>
@@ -2201,42 +3461,84 @@ $$<p>
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 <p>这个问题的答案是 $\frac{6}{\pi^2}$ ，也就是 $\frac{1}{ζ(2)}$ 。2023年新高考一卷有一道概率题，背景疑似是这个问题。</p>
 
