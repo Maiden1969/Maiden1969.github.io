@@ -202,42 +202,84 @@ $$<p>其中定义域应该是 $x_2$ 的取值范围。之后证明 $g(x)$ 恒大
 
 
 <style>
-  .post-content .alert-blockquote {
-    border-left: 4px solid;
-    border-radius: 5px;
-  }
-  
-  .alert-blockquote .alert-heading {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .alert-blockquote .alert-heading svg {
-    margin-right: 0.5rem;
-    fill: currentColor;
-  }
-
-   
-  .post-content .alert-note { border-left-color: #0969da; }
-  .post-content .alert-tip { border-left-color: #1a7f37; }
-  .post-content .alert-important { border-left-color: #8250df; }
-  .post-content .alert-warning { border-left-color: #9a6700; }
-  .post-content .alert-caution { border-left-color: #cf222e; }
-
-   
-  .alert-note .alert-heading { color: #0969da; }
-  .alert-tip .alert-heading { color: #1a7f37; }
-  .alert-important .alert-heading { color: #8250df; }
-  .alert-warning .alert-heading { color: #9a6700; }
-  .alert-caution .alert-heading { color: #cf222e; }
-  
-  body.dark .alert-note .alert-heading { color: #58a6ff; }
-  body.dark .alert-tip .alert-heading { color: #3fb950; }
-  body.dark .alert-important .alert-heading { color: #a371f7; }
-  body.dark .alert-warning .alert-heading { color: #d29922; }
-  body.dark .alert-caution .alert-heading { color: #f85149; }
+  .alert-blockquote {
+  all: revert !important;
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  padding: 0.25rem 1rem !important;
+  margin: 1rem 0 !important;
+  color: inherit !important;
+}
+.alert-blockquote * {
+  color: inherit !important;
+}
+.alert-blockquote .alert-heading {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+.alert-blockquote.alert-note {
+  border-left-color: #0969da !important;
+}
+.alert-blockquote.alert-note .alert-heading {
+  color: #0969da !important;
+}
+.alert-blockquote.alert-tip {
+  border-left-color: #1a7f37 !important;
+}
+.alert-blockquote.alert-tip .alert-heading {
+  color: #1a7f37 !important;
+}
+.alert-blockquote.alert-important {
+  border-left-color: #8250df !important;
+}
+.alert-blockquote.alert-important .alert-heading {
+  color: #8250df !important;
+}
+.alert-blockquote.alert-warning {
+  border-left-color: #9a6700 !important;
+}
+.alert-blockquote.alert-warning .alert-heading {
+  color: #9a6700 !important;
+}
+.alert-blockquote.alert-caution {
+  border-left-color: #cf222e !important;
+}
+.alert-blockquote.alert-caution .alert-heading {
+  color: #cf222e !important;
+}
+.alert-blockquote .alert-heading svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem !important;
+  fill: currentColor !important;
+}
+ 
+body.night .alert-blockquote {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote * {
+  color: #c9d1d9 !important;
+}
+body.night .alert-blockquote.alert-note .alert-heading {
+  color: #58a6ff !important;
+}
+body.night .alert-blockquote.alert-tip .alert-heading {
+  color: #3fb950 !important;
+}
+body.night .alert-blockquote.alert-important .alert-heading {
+  color: #a371f7 !important;
+}
+body.night .alert-blockquote.alert-warning .alert-heading {
+  color: #d29922 !important;
+}
+body.night .alert-blockquote.alert-caution .alert-heading {
+  color: #f85149 !important;
+}
+body.night .alert-blockquote .alert-heading svg {
+  fill: currentColor !important;
+}
 </style>
 
 
