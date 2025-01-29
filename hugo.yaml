@@ -86,4 +86,6 @@ markup:
 params:
   math: true
 
+enableEmoji: true
+
 
