@@ -1,10 +1,5 @@
-- id: caution
-  translation: '危险'
-- id: important
-  translation: '重要'
-- id: note
-  translation: '注释'
-- id: tip
-  translation: '提示'
-- id: warning
-  translation: '警告'
+caution: Caution
+important: Important
+note: Note
+tip: Tip
+warning: Warning
