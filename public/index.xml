@@ -7,7 +7,7 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
     <copyright>©2024 maiden1969</copyright>
-    <lastBuildDate>Wed, 29 Jan 2025 07:48:32 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jan 2025 08:01:54 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>进站必看</title>
@@ -15,6 +15,13 @@
       <pubDate>Wed, 29 Jan 2025 01:29:44 +0800</pubDate>
       <guid>http://localhost:1313/posts/%E8%BF%9B%E7%AB%99%E5%BF%85%E7%9C%8B/</guid>
       <description>&lt;h2 id=&#34;若数学公式图片显示有误系网络问题请等待一会或者刷新页面如果还不行请下载pdf版&#34;&gt;若数学公式、图片显示有误，系网络问题，请等待一会或者刷新页面。如果还不行，请下载PDF版。&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>论极值点偏移</title>
+      <link>http://localhost:1313/posts/%E6%96%B9%E6%B3%95%E8%AE%BA/%E8%AE%BA%E6%9E%81%E5%80%BC%E7%82%B9%E5%81%8F%E7%A7%BB/</link>
+      <pubDate>Wed, 29 Jan 2025 08:01:54 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E6%96%B9%E6%B3%95%E8%AE%BA/%E8%AE%BA%E6%9E%81%E5%80%BC%E7%82%B9%E5%81%8F%E7%A7%BB/</guid>
+      <description>介绍极值点偏移问题的常用解法</description>
     </item>
     <item>
       <title>集萃_1</title>

@@ -10,12 +10,11 @@
     <lastBuildDate>Wed, 29 Jan 2025 07:48:32 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/%E9%9A%BE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>集萃_1</title>
       <link>http://localhost:1313/posts/%E9%9B%86%E8%90%83/%E9%9B%86%E8%90%83_1/</link>
       <pubDate>Wed, 29 Jan 2025 07:48:32 +0800</pubDate>
       <guid>http://localhost:1313/posts/%E9%9B%86%E8%90%83/%E9%9B%86%E8%90%83_1/</guid>
-      <description>&lt;h2 id=&#34;题1&#34;&gt;题1&lt;/h2&gt;
-&lt;p&gt;定义：三维欧氏空间中的点称为整点，当且仅当x,y,z坐标都是整数，例如(1,1,2)，(-2,6,-2)。从空间中任取$n$个整点$P_1,P_2,P_3,...P_n$，再从它们之中任取两个不同的点$P_i,P_j(i \neq j)$，$P_i,P_j$的中点&lt;strong&gt;不会&lt;/strong&gt;是整点。问：$n$的最大值为$\underline{}\underline{}\underline{}\underline{}\underline{}$&lt;/p&gt;</description>
+      <description>《难题集萃》第一集</description>
     </item>
   </channel>
 </rss>

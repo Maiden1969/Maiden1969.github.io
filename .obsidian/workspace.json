@@ -125,6 +125,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "content/posts/方法论/论极值点偏移.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "论极值点偏移"
+            }
+          },
+          {
+            "id": "824c4c02602d04cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "home/HomePage.md",
                 "mode": "source",
                 "source": false
@@ -134,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -286,24 +300,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "239d5284dfe2bdff",
+  "active": "824c4c02602d04cc",
   "lastOpenFiles": [
-    "content/posts/集萃/集萃_1.md",
+    "content/posts/方法论/论极值点偏移.md",
+    "public/tags/极值点偏移/index.xml",
+    "public/tags/导数/index.xml",
+    "public/tags/导数/page/1/index.html",
+    "public/tags/导数/page/1",
+    "public/tags/导数/page",
+    "public/tags/导数/index.html",
+    "public/tags/导数",
+    "public/tags/极值点偏移/page/1/index.html",
+    "public/tags/极值点偏移/page/1",
+    "public/tags/极值点偏移/page",
     "content/posts/复习资料/数列大纲.md",
-    "home/HomePage.md",
-    "public/tags/趣题/index.xml",
-    "public/tags/趣题/page/1/index.html",
-    "public/tags/趣题/page/1",
-    "public/tags/趣题/page",
-    "public/tags/趣题/index.html",
-    "public/tags/趣题",
-    "public/tags/趣/index.xml",
-    "public/tags/趣/page/1/index.html",
-    "public/tags/趣/page/1",
-    "public/tags/趣/page",
-    "content/posts/专题练习/直线与圆-题集1.md",
-    "content/posts/试卷/高二上学期命题参考卷(自编）.md",
     "content/posts/复习资料/必修一复习讲义.md",
+    "content/posts/试卷/高二上学期命题参考卷(自编）.md",
+    "content/posts/专题练习/直线与圆-题集1.md",
+    "content/posts/集萃/集萃_1.md",
+    "home/HomePage.md",
     "content/posts/进站必看.md",
     "content/posts/2025m1d29h7m26s29.md",
     "content/posts/2025m1d29h5m18s17.md",
@@ -331,7 +346,6 @@
     "content/posts/2025m1d28h22m13s22.md",
     "content/posts/2025m1d28h23m31s11.md",
     "content/posts/2025m1d28h23m6s0.md",
-    "content/about.md",
-    "content/search.md"
+    "content/about.md"
   ]
 }
