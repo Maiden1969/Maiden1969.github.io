@@ -5,13 +5,13 @@
     <loc>http://localhost:1313/posts/%E8%BF%9B%E7%AB%99%E5%BF%85%E7%9C%8B/</loc>
     <lastmod>2025-01-29T01:29:44+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-01-29T08:01:54+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-29T19:48:36+08:00</lastmod>
+    <lastmod>2025-01-29T08:01:54+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-01-29T19:48:36+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-01-29T08:01:54+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
