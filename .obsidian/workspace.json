@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "cdf087a256891fa0",
@@ -206,6 +205,8 @@
   "active": "a0ff391ae8f47e9f",
   "lastOpenFiles": [
     "content/posts/方法论/论极值点偏移.md",
+    "home/HomePage.md",
+    "themes/PaperMod/layouts/partials/mathjax.html",
     "public/assets/css/stylesheet.8d5066a2433a15895323cae0607805286a1c99ec8dfffe092386e00072de93c1.css",
     "public/assets/css/stylesheet.f8cea2e99793e4a85af1ee6c12dbe1cf57cddae7efd5a3715cb68342e6075ae7.css",
     "public/assets/css/stylesheet.7bc15dba1e8a6b80d374f9a8313e25a826e2217df585e0204fd0e1ee28712f3a.css",
@@ -215,9 +216,7 @@
     "public/assets/css/stylesheet.390e3f179a81e2a49cc7daa34d220d148fbf136df1a5cdcc61df20cc5d39c2e6.css",
     "public/assets/css/stylesheet.8cff6e10dbdcd96486bf30e1c5621d5677c69abf77fc3d39de0aea269b22ba2f.css",
     "public/assets/css/stylesheet.826826df1031f49090aeec5b9f8cf442f03d55ae95d799049b89198263e52d5f.css",
-    "public/assets/css/stylesheet.d6f50cc8cd9f96ee6b1e7b06c75649032dd38679d49ffadbc0e2b8dec0779780.css",
     "content/posts/资料/数列讲义.md",
-    "home/HomePage.md",
     "content/posts/进站必看.md",
     "content/posts/集萃/集萃_1.md",
     "content/posts/资料/必修一复习讲义.md",
