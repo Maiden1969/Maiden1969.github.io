@@ -175,6 +175,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "themes/PaperMod/layouts/partials/mathjax.html",
     "i18n/zh-cn.toml",
     "layouts/shortcodes/notice.html",
     "layouts/shortcodes",
@@ -186,7 +187,6 @@
     "assets/scss",
     "layouts/_default/_markup/render-blockquote-alert.html",
     "content/posts/专题练习/直线与圆-题集1.md",
-    "layouts/partials/extend_head.html",
     "mathjax/README.md",
     "mathjax/CONTRIBUTING.md",
     "mj-tmp/README.md",
