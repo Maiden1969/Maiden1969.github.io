@@ -175,6 +175,7 @@
   },
   "active": "9d521a763e40d6f8",
   "lastOpenFiles": [
+    "themes/PaperMod/layouts/_default/_markup/render-blockquote-alert.html",
     "themes/PaperMod/layouts/partials/mathjax.html",
     "themes/PaperMod/layouts/partials/math.html",
     "mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff",
@@ -185,7 +186,6 @@
     "mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff",
     "mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff",
     "mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff",
-    "mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff",
     "mathjax/README.md",
     "mathjax/CONTRIBUTING.md",
     "mj-tmp/README.md",
