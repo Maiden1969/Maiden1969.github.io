@@ -2,7 +2,7 @@ baseURL: "https://math1969.com" # 主站的 URL
 title: Math1969 # 站点标题
 copyright: "[©2024 maiden1969](https://maiden1969.github.io/)" # 网站的版权声明，通常显示在页脚
 theme: PaperMod # 主题
-languageCode: en # 语言
+languageCode: zh-cn # 语言
  
 enableInlineShortcodes: true # shortcode，类似于模板变量，可以在写 markdown 的时候便捷地插入，官方文档中有一个视频讲的很通俗
 hasCJKLanguage: true # 是否有 CJK 的字符
