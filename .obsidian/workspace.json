@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/HomePage.md",
+                "file": "content/posts/进站必看.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HomePage"
+              "title": "进站必看"
             }
           }
         ],
@@ -190,6 +190,7 @@
   },
   "active": "f076b770446c0134",
   "lastOpenFiles": [
+    "home/HomePage.md",
     "content/posts/方法论/论极值点偏移.md",
     "content/posts/集萃/集萃_1.md",
     "public/posts/资料/数列讲义/index.html",
@@ -214,7 +215,6 @@
     "mathjax/CONTRIBUTING.md",
     "mj-tmp/README.md",
     "mj-tmp/CONTRIBUTING.md",
-    "home/HomePage.md",
     "content/posts/2025m1d30h11m17s16.md",
     "content/posts/2025m1d29h21m51s2.md",
     "content/posts/2025m1d29h7m26s29.md",
