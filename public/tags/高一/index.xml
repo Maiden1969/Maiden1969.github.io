@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>高一 on Math1969</title>
-    <link>https://math1969.com/tags/%E9%AB%98%E4%B8%80/</link>
+    <link>http://localhost:1313/tags/%E9%AB%98%E4%B8%80/</link>
     <description>Recent content in 高一 on Math1969</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>zh</language>
     <copyright>©2024 maiden1969</copyright>
     <lastBuildDate>Wed, 29 Jan 2025 01:20:21 +0800</lastBuildDate>
-    <atom:link href="https://math1969.com/tags/%E9%AB%98%E4%B8%80/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E9%AB%98%E4%B8%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>必修一复习讲义</title>
-      <link>https://math1969.com/posts/%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/%E5%BF%85%E4%BF%AE%E4%B8%80%E5%A4%8D%E4%B9%A0%E8%AE%B2%E4%B9%89/</link>
+      <link>http://localhost:1313/posts/%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/%E5%BF%85%E4%BF%AE%E4%B8%80%E5%A4%8D%E4%B9%A0%E8%AE%B2%E4%B9%89/</link>
       <pubDate>Wed, 29 Jan 2025 01:20:21 +0800</pubDate>
-      <guid>https://math1969.com/posts/%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/%E5%BF%85%E4%BF%AE%E4%B8%80%E5%A4%8D%E4%B9%A0%E8%AE%B2%E4%B9%89/</guid>
+      <guid>http://localhost:1313/posts/%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/%E5%BF%85%E4%BF%AE%E4%B8%80%E5%A4%8D%E4%B9%A0%E8%AE%B2%E4%B9%89/</guid>
       <description>必修一复习讲义</description>
     </item>
   </channel>
