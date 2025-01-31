@@ -13,20 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/资料/常用导数不等式汇总.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "常用导数不等式汇总"
-            }
-          },
-          {
-            "id": "301661d910f11d58",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "content/posts/方法论/论极值点偏移.md",
                 "mode": "source",
                 "source": false
@@ -36,7 +22,7 @@
             }
           },
           {
-            "id": "ebe236694f5ee593",
+            "id": "f71947a01ab3e42f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,23 +34,9 @@
               "icon": "lucide-file",
               "title": "HomePage"
             }
-          },
-          {
-            "id": "10c394ffec5d998d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/资料/常用导数不等式汇总.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "常用导数不等式汇总"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 284.5,
     "collapsed": true
   },
   "right": {
@@ -218,12 +190,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ebe236694f5ee593",
+  "active": "f71947a01ab3e42f",
   "lastOpenFiles": [
     "content/posts/方法论/论极值点偏移.md",
     "home/HomePage.md",
-    "content/posts/资料/常用导数不等式汇总.md",
+    "content/posts/2025m1d31h14m24s44.md",
     "content/posts/专题/直线与圆_题集1.md",
+    "content/posts/资料/必修一复习讲义.md",
+    "content/posts/资料/常用导数不等式汇总.md",
+    "content/posts/2025m1d31h14m20s2.md",
     "public/posts/资料/常用导数不等式汇总/index.html",
     "public/posts/资料/常用导数不等式汇总",
     "themes/PaperMod/layouts/partials/mathjax.html",
@@ -237,7 +212,6 @@
     "content/posts/资料/数列讲义.md",
     "content/posts/进站必看.md",
     "content/posts/集萃/集萃_1.md",
-    "content/posts/资料/必修一复习讲义.md",
     "content/about.md",
     "content/search.md",
     "content/archives.md",
@@ -256,7 +230,6 @@
     "content/posts/直线与圆_题集1/t1.png",
     "content/posts/直线与圆_题集1/t2.png",
     "pdf/专题练习_直线与圆_1.md",
-    "pdf.md",
     "public/posts/直线与圆_题集1/t9.png",
     "content/posts/直线与圆_题集1/t9.png",
     "public/posts/直线与圆_题集1/t7_1.png",
