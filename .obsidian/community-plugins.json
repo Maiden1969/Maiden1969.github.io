@@ -8,5 +8,7 @@
   "homepage",
   "obsidian-git",
   "obsidian-enhancing-export",
-  "obsidian-pandoc"
+  "obsidian-pandoc",
+  "oz-image-plugin",
+  "mousewheel-image-zoom"
 ]
