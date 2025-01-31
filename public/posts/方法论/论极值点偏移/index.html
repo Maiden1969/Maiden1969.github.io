@@ -156,14 +156,128 @@
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="https://www.hostize.com/zh/v/tkjxtJMfrI">下载PDF</a></p>
+  <div class="post-content"><p><a href="https://www.hostize.com/zh/v/Aq-u_c3UJC">下载PDF</a></p>
 <p>极值点偏移是非常非常套路化的题目。一般来说，掌握<strong>构造函数</strong>和<strong>比值/差值换元</strong>这两种方法，即可轻松解决绝大多数的极值点偏移问题。当然，本文还会介绍其它方法，以及一些稍难的题目。</p>
 <p>常见的情况是已知 $f(x_1)=f(x_2)$ ，证明 $x_1+x_2 > 2x_0$（其中$x_0$为极值点)；或者$x_1x_2>x_0^2$ 。当然这里的不等号可以反向。$2021$年新高考一卷最后一题是 $x_1+x_2$ 型的，$2022$年全国甲卷最后一题是 $x_1x_2$ 型的。</p>
 <p>认真阅读完本文后，你应该能轻松解决绝大多数极值点偏移问题。</p>
 <h2 id="0起源">0.起源<a hidden class="anchor" aria-hidden="true" href="#0起源">#</a></h2>
 <hr>
 <p>下面这道题来自于2010年天津高考，开创了极值点偏移类问题的先河。</p>
-<div class="notice note" >
+<style type="text/css">
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+     
+    @media (prefers-color-scheme:dark) {
+        .notice {
+            --title-color: #fff;
+            --title-background-color: #069;
+            --content-color: #ddd;
+            --content-background-color: #023;
+        }
+
+        .notice.info {
+            --title-background-color: #a50;
+            --content-background-color: #420;
+        }
+
+        .notice.tip {
+            --title-background-color: #363;
+            --content-background-color: #121;
+        }
+
+        .notice.warning {
+            --title-background-color: #800;
+            --content-background-color: #400;
+        }
+    }
+
+    body.dark .notice {
+        --title-color: #fff;
+        --title-background-color: #069;
+        --content-color: #ddd;
+        --content-background-color: #023;
+    }
+
+    body.dark .notice.info {
+        --title-background-color: #a50;
+        --content-background-color: #420;
+    }
+
+    body.dark .notice.tip {
+        --title-background-color: #363;
+        --content-background-color: #121;
+    }
+
+    body.dark .notice.warning {
+        --title-background-color: #800;
+        --content-background-color: #400;
+    }
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+</style><div class="notice note" >
     <p class="notice-title">
         <span class="icon-notice baseline">
             
@@ -177,7 +291,7 @@
 <hr>
 <p>这种方法的本质是<strong>消元</strong>。例如要证明 $x_1+x_2>2x_0$，这里有两个变量$x_1,x_2$，因此做如下处理：把其中一个变量移到不等式另一边，例如 $x_1 > 2x_0 - x_2$，此时如果两边的 $x_1$ 和 $2x_0-x_2$ 均落在原函数 $f(x)$ 的同一单调区间内，我们就可以在不等式两边套上 $f$，即比较 $f(x_1)$ 和 $f(2x_0-x_2)$ 的大小。而题目条件一般是 $f(x_1) = f(x_2)$，于是比较 $f(x_2)$ 和 $f(2x_0-x_2)$ 的大小。此时已经成功消元，于是构造函数</p>
 $$
-g(x) = f(x) - f(2x_0-x_2)
+g(x) = f(x) - f(2x_0-x)
 $$<p>其中定义域应该是 $x_2$ 的取值范围。之后证明 $g(x)$ 恒大于0或者小于0即可。<br>
 如果要证明的不等式是 $x_1x_2 > x_0^2$ 类型的，可以转化成 $x_1 > \frac{x_0^2}{x_2}$ ，如果两边的式子位于同一单调区间内，则构造函数 $g(x) = f(x) - f(\frac{x_0^2}{x})$ 。<br>
 <br>
