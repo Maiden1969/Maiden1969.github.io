@@ -35,8 +35,7 @@
               "title": "常用导数不等式汇总"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "cdf087a256891fa0",
@@ -189,10 +189,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "10c394ffec5d998d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "content/posts/专题/直线与圆_题集1.md",
     "content/posts/资料/常用导数不等式汇总.md",
+    "content/posts/专题/直线与圆_题集1.md",
     "public/posts/资料/常用导数不等式汇总/index.html",
     "public/posts/资料/常用导数不等式汇总",
     "home/HomePage.md",
