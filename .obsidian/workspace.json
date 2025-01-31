@@ -27,6 +27,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "content/posts/方法论/论极值点偏移.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "论极值点偏移"
+            }
+          },
+          {
+            "id": "ebe236694f5ee593",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "home/HomePage.md",
                 "mode": "source",
                 "source": false
@@ -50,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -107,7 +121,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "cdf087a256891fa0",
@@ -203,15 +218,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "301661d910f11d58",
+  "active": "ebe236694f5ee593",
   "lastOpenFiles": [
-    "content/posts/资料/常用导数不等式汇总.md",
+    "content/posts/方法论/论极值点偏移.md",
     "home/HomePage.md",
+    "content/posts/资料/常用导数不等式汇总.md",
     "content/posts/专题/直线与圆_题集1.md",
     "public/posts/资料/常用导数不等式汇总/index.html",
     "public/posts/资料/常用导数不等式汇总",
     "themes/PaperMod/layouts/partials/mathjax.html",
-    "content/posts/方法论/论极值点偏移.md",
     "public/assets/css/stylesheet.8d5066a2433a15895323cae0607805286a1c99ec8dfffe092386e00072de93c1.css",
     "public/assets/css/stylesheet.f8cea2e99793e4a85af1ee6c12dbe1cf57cddae7efd5a3715cb68342e6075ae7.css",
     "public/assets/css/stylesheet.7bc15dba1e8a6b80d374f9a8313e25a826e2217df585e0204fd0e1ee28712f3a.css",
