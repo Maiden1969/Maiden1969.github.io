@@ -10,7 +10,7 @@
 <meta name="description" content="介绍极值点偏移问题的常用解法">
 <meta name="author" content="zkr">
 <link rel="canonical" href="http://localhost:1313/posts/%E6%96%B9%E6%B3%95%E8%AE%BA/%E8%AE%BA%E6%9E%81%E5%80%BC%E7%82%B9%E5%81%8F%E7%A7%BB/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8d5066a2433a15895323cae0607805286a1c99ec8dfffe092386e00072de93c1.css" integrity="sha256-jVBmokM6FYlTI8rgYHgFKGocmeyN//4JI4bgAHLek8E=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.65a62cd935c4bde18ab76d87533d4564664217a17cf627e0add15d39998908f6.css" integrity="sha256-ZaYs2TXEveGKt22HUz1FZGZCF6F89ifgrdFdOZmJCPY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -136,14 +136,15 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="关于">
+                <a href="http://localhost:1313/about/" title="个人主页">
                     <span>关于</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
-<main class="main">
+<div class="gridmask"></div>
+    <main class="main">
 
 <article class="post-single">
   <header class="post-header">
@@ -166,7 +167,121 @@ $$<p>其中定义域应该是 $x_2$ 的取值范围。之后证明 $g(x)$ 恒大
 如果要证明的不等式是 $x_1x_2 > x_0^2$ 类型的，可以转化成 $x_1 > \frac{x_0^2}{x_2}$ ，如果两边的式子位于同一单调区间内，则构造函数 $g(x) = f(x) - f(\frac{x_0^2}{x})$ 。<br>
 <br>
 下面先举两个简单的例子，分别是 $x_1+x_2$ 型和 $x_1x_2$ 型。</p>
-<div class="notice note" >
+<style type="text/css">
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+     
+    @media (prefers-color-scheme:dark) {
+        .notice {
+            --title-color: #fff;
+            --title-background-color: #069;
+            --content-color: #ddd;
+            --content-background-color: #023;
+        }
+
+        .notice.info {
+            --title-background-color: #a50;
+            --content-background-color: #420;
+        }
+
+        .notice.tip {
+            --title-background-color: #363;
+            --content-background-color: #121;
+        }
+
+        .notice.warning {
+            --title-background-color: #800;
+            --content-background-color: #400;
+        }
+    }
+
+    body.dark .notice {
+        --title-color: #fff;
+        --title-background-color: #069;
+        --content-color: #ddd;
+        --content-background-color: #023;
+    }
+
+    body.dark .notice.info {
+        --title-background-color: #a50;
+        --content-background-color: #420;
+    }
+
+    body.dark .notice.tip {
+        --title-background-color: #363;
+        --content-background-color: #121;
+    }
+
+    body.dark .notice.warning {
+        --title-background-color: #800;
+        --content-background-color: #400;
+    }
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+</style><div class="notice note" >
     <p class="notice-title">
         <span class="icon-notice baseline">
             

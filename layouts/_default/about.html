@@ -1,17 +1,23 @@
 {{- define "main" }}
 
-<header class="page-header">
-    <h1>{{ .Title }}</h1>
+<header class="page-header fade-in">
     {{- if .Description }}
     <div class="post-description">
         {{ .Description }}
     </div>
     {{- end }}
 </header>
-
-<section>
+<img class="avatar fade-in" src="https://img.picui.cn/free/2025/01/31/679c45745d7c7.jpg" alt="avatar.jpg" title="avatar.jpg" />
+<section class="typewritter">
     <br>
     {{ .Content }}
 </section>
+<script>
+    // 打字机动画
+    let animelement_p = document.querySelectorAll('.typewritter p')
+    for (var elem of animelement_p){
+        elem.style.setProperty('--len', `${elem.textContent.length}`)
+    }
+</script>
 
 {{- end }}{{/* end main */}}

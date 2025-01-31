@@ -11,10 +11,10 @@
     <atom:link href="http://localhost:1313/categories/%E4%B8%93%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>直线与圆-题集1</title>
-      <link>http://localhost:1313/posts/%E4%B8%93%E9%A2%98/%E7%9B%B4%E7%BA%BF%E4%B8%8E%E5%9C%86-%E9%A2%98%E9%9B%861/</link>
+      <link>http://localhost:1313/posts/%E4%B8%93%E9%A2%98/%E7%9B%B4%E7%BA%BF%E4%B8%8E%E5%9C%86_%E9%A2%98%E9%9B%861/</link>
       <pubDate>Wed, 29 Jan 2025 00:30:16 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E4%B8%93%E9%A2%98/%E7%9B%B4%E7%BA%BF%E4%B8%8E%E5%9C%86-%E9%A2%98%E9%9B%861/</guid>
-      <description>专题练习</description>
+      <guid>http://localhost:1313/posts/%E4%B8%93%E9%A2%98/%E7%9B%B4%E7%BA%BF%E4%B8%8E%E5%9C%86_%E9%A2%98%E9%9B%861/</guid>
+      <description>直线与圆专题练习</description>
     </item>
   </channel>
 </rss>

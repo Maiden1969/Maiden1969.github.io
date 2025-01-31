@@ -7,7 +7,7 @@
     <generator>Hugo -- 0.142.0</generator>
     <language>zh</language>
     <copyright>©2024 maiden1969</copyright>
-    <lastBuildDate>Wed, 29 Jan 2025 08:01:54 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2025 12:59:46 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>进站必看</title>
@@ -15,6 +15,13 @@
       <pubDate>Wed, 29 Jan 2025 01:29:44 +0800</pubDate>
       <guid>http://localhost:1313/posts/%E8%BF%9B%E7%AB%99%E5%BF%85%E7%9C%8B/</guid>
       <description>&lt;h2 id=&#34;若数学公式图片显示有误系网络问题请等待一会或者刷新页面如果还不行请下载pdf版&#34;&gt;若数学公式、图片显示有误，系网络问题，请等待一会或者刷新页面。如果还不行，请下载PDF版。&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>常用导数不等式汇总</title>
+      <link>http://localhost:1313/posts/%E8%B5%84%E6%96%99/%E5%B8%B8%E7%94%A8%E5%AF%BC%E6%95%B0%E4%B8%8D%E7%AD%89%E5%BC%8F%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Fri, 31 Jan 2025 12:59:46 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E8%B5%84%E6%96%99/%E5%B8%B8%E7%94%A8%E5%AF%BC%E6%95%B0%E4%B8%8D%E7%AD%89%E5%BC%8F%E6%B1%87%E6%80%BB/</guid>
+      <description>仅汇总，不作证明</description>
     </item>
     <item>
       <title>论极值点偏移</title>
