@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>论导数题中的数列不等式 | Math1969</title>
+<meta name="keywords" content="导数, 数列, 选修二, 数列不等式">
+<meta name="description" content="我也是被震撼">
+<meta name="author" content="zkr">
+<link rel="canonical" href="http://localhost:1313/posts/%E6%96%B9%E6%B3%95%E8%AE%BA/%E8%AE%BA%E5%AF%BC%E6%95%B0%E9%A2%98%E4%B8%AD%E7%9A%84%E6%95%B0%E5%88%97%E4%B8%8D%E7%AD%89%E5%BC%8F/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0e5ffa725a759fc297f24ac08521b896b3d1461d1eb2006de5b6549689ac5888.css" integrity="sha256-Dl/6clp1n8KX8krAhSG4lrPRRh0esgBt5bZUlomsWIg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/%E6%96%B9%E6%B3%95%E8%AE%BA/%E8%AE%BA%E5%AF%BC%E6%95%B0%E9%A2%98%E4%B8%AD%E7%9A%84%E6%95%B0%E5%88%97%E4%B8%8D%E7%AD%89%E5%BC%8F/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['$$', '$$']],  
+      inlineMath: [['$', '$']]      
+    }
+  };
+</script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Math1969 (Alt + H)">Math1969</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Math1969">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="个人主页">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="gridmask"></div>
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      论导数题中的数列不等式
+    </h1>
+    <div class="post-meta"><span title='2025-02-01 15:10:32 +0800 CST'>二月 1, 2025</span>&nbsp;·&nbsp;zkr
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://www.hostize.com/zh/v/tYyJbZGIQH">下载PDF</a></p>
+<p>数列不等式是导数的一大题型，按照解题方法分类，一般可分为两类：能用单调性做的，不能用单调性做的。</p>
+<h2 id="0-起步利用单调性">0. 起步：利用单调性<a hidden class="anchor" aria-hidden="true" href="#0-起步利用单调性">#</a></h2>
+<hr>
+<p>原理非常简单，把不等式所有项移到一边，看作一个数列，研究其单调性即可。例如，要证明：</p>
+$$
+1 + \frac{1}{2} + \frac{1}{3} + \cdots +\frac{1}{n} > \ln{(n+1)}
+$$<p>
+我们把所有项移到左边，得到</p>
+$$
+1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n}-\ln{(n+1)} > 0
+$$<p>
+现在把左边全体看成一个数列 $\{a_n\}$ ，我们研究 $\{a_n\}$ 的单调性：</p>
+$$
+a_{n+1}  -a_n = \frac{1}{n+1} - \ln(1 + \frac{1}{n+1})
+$$<p>
+根据 $\ln{x} \leq x-1$ 知 $a_{n+1} - a_n > 0$，则 $\{a_n\}$ 单调递增，$a_n \geq a_1 = 1 - \ln{2} > 0$，得证。
+<br>
+一般来说，导数题的前几问会暗示你需要用什么不等式来证明最后一问的数列不等式。如果上面的例子放在考试里，可能这样出题：</p>
+<style type="text/css">
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+     
+    @media (prefers-color-scheme:dark) {
+        .notice {
+            --title-color: #fff;
+            --title-background-color: #069;
+            --content-color: #ddd;
+            --content-background-color: #023;
+        }
+
+        .notice.info {
+            --title-background-color: #a50;
+            --content-background-color: #420;
+        }
+
+        .notice.tip {
+            --title-background-color: #363;
+            --content-background-color: #121;
+        }
+
+        .notice.warning {
+            --title-background-color: #800;
+            --content-background-color: #400;
+        }
+    }
+
+    body.dark .notice {
+        --title-color: #fff;
+        --title-background-color: #069;
+        --content-color: #ddd;
+        --content-background-color: #023;
+    }
+
+    body.dark .notice.info {
+        --title-background-color: #a50;
+        --content-background-color: #420;
+    }
+
+    body.dark .notice.tip {
+        --title-background-color: #363;
+        --content-background-color: #121;
+    }
+
+    body.dark .notice.warning {
+        --title-background-color: #800;
+        --content-background-color: #400;
+    }
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+</style><div class="notice note" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            
+        </span></p><p>已知函数 $f(x) = \ln{x} - ax + 1$.<br>
+(1) 若 $f(x) \leq 0$ 恒成立，求 $a$ 的取值范围.<br>
+(2) 对任意 $n\in\mathbb{N^*}$，证明：$1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n} > \ln{(n+1)}$</p></div>
+<p>第一问其实暗示了不等式 $\ln{x} \leq x-1$，用来帮助你解决第二问，有些时候这种暗示比较隐晦，不容易找出。但是利用单调性的话，我们不需要任何提示就能直接证明数列不等式。<br>
+<br>
+之后的第 $1.$ 节，我给出了若干案例，它们都能用单调性直接解决（除了最后一个例子）。</p>
+<h2 id="0-起步使用放缩估计数列极限">0. 起步：使用放缩估计数列极限<a hidden class="anchor" aria-hidden="true" href="#0-起步使用放缩估计数列极限">#</a></h2>
+<hr>
+<p>一些比较困难的数列不等式，不能用单调性解决，需要放缩。下面是一个典型的例子：</p>
+<div class="notice note" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            
+        </span></p><p>设 $n\in\mathbb{N^*}$，证明：$\frac{1}{1^2} + \frac{1}{2^2} + \cdots + \frac{1}{n^2} < 2$.</p></div>
+<p>如果令 $a_n = \frac{1}{1^2} + \frac{1}{2^2} + \cdots + \frac{1}{n^2}$，则 $a_n$ 显然是递增的，那么 $a_n$ 的最大值应该是 $n\to+\infty$ 时的极限值，即 $\lim_{n\to+\infty} a_n$ 。然而，高中范围内，我们无法求解此极限值。虽然不能求出极限的准确值，但我们可以通过不等式放缩，来对此极限值作估计，如下：</p>
+$$
+\begin{align*}
+\frac{1}{1^2} + \frac{1}{2^2} + \cdots + \frac{1}{n^2} &< 1 + \frac{1}{2\cdot 1} + \frac{1}{3\cdot 2} +\cdots +\frac{1}{n(n-1)}\\
+&= 1 + (1 - \frac{1}{2}) + (\frac{1}{2} - \frac{1}{3}) + \cdots + (\frac{1}{n-1} - \frac{1}{n})\\
+&= 2 -\frac{1}{n}\\
+&< 2
+\end{align*}
+$$<p>
+这就估计出了 $a_n$ 的极限值一定小于 $2$ 。
+顺带一提，本题确切的极限值为</p>
+$$
+\frac{1}{1^2} + \frac{1}{2^2} + \cdots + \frac{1}{n^2} + \cdots = \frac{\pi^2}{6}
+$$<p>之后的第 $2.$ 节，我给出了若干案例，它们都不能用单调性直接解决，必须使用放缩来估计数列极限。</p>
+<h2 id="1-案例第一类">1. 案例（第一类）<a hidden class="anchor" aria-hidden="true" href="#1-案例第一类">#</a></h2>
+<hr>
+<div class="notice note" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            
+        </span></p><p>(2022年新高考二卷)已知函数 $f(x) = xe^{ax} - e^x$.<br>
+(1) 当 $a = 1$ 时，讨论 $f(x)$ 的单调性.<br>
+(2) 当 $x > 0$ 时，$f(x) < -1$，求 $a$ 的取值范围.<br>
+(3) 设 $n\in\mathbb{N^*}$，证明：$\frac{1}{\sqrt{1^2+1}} + \frac{1}{\sqrt{2^2+2}} + \cdots + \frac{1}{\sqrt{n^2+n}} > \ln{(n+1)}$.</p></div>
+<p>直接看第三问。题目中的不等式写成：</p>
+$$
+\frac{1}{\sqrt{1^2+1}} + \frac{1}{\sqrt{2^2+2}} + \cdots + \frac{1}{\sqrt{n^2+n}} - \ln{(n+1)} > 0
+$$<p>
+研究数列 $a_n = \frac{1}{\sqrt{1^2+1}} + \frac{1}{\sqrt{2^2+2}} + \cdots + \frac{1}{\sqrt{n^2+n}} - \ln{(n+1)}$ 的单调性，考虑 $a_{n+1}-a_n$：</p>
+$$
+a_{n+1} - a_n = \frac{1}{\sqrt{(n+1)^2+(n+1)}} - \ln(1+\frac{1}{n+1})
+$$<p>
+换元 $x = 1 + \frac{1}{n+1} > 1$ ，上式变成：</p>
+$$
+a_{n+1} - a_n = \sqrt{x} - \frac{1}{\sqrt{x}} - \ln{x} 
+$$<p>
+根据常见不等式 $\ln{x} < \sqrt{x} - \frac{1}{\sqrt{x}},x > 1$，有 $a_{n+1} - a_n > 0$，则 $\{a_n\}$ 递增，$a_n\geq a_1 = \frac{\sqrt{2}}{2} - \ln{2} > 0$ <br>
+<div class="notice note" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            
+        </span></p><p>(2010年湖北卷)已知函数 $f(x) = ax + \frac{b}{x} + c(a > 0)$ 的图像在点 $(1,f(1))$ 处的切线方程为 $y = x - 1$.<br>
+(1) 用 $a$ 表示出 $b,c$ .<br>
+(2) 若 $f(x)\geq \ln{x}$ 在 $[1,+\infty]$ 上恒成立，求 $a$ 的取值范围.<br>
+(3) 证明：</p>
+$$
+1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n} > \ln{(n+1)} + \frac{n}{2(n+1)}\quad (n\in\mathbb{N^*})
+$$</div></p>
+<p><strong>解析：</strong><br>
+直接看第三问。设</p>
+$$
+a_n = 1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n} - \ln{(n+1)}-\frac{n}{2(n+1)}
+$$<p>
+研究 $a_n$ 的单调性，考虑</p>
+$$
+\begin{align*}
+a_{n+1} - a_n &= \frac{1}{n+1} - \ln{\Big(1 + \frac{1}{n+1}\Big)}-\frac{1}{2(n+1)}+\frac{1}{2(n+2)}\\
+\end{align*}
+$$<p>
+换元 $x = 1+\frac{1}{n+1} > 1$，则上式变成</p>
+$$
+a_{n+1} - a_n = \frac{1}{2}(x-\frac{1}{x})-\ln x
+$$<p>
+根据常用不等式 $\ln x < \frac{1}{2}(x-\frac{1}{x}),x > 1$ ，知 $a_{n+1} - a_n > 0$，则 $\{a_n\}$ 递增，$a_n \geq a_1 = \frac{3}{4}-\ln 2 > 0$，得证。</p>
+<div class="notice note" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            
+        </span></p><p>(2023年天津卷)已知函数 $f(x) = (\frac{1}{x} + \frac{1}{2})\ln{(x+1)}$.<br>
+(1) 求曲线 $y = f(x)$ 在 $x = 2$ 处切线的斜率.<br>
+(2) 当 $x > 0$ 时，证明：$f(x) > 1$.<br>
+(3) 证明：$\frac{5}{6} < \ln{n!} - (n+\frac{1}{2})\ln{(n)} + n \leq 1$.</p></div>
+<p><strong>解析：</strong><br>
+直接看第三问。研究数列 $a_n = \ln{n!} - (n+\frac{1}{2})\ln{(n)} + n$ 的单调性，</p>
+$$
+a_{n+1} - a_n = 1 - (n+\frac{1}{2})\ln(1+\frac{1}{n})
+$$<p>
+换元 $x = 1+\frac{1}{n} > 1$，上式变为</p>
+$$
+a_{n+1} - a_n = 1 - \frac{x+1}{2(x-1)}\ln{x}
+$$<p>
+根据常见不等式 $\ln{x} > \frac{2(x-1)}{x+1},x > 1$ ，得 $a_{n+1} - a_n < 0$，则 $\{a_n\}$ 递减，$a_n \leq a_1 = 1$，于是右边的不等式得证。<br>
+$a_n$ 的下界在 $n\to+\infty$ 处，这个极限值以高中知识无法求解。如果读者有一些高等数学的知识储备，应该知道<strong>斯特林公式</strong>：</p>
+$$
+\text{当} n\to +\infty\text{时},n! \sim \sqrt{2\pi n}\Big(\frac{n}{e}\Big)^n
+$$<p>
+简单来说，当 $n$ 足够大的时候，$n!$ 的增长速度与 $\sqrt{2\pi n}(\frac{n}{e})^n$ 同量级，于是（需要说明的是，下面的极限求解过程并不严谨）</p>
+$$
+\begin{align*}
+\lim_{n\to+\infty}a_n &= \lim_{n\to+\infty} \ln{n!}-(n+\frac{1}{2})\ln{(n)} + n\\
+&=\lim_{n\to+\infty} \ln{\Big[\sqrt{2\pi n}\big(\frac{n}{e}\big)^n\Big]} - (n+\frac{1}{2})\ln{(n)} + n\\
+&= \ln{\sqrt{2\pi}}
+\end{align*}
+$$<p>
+所以，$a_n$ 的下确界为 $\ln{\sqrt{2\pi}}$，则 $a_n > \ln{\sqrt{2\pi}} > \frac{5}{6}$ 。<br>
+上面的过程，虽然不能直接在考试中书写，但给了我们一个启示：要证明左边的不等式，关键是对 $\ln{n!}$ 这一项的处理，或者说，对阶乘 $n!$ 的估计。考虑证明：存在正实数 $M$，当 $n > M$ 时，恒有：</p>
+$$
+n! < e^\frac{5}{6}\cdot\sqrt{n}\Big(\frac{n}{e}\Big)^n
+$$<p>
+把它写成：</p>
+$$
+\frac{n!\cdot e^n}{e^\frac{5}{6}\cdot\sqrt{n}\cdot n^n} < 1
+$$<p>
+令左边的部分为 $b_n$ ，我们研究 $b_n$  的单调性，使用前两项之比：</p>
+$$
+\begin{align*}
+\frac{b_{n+1}}{b_n} &= e\cdot\Big(\frac{n}{n+1}\Big)^{n+\frac{1}{2}}
+\end{align*}
+$$<p>
+取对数</p>
+$$
+\ln{\frac{b_{n+1}}{b_n}} = 1 - (n+\frac{1}{2})\ln{\Big(1 + \frac{1}{n}\Big)}
+$$<p>
+这跟之前的 $a_{n+1} - a_n$ 一模一样，则 $\ln{\frac{b_{n+1}}{b_n}} < 0$，$b_{n+1} < b_n$，$\{b_n\}$ 递减 。又因为</p>
+$$
+\begin{align*}
+b_5 &= \frac{5!\cdot e^5}{e^{\frac{5}{6}}\cdot \sqrt{5}\cdot5^5}\\
+&= \frac{24\cdot e^{\frac{10}{3}}}{625\sqrt{5}}\\
+&< 1
+\end{align*}
+$$<p>
+这可由 $\ln{2}\approx 0.7,\ln{3}\approx 1.0,\ln{5}\approx 1.6$ 得到，常用的对数值要记住。<br>
+所以，当 $n \geq 5$ 时，有</p>
+$$
+n! < e^\frac{5}{6}\cdot\sqrt{n}\Big(\frac{n}{e}\Big)^n
+$$<p>
+从而</p>
+$$
+\ln{n!} - (n+\frac{1}{2})\ln{(n)} + n < \ln{\Big[e^\frac{5}{6}\cdot\sqrt{n}\Big(\frac{n}{e}\Big)^n\Big] - (n+\frac{1}{2})\ln{(n)} + n} = \frac{5}{6}
+$$<p>
+左边不等式得证。
+<br>
+上面这道题目，右边的不等式是常规的、能直接依据数列单调性解决的不等式；而左边的不等式，则是另一种类型，需要使用放缩，来对数列的极限进行估计，这就是下一节的内容：</p>
+<h2 id="2-案例第二类">2. 案例（第二类）<a hidden class="anchor" aria-hidden="true" href="#2-案例第二类">#</a></h2>
+<hr>
+<div class="notice note" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            
+        </span></p><p>(2017年全国三卷)已知函数 $f(x) = x - 1 - a\ln{x}$.<br>
+(1) 若 $f(x) \geq 0$，求 $a$ 的值.<br>
+(2) 设 $m$ 为整数，且对于任意正整数 $n$ ，$(1+\frac{1}{2})(1+\frac{1}{2^2})\cdots(1+\frac{1}{2^n}) < m$，求 $m$ 的最小值.</p></div>
+<p><strong>解析：</strong><br>
+首先，数列 $a_n = (1+\frac{1}{2})(1+\frac{1}{2^2})\cdots(1+\frac{1}{2^n})$ 显然是递增的，于是本题需要估计极限值。<br>
+第一问显然是提示了不等式 $\ln{x} \leq x - 1$ 。这是个对数不等式，为了将第二问的连乘式与对数产生联系，将其取对数，得到：</p>
+$$
+\ln(1+\frac{1}{2}) + \ln(1 + \frac{1}{2^2}) + \cdots \ln(1 + \frac{1}{2^n}) < \ln m
+$$<p>
+使用不等式 $\ln x \leq x - 1$，得</p>
+$$
+\begin{align*}
+\ln(1+\frac{1}{2}) + \ln(1 + \frac{1}{2^2}) + \cdots \ln(1 + \frac{1}{2^n}) &< \frac{1}{2} + \frac{1}{2^2} + \cdots +\frac{1}{2^n}\\
+&= 1-\frac{1}{2^n}\\
+&< 1
+\end{align*}
+$$<p>
+这就估计出了 $a_n$ 的极限值小于 $e$ ，又因为 $a_3 = \frac{135}{64} > 2$，则 $a_n$ 的极限值大于 $2$ ，小于 $e$ 。故 $m=3$ 。 (考试的时候不要在卷子上写极限两个字)</p>
+<br>
+<div class="notice note" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            
+        </span></p><p>(2021年深圳二模)已知定义在 $\mathbb{R}$ 上的函数 $f(x) = x^2 + a\cos{x} + (a-2)e^{-x}$，$a\in\mathbb{R}$.<br>
+(1) 当 $a=2$ 时，求 $f(x)$ 的极值.<br>
+(2) 若 $f(x)$ 在 $[0,\pi]$ 上单调递增，求实数 $a$ 的取值范围. <br>
+(3) 当 $n\in\mathbb{N^*}$ 时，证明：</p>
+$$
+\sum_{k=1}^{n} \frac{1}{(n+k)\tan{\frac{1}{n+k}}} > n - \frac{1}{4n+2}
+$$</div>
+<p><strong>解析：</strong><br>
+前两问比较简单，不讲。第一问就已经暗示了不等式</p>
+$$
+\cos{x} \geq 1 - \frac{x^2}{2}
+$$<p>
+下面看第三问。如果直接研究数列</p>
+$$
+a_n = \sum_{k=1}^{n} \frac{1}{(n+k)\tan{\frac{1}{n+k}}} - n + \frac{1}{4n+2}
+$$<p>
+的单调性，比较困难，最后会得到 $\{a_n\}$ 是递减的，而我们要证明的是 $a_n > 0$，因此需要对 $n\to+\infty$ 处的数列极限作估计。<br>
+题目提供给我们的不等式是关于余弦的，而待证不等式中是正切。那么根据余弦和正切的关系，我们有：</p>
+$$
+\begin{align*}
+\tan{\frac{1}{n+k}} &= \sqrt{\frac{1}{\cos^2{\frac{1}{n+k}}}-1}\\
+&< \sqrt{\frac{1}{\big[1-\frac{1}{2(n+k)^2}\big]^2}-1}\\
+&= \frac{\sqrt{4(n+k)^2-1}}{2(n+k)^2-1}
+\end{align*}
+$$<p>
+于是</p>
+$$
+\begin{align*}
+\sum_{k=1}^{n} \frac{1}{(n+k)\tan{\frac{1}{n+k}}} &> \sum_{k=1}^{n}\frac{2(n+k)^2-1}{(n+k)\sqrt{4(n+k)^2-1}}\\
+&> \sum_{k=1}^n \frac{2(n+k)^2-1}{2(n+k)^2}\\
+&= \sum_{k=1}^n 1-\frac{1}{2(n+k)^2}\\
+&= n - \sum_{k=1}^n \frac{1}{2(n+k)^2}
+\end{align*}
+$$<p>
+要证明</p>
+$$
+\sum_{k=1}^{n} \frac{1}{(n+k)\tan{\frac{1}{n+k}}} > n - 
+\frac{1}{4n+2}
+$$<p>
+只需证明</p>
+$$
+\sum_{k=1}^n \frac{1}{(n+k)^2} < \frac{1}{2n+1}
+$$<p>
+这个数列不等式也不简单，如果尝试用单调性证明。令</p>
+$$
+b_n = \sum_{k=1}^n \frac{1}{(n+k)^2} - \frac{1}{2n+1}
+$$<p>
+考虑</p>
+$$
+\begin{align*}
+b_{n+1} - b_n &= \frac{1}{(2n+1)^2} + \frac{1}{(2n+2)^2} - \frac{1}{(n+1)^2}+\frac{1}{2n+1}-\frac{1}{2n+3}\\
+&= \frac{8n^2 + 22n + 11}{4(2n+1)^2(n+1)^2(2n+3)}\\
+&> 0
+\end{align*}
+$$<p>
+则 $\{b_n\}$ 递增，由于要证明的是 $b_n < 0$ ，我们还得放缩估计 $b_n$ 的极限值。<br>
+<br>
+希望证明：</p>
+$$
+\sum_{k=1}^n \frac{1}{(n+k)^2} < \frac{1}{2n+1}
+$$<p>
+对于左边的式子，一种常见的估计是</p>
+$$
+\begin{align*}
+\sum_{k=1}^n \frac{1}{(n+k)^2} &< \sum_{k=1}^n\frac{1}{(n+k)(n+k-1)}\\
+&= \sum_{k=1}^n \frac{1}{n+k-1}-\frac{1}{n+k}\\
+&= \frac{1}{2n}
+\end{align*}
+$$<p>
+然而 $\frac{1}{2n} > \frac{1}{2n+1}$，说明这种估计不够精确。一般来说，要改进放缩的精确度，有两种方法：一种是放项；另一种是换用精度更高的放缩不等式。<br>
+所谓的放项，就是保留数列的前几项不参与放缩，例如，我们保留前两项：</p>
+$$
+\begin{align*}
+\sum_{k=1}^n \frac{1}{(n+k)^2} &= \frac{1}{(n+1)^2}+\frac{1}{(n+2)^2}+\frac{1}{(n+3)^2}+\cdots+\frac{1}{(2n)^2}\\
+&< \frac{1}{(n+1)^2}+\frac{1}{(n+2)^2}+\frac{1}{(n+3)(n+2)}+\cdots + \frac{1}{2n(2n-1)}\\
+&= \frac{1}{(n+1)^2}+\frac{1}{(n+2)^2}+\frac{1}{n+2}-\frac{1}{2n}
+\end{align*}
+$$<p>
+比较难绷的是，上面的式子依然是大于 $\frac{1}{2n+1}$ 的，如果放更多项，计算量会很大，也不优雅。于是我们要改变放缩策略。考虑如下估计：</p>
+$$
+\begin{align*}
+\sum_{k=1}^n \frac{1}{(n+k)^2} &< \sum_{k=1}^n\frac{1}{(n+k + \frac{1}{2})(n+k-\frac{1}{2})}\\
+&= 2\sum_{k=1}^n\frac{1}{2(n+k)-1}-\frac{1}{2(n+k)+1}\\
+&= \frac{2}{2n+1}-\frac{2}{4n+1}\\
+&< \frac{1}{2n+1}
+\end{align*}
+$$<p>
+这下精度就够了。于是本题终于得证 。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/%E5%AF%BC%E6%95%B0/">导数</a></li>
+      <li><a href="http://localhost:1313/tags/%E6%95%B0%E5%88%97/">数列</a></li>
+      <li><a href="http://localhost:1313/tags/%E9%80%89%E4%BF%AE%E4%BA%8C/">选修二</a></li>
+      <li><a href="http://localhost:1313/tags/%E6%95%B0%E5%88%97%E4%B8%8D%E7%AD%89%E5%BC%8F/">数列不等式</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span><a href="https://maiden1969.github.io/">©2024 maiden1969</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+
+</body>
+
+</html>
