@@ -8,35 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ef9a6676c39c38f4",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/方法论/再论极值点偏移.md",
+                "file": "content/posts/资料/常用导数不等式汇总.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "再论极值点偏移"
+              "title": "常用导数不等式汇总"
             }
           },
           {
-            "id": "85a52d53c31b8553",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/方法论/论极值点偏移.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "论极值点偏移"
-            }
-          },
-          {
-            "id": "6a826bf88f659e01",
+            "id": "58943f9f49ca8c0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,12 +190,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6a826bf88f659e01",
+  "active": "58943f9f49ca8c0f",
   "lastOpenFiles": [
-    "content/posts/方法论/再论极值点偏移.md",
-    "home/HomePage.md",
-    "content/posts/方法论/论极值点偏移.md",
     "content/posts/资料/常用导数不等式汇总.md",
+    "home/HomePage.md",
+    "public/posts/2025m2d1h10m53s13/index.html",
+    "public/posts/2025m2d1h10m53s13",
+    "content/posts/2025m2d1h10m53s13.md",
+    "public/posts/2025m2d1h10m52s43/index.html",
+    "public/posts/2025m2d1h10m52s43",
+    "content/posts/2025m2d1h10m52s43.md",
+    "content/posts/试卷/高二上学期命题参考卷(自编）.md",
+    "content/posts/方法论/论极值点偏移.md",
+    "content/posts/方法论/再论极值点偏移.md",
     "content/posts/资料/数列讲义.md",
     "public/assets/css/stylesheet.20fd98a4efc992200ac7558c7f722b89e51e6d20e58b90f9f1123404470cf183.css",
     "public/assets/css/stylesheet.0e5ffa725a759fc297f24ac08521b896b3d1461d1eb2006de5b6549689ac5888.css",
@@ -217,10 +210,6 @@
     "public/assets/css/stylesheet.bb2cddd5995c01016cedb9a1656e9f9874f27bf67932b6694a11c976c1e24397.css",
     "public/assets/css/stylesheet.112f1cccc620c6492cb66e5e06ef0cbf051e05b74a2547b90990079c707cf699.css",
     "public/assets/css/stylesheet.22b1a3d1d9dc6abbf1bc95734f4aa0e99291f617b7e8aab6430e98ddae476cf1.css",
-    "public/assets/css/stylesheet.2ac8cf04188d7f4fdb49824c1a86c64b8b87bf81fd194a9eafcaa67916e4a9cf.css",
-    "public/assets/css/stylesheet.6b6685f029a2508a8cb919d552de56ab0acdfa31582ba21208a3babfafe80efc.css",
-    "public/assets/css/stylesheet.bdb644ca13074de80d8d3179c68832ec1d1a777232e34050b164467a59c01559.css",
-    "public/assets/css/stylesheet.69293fdcf8860b2d3a2a31d1ced7e15600f6314d8bb60becf2ff4287491ab406.css",
     "content/posts/2025m1d31h17m4s19.md",
     "content/posts/2025m1d31h17m4s0.md",
     "content/posts/资料/必修一复习讲义.md",
@@ -235,13 +224,10 @@
     "content/about.md",
     "content/search.md",
     "content/archives.md",
-    "content/posts/试卷/高二上学期命题参考卷(自编）.md",
     "mathjax/README.md",
     "mathjax/CONTRIBUTING.md",
     "mj-tmp/README.md",
     "mj-tmp/CONTRIBUTING.md",
-    "content/posts/2025m1d30h11m17s16.md",
-    "content/posts/2025m1d29h21m51s2.md",
     "content/posts/直线与圆_题集1/t1.png",
     "content/posts/直线与圆_题集1/t2.png",
     "public/posts/直线与圆_题集1/t9.png",
