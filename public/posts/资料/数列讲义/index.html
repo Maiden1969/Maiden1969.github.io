@@ -1,0 +1,4459 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>数列大纲 | Math1969</title>
+<meta name="keywords" content="数列, 选修二">
+<meta name="description" content="数列题型详解">
+<meta name="author" content="zkr">
+<link rel="canonical" href="http://localhost:1313/posts/%E8%B5%84%E6%96%99/%E6%95%B0%E5%88%97%E8%AE%B2%E4%B9%89/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.42c443ca8ee686a5a6f8e6144506b72332fff9f3c9384de07ded275d0ca12cc8.css" integrity="sha256-QsRDyo7mhqWm&#43;OYURQa3IzL/&#43;fPJOE3gfe0nXQyhLMg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/%E8%B5%84%E6%96%99/%E6%95%B0%E5%88%97%E8%AE%B2%E4%B9%89/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['$$', '$$']],  
+      inlineMath: [['$', '$']]      
+    }
+  };
+</script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Math1969 (Alt + H)">Math1969</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Math1969">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="个人主页">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="gridmask"></div>
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      数列大纲
+    </h1>
+    <div class="post-meta"><span title='2025-01-29 00:08:34 +0800 CST'>一月 29, 2025</span>&nbsp;·&nbsp;zkr
+
+</div>
+  </header> 
+  <div class="post-content"><p>本章由于字数比较多，造成网页端排版紊乱。因此最好点击下方链接下载PDF阅读：
+<a href="https://www.hostize.com/zh/v/KlJPRx6zDw">下载PDF </a></p>
+<h2 id="1概念">1.概念<a hidden class="anchor" aria-hidden="true" href="#1概念">#</a></h2>
+<p><strong>数列：</strong> 顾名思义，就是一列数 $a_1,a_2,a_3,... a_n ...$ ，用 $\{a_n\}$ 表示。注意以下几点：</p>
+
+
+<blockquote class="alert-blockquote alert-caution">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0
+  1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0
+  11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1
+  .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Caution</span>
+  </p>
+  <ol>
+<li>高中阶段，数列的下标 $n$ 都是从 $1$ 开始的，也就是没有 $a_0$ 。</li>
+<li>数列里面可以有无穷个数，此时称为无穷数列；否则是有穷数列。</li>
+<li>数列并不要求 $a_n$ 有规律、有递推式、有通项公式，它们仅仅是一列数而已，完全没有规律也是可以的。另外，即使有规律，也不一定有递推式和通项公式，例如<strong>质数列:</strong> $\{2,3,5,7,11,...\}$ 没有通常意义下的递推公式和通项公式。</li>
+<li>数列中的元素称为数列的<strong>项</strong>，元素个数称为<strong>项数</strong>。</li>
+</ol>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>$$
+a_n = S_n-S_{n-1}
+$$<p>
+其中 $n\geq2$ 。对于 $n=1$ ，直接有 $a_1 = S_1$ 。</p>
+<p><strong>通项公式：</strong> 如果 $a_n$ 能写成 $a_n = f(n)$ 的形式（其中 $f(n)$ 是一个关于 $n$ 的函数），那么 $f(n)$ 就称为数列 $\{a_n\}$ 的通项公式。例如数列 $\{1,2,3,4,...\}$ 的通项公式是 $a_n = n$ 。注意以下几点：</p>
+
+
+<blockquote class="alert-blockquote alert-caution">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0
+  1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0
+  11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1
+  .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Caution</span>
+  </p>
+  <ol>
+<li>数列并不一定有通项公式，实际上恰恰相反，几乎所有的数列都求不出通项公式，只有极少数的特殊数列能求出通项公式，例如等差和等比。</li>
+<li>根据一个通项公式，不能唯一确定一个数列。例如 $a_n = n$ 对于数列 $\{1,2,3,4\}$ 和 $\{1,2,3\}$ 都是成立的。</li>
+<li>对于一个数列，它的通项公式也不唯一。例如数列 $1,2,3$ 的通项公式可以是 $a_n = n$ ，也可以是 $a_n = -\frac{1}{6}n^3 + n^2 - \frac{5}{6}n + 1$ 。(这实际上是多项式函数的<strong>插值</strong>，经过点 $(1,1)$,$(2,2)$,$(3,3)$ 的多项式函数有无数个)即使是无穷数列也如此，例如 $1,2,3,4,...$ 的通项公式可以是 $a_n = n$ 也可以是 $a_n = \begin{cases}-\frac{1}{6}n^3 + n^2 - \frac{5}{6}n + 1 & n=1,2,3\\ n & n\geq 4 \end{cases}$ 。</li>
+</ol>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><p><strong>递推公式：</strong> 如果 $a_n$ 能写成 $a_n = f(a_1,a_2,a_3,...a_{n-1})$ 的形式（其中 $f(a_1,a_2,a_3,...a_{n-1})$ 是一个关于 $a_1,a_2,a_3,...a_{n-1}$ 的表达式），那么 $f(a_1,a_2,a_3,...a_{n-1})$ 就称为数列 $\{a_n\}$ 的递推公式。简单来
+说，就是数列中的任意一项 $a_n$ 都能通过它之前的 $n-1$ 项求出来。注意以下几点：</p>
+
+
+<blockquote class="alert-blockquote alert-caution">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0
+  1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0
+  11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1
+  .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Caution</span>
+  </p>
+  <ol>
+<li>根据通项公式不一定能求出递推公式，例如 $a_n = \sin{(n)} + n$ 。</li>
+</ol>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><ol start="2">
+<li>根据递推公式也不一定能求出通项公式，例如 $a_{n+1} = \sin{a_n} + a_n$ 。</li>
+</ol>
+<blockquote>
+<ol start="3">
+<li>如果我们要求出数列中的某一项，有时候用递推公式反而比通项公式方便。例如<strong>斐波那契数列</strong>的递推公式是 $a_{n+2} = a_{n+1} + a_n$ ，通项公式是 $a_n = \frac{1}{\sqrt{5}}[(\frac{\sqrt{5}+1}{2})^n-(\frac{1-\sqrt{5}}{2})^n]$ 。如果我们要手算出第20项 $a_{20}$，显然应该用递推公式。插一句题外话，某 top2 大学的自主招生考过一个题目：</li>
+</ol>
+
+
+<blockquote class="alert-blockquote alert-question">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Question</span>
+  </p>
+  <p>求 $(\frac{\sqrt{5}+1}{2})^{20}$ 的整数部分</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><p>利用斐波那契数列的递推公式，我们可以算出 $a_{20} = 6765$ ，另一方面利用斐波那契数列的通项公式，我们可以得到 $a_{20} = \frac{1}{\sqrt{5}}[(\frac{\sqrt{5}+1}{2})^{20} - (\frac{1-\sqrt{5}}{2})^{20}]$ 。 所以 $(\frac{\sqrt{5}+1}{2})^{20}=6765\sqrt{5}+(\frac{1-\sqrt{5}}{2})^{20}$,由于$6765\sqrt{5}\approx 15126.9$ ， $|\frac{1-\sqrt{5}}{2}|<0.7$ ， $(\frac{1-\sqrt{5}}{2})^{20}$ 小到可以忽略不计 ，故答案就是 $15126$ 。</p>
+</blockquote>
+<h2 id="2根据递推式求通项公式">2.根据递推式求通项公式<a hidden class="anchor" aria-hidden="true" href="#2根据递推式求通项公式">#</a></h2>
+<p>这是数列中最最最常考的题型。下面介绍一些常见案例：</p>
+<h3 id="a_n--pa_n-1q">$a_n = pa_{n-1}+q$<a hidden class="anchor" aria-hidden="true" href="#a_n--pa_n-1q">#</a></h3>
+<hr>
+<p>最常见的情况。这时 $a_n$ 相当于 $a_{n-1}$ 的一次函数。我们分几种情况讨论：</p>
+<ol>
+<li>$a_n = pa_{n-1}$</li>
+</ol>
+<p>简单，显然是等比数列（如果 $p\neq0$）。</p>
+<ol start="2">
+<li>$a_n=a_{n-1}+q$</li>
+</ol>
+<p>简单，显然是等差数列。</p>
+<ol start="3">
+<li>$a_n=pa_{n-1}+q$ ，其中 $p\neq1$</li>
+</ol>
+$$
+a_n = 2a_{n-1}+1,a_1=1
+$$<p>
+先说结论：上面的递推公式可以写成 $a_n+1 = 2(a_{n-1}+1)$，从而数列 $\{a_n+1\}$ 就成为一个等比数列，$a_n+1 = 2^n$，得到 $a_n = 2^n-1$ 。</p>
+<p>我们关心两个问题：为什么这个递推公式能写成上面的形式，为什么是 $\{a_n+1\}$ 而不是 $\{a_n+2\}$ (或者其它)。</p>
+<p>回答第一个问题：我们之前讨论过 $q=0$ 的情况，即 $a_n = pa_{n-1}$ ，此时很明显是一个等比数列。但是如果右边加上一个非零常数后，就不是等比数列了。这其实相当于把一个经过原点的一次函数进行平移，那么平移后的函数就不再经过原点了，也就是 $a_n$ 不再是等比数列。那如果我们再把这个一次函数“平移回去”，是不是又会得到一个等比数列了？例如在本题中，$a_n = 2a_{n-1}+1$ ，相当于把 $a_n = 2a_{n-1}$ 向上平移了 $1$ ，那么我们把 $a_n$ 向左平移 $1$ 得到的 ${a_n+1}$ 就是一个等比数列了。因为对于一次函数 $y=ax+b$ 而言，把 $y$ 向上平移和把 $x$ 向左平移是等价的。</p>
+<p>回答第二个问题：根据上面的讨论，我们已经知道，对于递推公式 $a_n = pa_{n-1}+q$ ，$q\neq0,p\neq1$，它总能写成 $a_n+x = p(a_{n-1}+x)$ 的形式，把它展开后，得到 $a_n = pa_{n-1}+(p-1)x$ ，从而有 $(p-1)x = q$ ，得到 $x=\frac{q}{p-1}$ 。例如在本题中，$x = \frac{1}{2-1}=1$ ，所以 $\{a_n+1\}$ 是等比数列，公比就是 $p=2$ 。</p>
+<p>再看一个例子：$a_n = 3a_{n-1}-1$，$a_1=0$，求通项公式。我们计算得到 $x=\frac{-1}{3-1}=-\frac{1}{2}$ ，因此 $\{a_n-\frac{1}{2}\}$ 就是一个首项为 $-\frac{1}{2}$ ，公比为 $3$ 的等比数列，从而 $a_n = -\frac{1}{2}3^{n-1}+\frac{1}{2}$ 。</p>
+<h3 id="a_npa_n-1q">$a_n=pa_{n-1}^q$<a hidden class="anchor" aria-hidden="true" href="#a_npa_n-1q">#</a></h3>
+<hr>
+<p>两边取对数，得到 $\ln{a_n}=q\ln{a_{n-1}} + \ln{p}$ ，令 $b_n=\ln{a_n}$ ，则 $b_n=qb_{n-1}+\ln{p}$ ，这就变成了上面那种情形了。</p>
+<p>看一个例子：$a_n = 3a_{n-1}^2$ ，$a_1=1$ ，求通项。两边取对数得到 $\ln{a_n} = 2\ln{a_{n-1}}+\ln{3}$ ，计算得 $x=\frac{\ln{3}}{2-1}=\ln{3}$ ，因此 $\{\ln{a_n}+\ln{3}\}$ 是一个首项为 $\ln{3}$ ，公比为 $2$ 的等比数列，&hellip;&hellip;</p>
+<p>再看一个例子：$a_n = a_{n-1}^2 + 2a_{n-1}$，$a_1=1$，求通项。两边加1得到 $a_n + 1 = (a_{n-1}+1)^2$ ，把 $a_n+1$ 看成整体即可。</p>
+<h3 id="a_n2--pa_n1qa_n">$a_{n+2} = pa_{n+1}+qa_n$<a hidden class="anchor" aria-hidden="true" href="#a_n2--pa_n1qa_n">#</a></h3>
+<hr>
+<p>这是所谓的<strong>二阶常系数齐次递推公式</strong> 。很多著名数列，例如斐波那契数列 $a_{n+2}=a_{n+1}+a_n$ ，佩尔数列 $a_{n+2}=2a_{n+1}+a_n$ 都属于这种类型。
+要想求解这个递推公式，一种方法是使用<strong>矩阵</strong>的特征根。虽然高中不涉及，但是曾经在高考卷上出现过。感兴趣的同学，可以上网搜索，关键词”<strong>不动点</strong>“和“<strong>特征根</strong>”。
+还有一种方法，就是所谓的“母函数法”，这种方法在高中知识的范围内，详情见本资料后面部分。</p>
+<h3 id="a_n--fracpa_n-1qsa_n-1t">$a_{n} = \frac{pa_{n-1}+q}{sa_{n-1}+t}$<a hidden class="anchor" aria-hidden="true" href="#a_n--fracpa_n-1qsa_n-1t">#</a></h3>
+<hr>
+<p>这种递推式需要用<strong>不动点</strong>求解，这里不做介绍。但是有两个特例：</p>
+<ol>
+<li>p = 0
+这种情况一般是周期数列，可以算出前几项来检验。举个例子：$a_n = \frac{1}{1-a_{n-1}}$ ，$a_1=\frac{1}{2}$ 。可以算出 $a_2=2,a_3=-1,a_4=\frac{1}{2}$ ，所以周期为 $3$ 。</li>
+<li>q = 0
+把两边取倒数即可。举个例子：$a_n=\frac{a_{n-1}}{1+a_{n-1}}$，转换成 $\frac{1}{a_n}=\frac{1}{a_{n-1}}+1$ ，从而 $\{\frac{1}{a_n}\}$ 是一个等差数列。</li>
+</ol>
+<h3 id="a_n--pa_n-1--fn">$a_n = pa_{n-1} + f(n)$<a hidden class="anchor" aria-hidden="true" href="#a_n--pa_n-1--fn">#</a></h3>
+<hr>
+<p>这种情况也是比较常见的。我们直接举例说明：(假设下面各例中都有 $a_1=1$)</p>
+<ol>
+<li>
+<p>$a_n = a_{n-1} + n$
+累加，就有 $a_n = a_1+(a_2-a_1)+(a_3-a_2)+(a_4-a_3)+...+(a_n-a_{n-1})=1+2+3+...n=\frac{n(n+1)}{2}$</p>
+</li>
+<li>
+<p>$a_n=a_{n-1}+2^n$
+同样是累加</p>
+</li>
+<li>
+<p>$a_n = 2a_{n-1}+n$
+两边同除 $2^n$ ，得到 $\frac{a_n}{2^n}=\frac{a_{n-1}}{2^{n-1}} + \frac{n}{2^{n-1}}$ ，把 $\frac{a_n}{2^n}$ 看成一个整体，累加即可。</p>
+</li>
+</ol>
+<p>可见，如果 $p\neq1$ ，那么我们在两边同时除以 $p^n$ ，就能化为 $p=1$ 的情况。</p>
+<h3 id="a_n--fna_n-1">$a_n = f(n)*a_{n-1}$<a hidden class="anchor" aria-hidden="true" href="#a_n--fna_n-1">#</a></h3>
+<hr>
+<p>这种情况比较简单，累乘即可，例如 $a_{n} = \frac{n-1}{n+1}a_{n-1}$ 。</p>
+<h3 id="a_n--fs_n">$a_n = f(S_n)$<a hidden class="anchor" aria-hidden="true" href="#a_n--fs_n">#</a></h3>
+<hr>
+<p>一般都要用 $a_n = S_{n+1}-S_n$ 来转换。这里就有两种情况，要么从左到右转换，要么从右到左，这就要具体题目具体分析了。但是尤其要注意 $n$ 的取值范围，举几个例子：</p>
+<ol>
+<li>$a_{n+1} = S_n + 2$，$a_1=1$
+把 $a_{n+1}=S_n+2$ 与 $a_n=S_{n-1}+2$ 相减，得到 $a_{n+1}-a_{n}=a_n$ ，即 $a_{n+1}=2a_n$ ，但是要注意这里 $n\geq 2$ ，这是因为上面用到了式子 $a_n = S_{n-1}+2$，要求下标 $n-1 \geq1$ 。所以不能简单地认为数列 ${a_n}$ 是一个等比数列，只能说从第二项开始是等比的，公比为 $2$ ，但第一项和第二项的比值却不一定为 $2$ 。我们可以算出 $a_2=3$，从而 $\frac{a_2}{a_1}=3\neq2$ ，因此通项公式为：
+$$
+	a_n=
+	\begin{cases}
+	1 & n=1\\
+	3*2^{n-2} & n>1
+	\end{cases}
+	$$</li>
+<li>$S_n=\frac{1}{2}(a_n+\frac{1}{a_n})$，$a_1=1$
+把 $S_n=\frac{1}{2}(a_n+\frac{1}{a_n})$ 和 $S_{n-1} = \frac{1}{2}(a_{n-1}+\frac{1}{a_{n-1}})$ 相减，得到 $a_n=\frac{1}{2}(a_n-a_{n-1}+\frac{1}{a_n}-\frac{1}{a_{n-1}})$ 。注意这里 $n\geq2$ 。我们把 $a_n$ 和 $a_{n-1}$ 移到两边，得到
+$$
+	a_n-\frac{1}{a_n} = -(a_{n-1}+\frac{1}{a_{n-1}})
+	$$
+两边平方，得到
+$$
+	a_n^2+\frac{1}{a_n^2}=a_{n-1}^2+\frac{1}{a_{n-1}^2}+4
+	$$
+很明显，数列 $\{a_n^2+\frac{1}{a_n^2}\}$ 是一个公差为 $4$ 的等差数列。</li>
+</ol>
+<h2 id="3技术">3.技术<a hidden class="anchor" aria-hidden="true" href="#3技术">#</a></h2>
+<h3 id="裂项相消">裂项相消<a hidden class="anchor" aria-hidden="true" href="#裂项相消">#</a></h3>
+<hr>
+<p>直接说结论：分式 $\frac{1}{(n-x_1)(n-x_2)(n-x_3)...(n-x_m)}$ 可以写成 $\frac{\lambda_1}{n-x_1} + \frac{\lambda_2}{n-x_2} + ... + \frac{\lambda_m}{n-x_m}$ 的形式。例如：</p>
+
+
+<blockquote class="alert-blockquote alert-example">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Example</span>
+  </p>
+  <ol>
+<li>$\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}$</li>
+<li>$\frac{1}{n(n+1)(n+2)} = \frac{1}{2n} + \frac{1}{2(n+2)} - \frac{1}{n+1}$</li>
+<li>$\frac{1}{n^2-3n+2}=\frac{1}{(n-1)(n-2)}=\frac{1}{n-1}-\frac{1}{n-2}$</li>
+</ol>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>$$
+\frac{1}{n(n+1)(n+2)} = \frac{\lambda_1}{n} + \frac{\lambda_2}{n+1} + \frac{\lambda_3}{n+2}
+$$$$
+\frac{\lambda_1(n+1)(n+2)+\lambda_2n(n+2)+\lambda_3n(n+1)}{n(n+1)(n+2)}=\frac{(\lambda_1+\lambda_2+\lambda_3)n^2+(3\lambda_1+2\lambda_2+\lambda_3)n+2\lambda_1}{n(n+1)(n+2)}
+$$<p>
+比较系数，应该有 $\lambda_1+\lambda_2+\lambda_3=0$，$3\lambda_1+2\lambda_2+\lambda_3=0$，$2\lambda_1=1$。解得 $\lambda_1=\frac{1}{2}$，$\lambda_2=-1$，$\lambda_3=\frac{1}{2}$ 。</p>
+<h3 id="错位相减">错位相减<a hidden class="anchor" aria-hidden="true" href="#错位相减">#</a></h3>
+<hr>
+<p>我们把等差数列与等比数列的乘积叫做差比数列，例如 $a_n = n*2^n$ 。错位相减是用来求解差比数列的前n项和的。
+以 $a_n = n*2^n$ 为例，写出</p>
+$$
+\begin{aligned}
+S_n &= 1*2^1 + &&2*2^2 + 3*2^3 + \dots + n*2^n\\
+2*S_{n} &= &&1*2^2 + 2*2^3 + \dots + (n-1)*2^{n} + n*2^{n+1}
+\end{aligned}
+$$<p>其中第二行是把第一行乘以公比2得到的。然后把两行按照上面的对应顺序相减，得到</p>
+$$
+-S_n=1*2^1 + (2^2 + 2^3 + 2^4 + \dots + 2^n) -n*2^{n+1}=2^{n+1}-2-n*2^{n+1}
+$$<p>于是 $S_n = 2+(n-1)*2^{n+1}$。</p>
+<h3 id="母函数法">母函数法<a hidden class="anchor" aria-hidden="true" href="#母函数法">#</a></h3>
+<hr>
+<p>==<em>前排提示：本节内容仅供学有余力的同学学习</em>==</p>
+$$
+f(x) = a_1x + a_2x^2 +a_3x^3 +\cdots + a_nx^n 
+$$<p>
+为 $\{a_n\}$ 的<strong>母函数</strong>。</p>
+<p>不难发现母函数的一个性质是 $f(1) = S_n$，这里 $S_n$ 是前 $n$ 项和。</p>
+<p>母函数定义很简单，但是威力令人难以置信地强大。下面我们用母函数来求解斐波那契数列</p>
+$$
+F_1 = F_2= 1,\quad F_{n+2} = F_{n+1} + F_{n}
+$$<p>的通项公式。</p>
+<p>母函数为 $f(x) = F_1x+F_2x^2+F_3x^3+\cdots+F_nx^n$ 。于是</p>
+$$
+xf(x) = F_1x^2+F_2x^3+F_3x^4+\cdots+F_nx^{n+1}
+$$$$
+x^2f(x)=F_1x^3+F_2x^4+F_3x^5+\cdots+F_nx^{n+2}
+$$<p>计算</p>
+$$
+\begin{align*}
+(1-x-x^2)f(x) &= F_1x+(F_3-F_2-F_1)x^3+(F_4-F_3-F_2)x^4+\cdots+(F_n-F_{n-1}-F_{n-2})x^n\\&-(F_{n-1}+F_n)x^{n+1}-F_nx^{n+2}\\
+&=x-F_{n+1}x^{n+1}-F_nx^{n+2}
+\end{align*}
+$$<p>等式左边，$1-x-x^2$ 有两个零点，分别记作 $\alpha= \frac{-1+\sqrt{5}}{2}$，$\beta = \frac{-1-\sqrt{5}}{2}$。把这两个零点代入上式，左边为 $0$，右边也应当为 $0$，于是就有</p>
+$$
+\begin{align*}
+\alpha-\alpha^{n+1}F_{n+1}-\alpha^{n+2}F_n&=0\\
+\beta - \beta^{n+1}F_{n+1}-\beta^{n+2}F_n&=0
+\end{align*}
+$$<p>这相当于一个关于 $F_n$，$F_{n+1}$的二元一次方程组，解之，得到</p>
+$$
+F_n = \frac{\alpha^n - \beta^n}{\alpha^n\beta^n(\beta-\alpha)}
+$$<p>$\alpha\beta=-1$，$\beta-\alpha=-\sqrt{5}$，代入上式化简得到</p>
+$$
+F_n = \frac{1}{\sqrt{5}}\Big[\Big(\frac{1+\sqrt{5}}{2}\Big)^n-\Big(\frac{1-\sqrt{5}}{2}\Big)^n\Big]
+$$<p>这就是斐波那契数列的通项公式。</p>
+<p>母函数的作用远不止如此，例如，在之前求出的</p>
+$$
+(1-x-x^2)f(x)=x-F_{n+1}x^{n+1}-F_nx^{n+2}
+$$<p>中，我们取 $x=1$，注意到 $f(1)=F_1+F_2+\cdots+F_n$ 是前 $n$ 项和，于是有</p>
+$$
+F_1+F_2+\cdots+F_n=F_{n+1}+F_n-1=F_{n+2}-1
+$$<p>这就得到了斐波那契数列一个特别性质。如果取 $x$ 为其它数，还能得到更多等式。例如 $x=2$，$f(2)=2F_1+2^2F_2+\cdots+2^nF_n$，就有</p>
+$$
+2F_1+2^2F_2+\cdots+2^nF_n=\frac{2^{n+1}F_{n+1}+2^{n+2}F_n-2}{5}
+$$<p>读者可以发挥想象力，探索母函数的其它作用。</p>
+
+
+<blockquote class="alert-blockquote alert-todo">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Todo</span>
+  </p>
+  <p>作为练习，读者可以试着用母函数求解佩尔数列的通项公式：</p>
+$$
+P_1=0,\quad P_2=1,\quad P_{n+2}=2P_{n+1}+P_n
+$$
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-tip">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984
+  2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0
+  1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766
+  2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328
+  3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0
+  1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304
+  0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1
+  .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z\"></path>"
+    </svg>
+    <span>Tip</span>
+  </p>
+  <p>除了上面三种技术，感兴趣的同学还可以上网搜索“蛛网工作法”。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><h2 id="4数列求和">4.数列求和<a hidden class="anchor" aria-hidden="true" href="#4数列求和">#</a></h2>
+<p>数列求和是最古老的数列问题之一。</p>
+<h3 id="等差等比求和公式">等差等比求和公式<a hidden class="anchor" aria-hidden="true" href="#等差等比求和公式">#</a></h3>
+<hr>
+<p>例：$a_n = 2^n + n + 1$，求 $S_n$</p>
+<blockquote>
+<p>$S_n = 2*\frac{1-2^n}{1-2} + \frac{n(n+1)}{2} + n = 2^{n+1}-2+\frac{n(n+3)}{2}$</p>
+</blockquote>
+<h3 id="裂项相消-1">裂项相消<a hidden class="anchor" aria-hidden="true" href="#裂项相消-1">#</a></h3>
+<hr>
+<p>例1：$a_n = \frac{1}{\sqrt{n} + \sqrt{n+1}}$，求 $S_n$</p>
+<blockquote>
+<p>$a_n = \sqrt{n+1}-\sqrt{n}$，$S_n = (\sqrt{2}-\sqrt{1})+(\sqrt{3}-\sqrt{2})+\dots+(\sqrt{n+1}-\sqrt{n})=\sqrt{n+1}-1$</p>
+</blockquote>
+<p>上面这种对根号的裂项本质上就是分母有理化，一定要掌握。一般地，我们有</p>
+<blockquote>
+<p>$\frac{1}{\sqrt{n}+\sqrt{n+k}} = \frac{1}{k}(\sqrt{n+k}-\sqrt{n})$</p>
+</blockquote>
+<p>例2：$a_n=\frac{4n^2}{(2n-1)(2n+1)}$，求$S_n$</p>
+<blockquote>
+<p>$a_n = 1+\frac{1}{(2n-1)(2n+1)} = 1+ \frac{1}{2}(\frac{1}{2n-1}-\frac{1}{2n+1})$，$S_n=\dots$</p>
+</blockquote>
+<p>首先把分子变成常数，然后运用之前讲的方法裂项即可。本题实际上不需要待定系数了，直接能看出来。</p>
+<p>例3：$a_n=\frac{2^n}{(2^n-1)(2^{n+1}-1)}$，求 $S_n$</p>
+<blockquote>
+<p>$a_n=\frac{1}{2^n-1} - \frac{1}{2^{n+1}-1}$ ，$S_n=\dots$</p>
+</blockquote>
+<p>总之先裂开再说，然后发现 $(2^{n+1}-1)-(2^n-1)$ 刚好是 $2^n$。</p>
+<p>例4：$a_n=\frac{n+2}{n(n+1)2^n}$，求 $S_n$</p>
+<blockquote>
+<p>$a_n=2[\frac{1}{n2^n}-\frac{1}{(n+1)2^{n+1}}]$，$S_n=\dots$</p>
+</blockquote>
+<p>这题比较难，总之还是先裂开再说，我们希望裂项后是两个分数相减，它们的分母上分别有一个 $n$ 和 $n+1$ ，然后要想使得裂项后的结果求和时能够相消，它们的分母上还应该分别有一个 $2^n$ 和 $2^{n+1}$。于是就有 $\frac{1}{n2^n}-\frac{1}{(n+1)2^{n+1}}$ ，我们通分后发现还要乘以系数 $2$ 。</p>
+<p>例5：$a_n=\tan{(n-1)}\tan{n}$，求 $S_n$</p>
+<blockquote>
+<p>$a_n=\frac{1}{\tan{1}}[\tan{n}-\tan{(n-1)}]-1$，$S_n=\dots$</p>
+</blockquote>
+<p>冷门的三角裂项，==看看就好==。</p>
+<h3 id="分段通项公式的求和">分段通项公式的求和<a hidden class="anchor" aria-hidden="true" href="#分段通项公式的求和">#</a></h3>
+<p>例：$a_{n+1} = \begin{cases} a_n+1 & n\text{是奇数}\\ 2a_n & n\text{是偶数} \end{cases}$，$a_1 = 1$，求 $S_n$</p>
+<blockquote>
+<p>首先我们需要求出 $a_n$ 的通项公式。如果题干按照奇偶分段，那么一般要分别考虑数列中的奇数项和偶数项。</p>
+<p>考虑偶数项 $a_{2n}$ ，则 $a_{2n} = a_{2n-1}+1=2a_{2(n-1)}+1$ ，这说明 $\{a_n\}$ 的偶数项构成的数列 $\{b_n\}$ 的递推公式是 $b_{n} = 2b_{n-1}+1$ ，这里的 $b_n = a_{2n}$ 。容易求出 $b_n = 3\cdot2^{n-1} - 1$ ，所以 $a_{2n}=b_n=3\cdot2^{n-1}$$-1$ 。</p>
+<p>考虑奇数项 $a_{2n-1}$ ，则 $a_{2n-1} = a_{2n}-1 = b_n-1 = 3\cdot2^{n-1} - 2$ ，则 $\{a_n\}$ 的奇数项构成的数列 $\{c_n\}$ 的通项公式是 $c_n = 3\cdot2^{n-1}-2$ ，这里 $c_n = a_{2n-1}$ 。</p>
+<p>综上，$a_n = \begin{cases} 3\cdot2^{\frac{n-1}{2}}-2 & n\text{是奇数}\\ 3\cdot2^{\frac{n}{2}-1}-1 & n\text{是偶数} \end{cases}$  。实际上并不需要求出这个通项公式。</p>
+<p>下面求和 $S_n$ 的时候，注意也要分奇偶：
+$S_{2n} = (a_1+a_3+a_5+\cdots+a_{2n-1}) + (a_2+a_4+a_6+\cdots+a_{2n})=(b_1+b_2+\cdots+b_n)+$$(c_1+c_2+\cdots+c_n)$ $=(3\cdot2^n - 4) + (3\cdot2^n - 5) = 6\cdot2^n - 9$ 。
+$S_{2n-1} = S_{2n} - a_2n = 6\cdot2^n-9-(3\cdot2^{n-1}-1) = 9\cdot2^{n-1}-8$ 。</p>
+<p>综上，$S_n = \begin{cases} 9\cdot2^{\frac{n-1}{2}}-8 & n\text{是奇数} \\ 6\cdot2^{\frac{n}{2}}-9 & n\text{是偶数} \end{cases}$</p>
+</blockquote>
+<h3 id="错位相减-1">错位相减<a hidden class="anchor" aria-hidden="true" href="#错位相减-1">#</a></h3>
+<hr>
+<p>常规的就不再赘述了，下面介绍一个特别的例子：</p>
+<blockquote>
+<p>$a_n=n^2\cdot2^n$，求 $S_n$</p>
+</blockquote>
+<p>这里的 $a_n$ 不是一个差比数列，因为 $n$ 的次数是2。因此这道题目需要错位相减两次。</p>
+<p>==前排提示：由于网页端排版问题，之后的章节请回到本章开头下载PDF阅读。==</p>
+<h2 id="5数列与数论">5.数列与数论<a hidden class="anchor" aria-hidden="true" href="#5数列与数论">#</a></h2>
+<h3 id="等差数列中的数论问题">等差数列中的数论问题<a hidden class="anchor" aria-hidden="true" href="#等差数列中的数论问题">#</a></h3>
+<hr>
+<p>先引入一个例子</p>
+
+
+<blockquote class="alert-blockquote alert-example">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Example</span>
+  </p>
+  <p>把数列 $\{3n-2\}$ 和数列 $\{6n+1\}$ 的公共项依次取出作为一个新数列 $\{a_n\}$ ，求 $\{a_n\}$ 的通项公式</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><p>首先需要指出，本题与数论有关。数论是一门研究整数的数学分支，虽然高中书本上没有介绍，但现在的高考有意将其引入，尤其是与数列相结合作为压轴题，一般难度较大。</p>
+<p>从数论的角度来看，数列 $\{3n-2\}$ 中的项都有这样的性质：除以 $3$ 余 $1$ ，称为“ 模 $3$ 余 $1$ ”。而数列 $\{6n+1\}$ 中的项都是“ 模 $6$ 余 $1$ ” 的。因此它们的公共项是既模 $3$ 余 $1$ 又模 $6$ 余 $1$ 的。</p>
+<p>下面是关键：由于 $6n+1 = 3*2n + 1 = 3*(2n+1)-2$，这说明在数列 $\{6n+1\}$ 中，每一个奇数项都是数列 $\{3n-2\}$ 中的项（因为它们符合 $3*f(n)-2$ 的形式）。因此这两个数列的公共项就是数列 $\{6n+1\}$ 的奇数项，通项公式为 $a_n = 6(2n-1)+1 = 12n-5$ 。</p>
+<p>我们发现，$\{a_n\}$ 还是一个等差数列，其中的每一项都是模 $12$ 余 $7$ 的，其中的 $12$ 既是模数，也是公差，而且恰好是题目中两个数列的公差 $3$ 和 $6$ 的==最小公倍数==。这很符合直觉。于是可以从中总结出下面这个结论：</p>
+
+
+<blockquote class="alert-blockquote alert-note">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1
+  7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1
+  1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Note</span>
+  </p>
+  <p>等差数列 $\{pn+q\}$ 和 $\{sn+t\}$ （其中 $p,q$ 为正整数，$s,t$ 为整数）的公共项组成的数列也是等差数列，且公差为 $p$ 和 $s$ 的最小公倍数。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><p>这个结论的证明需要数论的知识，略过。使用这个结论来做本题，我们马上能得到 $\{a_n\}$ 是公差为 $12$ 的等差数列。但除了公差，我们还需要知道首项 $a_1$ ，这个简单，只需要把两个数列 $\{3n-2\}$ 和 $\{6n+1\}$ 的前几项写出来，找出它们第一个公共项就行了，很快就能得到 $a_1=7$ ，于是 $a_n$ 就能求出来了。</p>
+<p>再来看下一个例子：</p>
+
+
+<blockquote class="alert-blockquote alert-example">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Example</span>
+  </p>
+  <p>无穷等差数列 $\{a_n\}$ 的每一项都是正整数，公差大于 $1$ ，且 $520$ 和 $1314$ 都是 $\{a_n\}$ 中的项。问 $2025$ 是不是 $\{a_n\}$ 中的项？</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><p>首先，$\{a_n\}$ 的通项公式应该是 $pn+q$ ( $p$ 为正整数且 $p>1$ ，$q$ 为整数) 形式的。</p>
+<p>现在，$520$ 和 $1314$ 都是 $\{a_n\}$ 中的项，假设 $520 + kp = 1314$，则 $p=\frac{794}{k}$ ，这说明模数（或者说公差）$p$ 应该是 $794$ 的一个因子。假设 $2025$ 是 $\{a_n\}$ 中的项，$1314 + mp = 2025$，则 $p=\frac{711}{m}$ ，这说明模数 $p$ 应该是 $711$ 的一个因子。于是 $p$ 应该是 $794$ 和 $711$ 的公因子。通过质因数分解，可以得到 $794=2*397$，$711=3^2*79$，其中 $397$ 和 $79$ 都是质数，因此 $794$ 和 $711$ 的公因子只有 $1$，但是题目说公差大于 $1$ ，从而 $2025$ 不可能是 $\{a_n\}$ 中的项。</p>
+<h3 id="其它数论问题">其它数论问题<a hidden class="anchor" aria-hidden="true" href="#其它数论问题">#</a></h3>
+<hr>
+<p>本节介绍一般性的数论的问题，它们非常考验数学思想，因而比较困难。</p>
+<p>首先，我们介绍一下数论中的一些基本概念：</p>
+
+
+<blockquote class="alert-blockquote alert-note">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1
+  7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1
+  1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Note</span>
+  </p>
+  <p>$a,b$ 是整数。若存在整数 $k$ 使得 $b=ka$ ，则称 $a$ 整除 $b$ ，记作 $a|b$ 。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-note">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1
+  7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1
+  1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Note</span>
+  </p>
+  <p>$a,b$ 是正整数。显然一定存在正整数 $p,r$，$0\leq r < b$，使得 $a = pb + r$ ，称为带余除法，其中 $p$ 称为 $b$ 除 $a$ 的商， $r$ 称为 $b$ 除 $a$ 的余数。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-note">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1
+  7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1
+  1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Note</span>
+  </p>
+  <p>$a$ 是正整数。称整除 $a$ 的数为 $a$ 的因子。特别地，若因子为素数，则称为质因子。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-note">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1
+  7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1
+  1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Note</span>
+  </p>
+  <p>$p$ 是正整数。若 $p$ 除了 $1$ 和 $p$ 之外没有其它因子，则称 $p$ 是素数。</p>
+<ul>
+<li>规定 $1$ 不是素数，$2$ 是最小的素数，也是唯一的偶素数。</li>
+<li>素数也称质数。</li>
+<li>不是素数的正整数称为合数。</li>
+<li>素数有无穷多个。</li>
+</ul>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-note">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1
+  7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1
+  1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Note</span>
+  </p>
+  <p>$a,b$ 是正整数。若一个数 $c$ 既是 $a$ 的因子，又是 $b$ 的因子，则称 $c$ 为 $a,b$ 的一个公因子。
+最大的公因子称为最大公因子，也叫做最大公约数，记作 $(a,b)$ 。它的一些性质如下：</p>
+<ul>
+<li>$(a + kb,b) = (a,b)$</li>
+<li>$(ka,kb) = k(a,b)$</li>
+</ul>
+<p>其中 $k$ 是任意正整数。
+这两个性质不难证明，例如第一个性质，$(a,b)$ 既是 $b$ 的因子也是 $a$ 的因子，因此一定是 $a+kb$ 的因子，从而是 $a+kb$ 和 $b$ 的公因子。假设还有比 $(a,b)$ 更大的公因子 $m$，则 $m|a+kb$ ，$m|b$，推出 $m|a$，这说明 $m$ 是 $a$ 和 $b$ 的公因子，而且比 $(a,b)$ 更大，是矛盾的。故得证。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-note">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1
+  7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1
+  1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Note</span>
+  </p>
+  <p>$a,b$ 是正整数。若存在一个数 $c$ ，$a$ 和 $b$ 都是 $c$ 的因子，则称 $c$ 为 $a,b$ 的一个公倍数。
+最小的公倍数称为最小公倍数，记作 $[a,b]$ 。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-note">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1
+  7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1
+  1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Note</span>
+  </p>
+  <p>$a,b$ 是正整数。若 $a,b$ 除了 $1$ 之外没有其它公因子，即 $(a,b)=1$ ，则称 $a,b$ 互素，或者称为互质。</p>
+<ul>
+<li>对任意正整数 $a$ ，都有 $(a,a+1) = (a,1) = 1$。利用这个性质以及下面将要介绍的质因子唯一分解定理可以证明素数有无穷多个，留给读者思考。</li>
+</ul>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><p>下面，介绍数论中最基本的一个定理——质因子唯一分解定理</p>
+
+
+<blockquote class="alert-blockquote alert-note">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      "<path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1
+  7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1
+  1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>"
+    </svg>
+    <span>Note</span>
+  </p>
+  <p>任意一个大于 $1$ 的正整数 $N$ 都能被唯一的分解为若干质因子的乘积。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><p>例如 $120$ 的质因子为 $2,3,5$ ，它可以被分解为 $2^3 \cdot 3 \cdot 5$ ，这种分解是唯一的。</p>
+<p>下面举几例数列中的数论问题。提前说明一下，有些解答我使用了数学归纳法，你可以查阅教材来了解这种方法。（虽然打了星号，但我认为非常有必要掌握）</p>
+
+
+<blockquote class="alert-blockquote alert-question">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Question</span>
+  </p>
+  <p>用 $(a,b)$ 表示两个整数 $a,b$ 的最大公因子。设数列 $\{a_n\}$ 是递增数列，且每一项都是正整数。证明对任意正整数 $n$ 均有：</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>$$
+ \frac{(a_1,a_2)}{a_1a_2}+\frac{(a_2,a_3)}{a_2a_3}+\cdots+\frac{(a_n,a_{n+1})}{a_na_{n+1}}  < 1
+ $$<p><strong>解答:</strong>
+我们需要认识最大公因子的性质。设两个正整数 $a,b$ ，$a < b$，由于 $(a,b)$ 是 $a$ 和 $b$ 的公因子，故存在正整数 $k_1,k_2$ 使得 $a=k_1(a,b), b=k_2(a,b)$ ，其中 $k_2 > k_1$ 。于是我们有 $b-a = (k_2-k_1)(a,b) \geq (a,b)$ ，得到一个不等式：</p>
+$$
+(a,b) \leq b-a
+$$<p>显然有 $(a,b) \leq a$，这是第二个不等式。
+另一方面，$\frac{a+b}{2} = \frac{k_1+k_2}{2}(a,b) \geq (a,b)$，于是有第三个不等式：</p>
+$$
+ (a,b) \leq \frac{a+b}{2}
+ $$<p>上面三个不等式，刻画了最大公因子的上界。本题的不等式证明则需要用到上面的第一个不等式，这是因为 $\frac{(a_i,a_{i+1})}{a_ia_{i+1}} \leq \frac{a_{i+1}-a_i}{a_ia_{i+1}}=\frac{1}{a_i} - \frac{1}{a_{i+1}}$ ，变成了裂项相消的典型形式。于是就有</p>
+$$
+ \frac{(a_1,a_2)}{a_1a_2}+\frac{(a_2,a_3)}{a_2a_3}+\cdots+\frac{(a_n,a_{n+1})}{a_na_{n+1}} \leq  \frac{1}{a_1} - \frac{1}{a_2} + \frac{1}{a_2} -\frac{1}{a_3}+\cdots + \frac{1}{a_n} - \frac{1}{a_{n+1}} < \frac{1}{a_1} \leq 1
+ $$<p>证毕。</p>
+<blockquote>
+$$
+> a_1=k+1,\quad a_{n+1}=a_n^2-ka_n+k,\quad n=1,2,\cdots
+> $$<p>
+证明：对任意不同的正整数 $m,n$ ，必有 $a_m$ 与 $a_n$ 互素。</p>
+</blockquote>
+
+
+<blockquote class="alert-blockquote alert-success">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Success</span>
+  </p>
+  <p>显然，求出 $a_n$ 的通项公式是<strong>不可能的</strong>，因为题目给出的是一个二次多项式型的递推公式。于是我们只能在递推公式上做文章。</p>
+$$
+>a_{n+1}-k=a_n(a_n-k)
+>$$$$
+>(a_m,a_n) = (\lambda a_n + k, a_n) = (k,a_n)
+>$$<p>
+于是只需要证明 $(k,a_n)=1$ 即可。题目告诉我们 $a_1=k+1$ ，那么显然 $(a_1,k)=1$。我们还可以计算出 $a_2 = 2k+1,a_3=2k^2+4k+1$，一个明显的规律是它们都是 $k$ 的倍数加 $1$ ，因而都与 $k$ 互素。而且根据递推公式，不难发现所有的 $a_n$ 都是这个形式。下面要证明这个结论，需要用到数学归纳法。</p>
+<ol>
+<li>$a_1 = k+1$，是 $k$ 的倍数加 $1$ 。</li>
+<li>假设 $a_n = pk + 1$，是 $k$ 的倍数加 $1$。</li>
+<li>$a_{n+1} = a_n^2 - ka_n + k = (p^2-p)k^2 + 2pk + 1$，也是 $k$ 的倍数加 $1$ 。</li>
+</ol>
+<p>这就证明了所有 $a_n$ 都是 $k$ 的倍数加 $1$ 的形式，因而都与 $k$ 互素。证毕。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-question">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Question</span>
+  </p>
+  <p>非负有理数数列 $\{a_n\}$ 满足：对任意 $m,n\in\mathbb{N^*}$ 都有 $a_{mn}=a_m + a_n$ 。证明：$\{a_n\}$ 中有相等的项。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-success">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Success</span>
+  </p>
+  <p>本题这个数列的性质类似于对数函数。</p>
+$$
+> a_N = a_{p_1^{\alpha_1} p_2^{\alpha_2}\dots p_k^{\alpha_k}} =\alpha_1 a_{p_1} + \alpha_2 a_{p_2} + \cdots + \alpha_k a_{p_k}
+> $$<p>
+受此启发，我们设 $a_2 = \frac{t_1}{s_1}$，$a_3 = \frac{t_2}{s_2}$，则 $a_{2^{s_1t_2}} = s_1t_2 a_2 = t_1t_2$，$a_{3^{s_2t_1}} = s_2t_1a_3 = t_1t_2$，从而 $a_{2^{s_1t_2}} = a_{3^{s_2t_1}}$ 。由于 $2^{s_1t_2}$ 与 $3^{s_2t_1}$ 奇偶性不同，不可能相等，故 $a_{2^{s_1t_2}}$ 与 $a_{3^{s_2t_1}}$ 是数列 $\{a_n\}$ 中相等的项，证毕。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-question">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Question</span>
+  </p>
+  <p>用 $(a,b)$ 表示两个整数 $a,b$ 的最大公因子。设 $\{a_n\}$ 是一个正整数列，若对任意 $i \neq j$，有 $(a_i,a_j) = (i,j)$，证明：$a_n=n$ 。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-success">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Success</span>
+  </p>
+  <p>本题的做法不容易想到。</p>
+<p>由题意，$(a_i,a_{2i}) = (i,2i) = i$，则 $i|a_i$，于是 $(a_i,a_{a_i}) = (i,a_i) = i$。
+另一方面，$(a_{a_i},a_{2a_i}) = (a_i,2a_i) = a_i$，则 $a_i|a_{a_i}$。于是 $(a_i,a_{a_i}) = a_i$。综上有 $a_i = i$，证毕。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><h2 id="6其它数列问题举隅">6.其它数列问题举隅<a hidden class="anchor" aria-hidden="true" href="#6其它数列问题举隅">#</a></h2>
+<p>本节介绍除了数论外的其它类型问题，有时会出现新定义。这类问题更加没有章法，
+灵活多变。</p>
+
+
+<blockquote class="alert-blockquote alert-question">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Question</span>
+  </p>
+  <p>已知 $a_i$ ($i=1,2,3\dots2025$) 为 $2025$ 个实数，满足 $a_1+a_2+\cdots+a_{2025}=0$ ，且 $|a_1-2a_2|=|a_2-2a_3|=\cdots=|a_{2025}-2a_1|$，证明：$a_1=a_2=\cdots=a_{2025}=0$ 。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-success">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Success</span>
+  </p>
+  <p>设 $|a_1-2a_2|=|a_2-2a_3|=\cdots=|a_{2025}-2a_1|=k$。</p>
+<p>若 $k=0$，则 $a_1=2a_2,a_2=2a_3,\cdots a_{2025}=2a_1$，由 $a_1+a_2+\cdots+a_{2025}=0$ 知它们全为 $0$ 。</p>
+<p>若 $k>0$，则 $a_1-2a_2,a_2-2a_3,a_3-2a_4,\cdots a_{2025}-2a_1$ 这 $2025$ 个数要么为 $k$ 要么为 $-k$，它们的和不可能为 $0$ 。但事实上它们的和为 $-(a_1+a_2+\cdots+a_{2025})=0$，矛盾表明 $k>0$ 不成立。而 $k=0$ 的情况上面已经证明。</p>
+<p>证毕。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-question">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Question</span>
+  </p>
+  <p>已知数集 $A=\{a_1,a_2,\cdots,a_n\}$ ($1\leq a_1<a_2<\cdots<a_n, n\geq2$) 具有性质 $P$：对任意的 $i,j$ ($1\leq i\leq j\leq n$)，$a_ia_j$ 与 $\frac{a_j}{a_i}$ 两个数中至少有一个属于 $A$ 。</p>
+<p>(1)分别判断数集 $\{1,3,4\}$ 和 $\{1,2,3,6\}$ 是否具有性质 $P$，并说明理由。</p>
+<p>(2)证明：$a_1=1$ 且 $\frac{a_1+a_2+\cdots+a_n}{a_1^{-1}+a_2^{-1}+\cdots+a_n^{-1}}=a_n$。</p>
+<p>(3)证明：当 $n=5$ 时，$a_1,a_2,a_3,a_4,a_5$ 成等比数列。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-success">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Success</span>
+  </p>
+  <p>本题的第三问很神奇，不知道有什么背景。</p>
+<p>(1) 略。</p>
+<p>(2) 取 $i=j=n$，则 $a_n^2$ 和 $1$ 中至少有一个属于 $A$。但是 $a_n^2$ 显然不可能属于 $A$，因为它比 $A$ 中的最大者 $a_n$ 还要大，故 $1$ 属于 $A$，只能是 $a_1=1$。</p>
+$$
+>\begin{align*}
+>\frac{a_1+a_2+\cdots+a_n}{a_1^{-1}+a_2^{-1}+\cdots+a_n^{-1}} &= \frac{a_n(a_1^{-1}+a_2^{-1}+\cdots+a_n^{-1})}{a_1^{-1}+a_2^-1+\cdots+a_n^{-1}}\\
+>&= a_n
+>\end{align*}
+>$$<p>
+证毕。</p>
+<p>(3) 根据 (2) ，我们有 $a_1=1$，$a_2=\frac{a_5}{a_4}$，$a_3=\frac{a_5}{a_3}$，$a_4=\frac{a_5}{a_2}$ ，则 $a_5 = a_2a_4=a_3^2$ 。另一方面我们取 $i=3,j=4$，则 $a_3a_4$ 与 $\frac{a_4}{a_3}$ 中至少有一个属于集合 $A$。由于 $a_3a_4 > a_2a_4 = a_5$，故只可能是 $\frac{a_4}{a_3}$ 属于集合 $A$。由于 $1 < \frac{a_4}{a_3} = \frac{a_3}{a_2} < a_3$，故 $\frac{a_4}{a_3}$ 对应的是 $a_2$，即 $a_4=a_2a_3$。综合前面的结论，就有 $\frac{a_2}{a_1} = \frac{a_3}{a_2} = \frac{a_4}{a_3} = \frac{a_5}{a_4} = a_2$，故这是等比数列。证毕。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><blockquote>
+$$
+>a^2_{n+1} \geq 2a_na_{n+2}
+>$$</blockquote>
+<blockquote>
+$$
+>\frac{a_{n+2}}{a_{n+1}} \leq \frac{a_{n+1}}{2a_n}
+>$$<p>
+令 $n$ 从 $1$ 到 $n-1$ 累乘，得到 $\frac{a_{n+1}}{a_n} \leq \frac{1}{2^{n-1}}\cdot\frac{a_n}{a_1}$，即 $a_{n+1} \leq \frac{a_n^2}{2^{n-1}\cdot a_1}$ 。直观上看，$a_n$ 的增长速度至少应该是指数级别的，否则 $a_{n+1}$ 会越来越小，不可能保持为正整数。但是如果 $a_n$ 的增长速度太快了，又不会符合 $a_{n+1}^2\geq 2a_na_{n+2}$ 。因此我们推测 $a_n$ 的增长速度应该恰好是指数级别的，例如 $a_n=2^n$。由于指数函数的性质，$a_{n+1}^2 = a_na_{n+2}$，这与题目也产生了矛盾，到这里我们应该可以推测这样的正整数列是不存在的。</p>
+$$
+>a_{n+1} \leq \frac{a_n^2}{2^{n-1}\cdot a_1}
+>$$$$
+>a_n \leq a_1\cdot2^{n+1-2^n}
+>$$<p>
+不等式右边会越来越小，最终趋于 $0$ ，所以 $a_n$ 不可能始终保持为正整数。</p>
+</blockquote>
+
+
+<blockquote class="alert-blockquote alert-question">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Question</span>
+  </p>
+  <p>数列 $\{a_n\}$，$\{b_n\}$，$\{c_n\}$ 。已知 $b_n = a_n - a_{n+2}$，$c_n = a_n + 2a_{n+1} + 3a_{n+2}$ ，若 $b_n \leq b_{n+1}$，$\{c_n\}$ 是等差数列，证明：$\{a_n\}$ 是等差数列。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>
+
+<blockquote class="alert-blockquote alert-success">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Success</span>
+  </p>
+  <p>本题来自于某年江苏高考。</p>
+$$
+>a_n - a_{n+2} \leq a_{n+1} - a_{n+3}
+>$$$$
+>a_{n+1} - a_n \geq a_{n+3} - a_{n+2}\quad\quad (1)
+>$$$$
+>c_{n+1}-c_{n} = (a_{n+1}-a_{n}) + 2(a_{n+2}-a_{n+1}) + 3(a_{n+3}-a_{n+2})\quad\quad (2)
+>$$$$
+>c_{n+3}-c_{n+2} = (a_{n+3}-a_{n+2}) + 2(a_{n+4}-a_{n+3}) + 3(a_{n+5}-a_{n+4})\quad\quad (3)
+>$$$$
+>a_{n+1}-a_n = a_{n+3}-a_{n+2}\quad\quad (4)
+>$$$$
+>c_{n+2}-c_{n+1} =(a_{n+2}-a_n) + 2(a_{n+3}-a_{n+1}) + 3(a_{n+4} - a_{n+2})\quad\quad (5)
+>$$<p>
+式(5)和式(2)的左边相等，故右边也相等。利用式(4)化简得到 $a_{n+1} - a_n = a_{n+2} - a_{n+1}$。所以 $\{a_n\}$ 是等差数列。</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><h2 id="7new-horizons">7.New Horizons<a hidden class="anchor" aria-hidden="true" href="#7new-horizons">#</a></h2>
+<p>下面介绍三个与数列相关的著名问题，它们常常作为题目的背景。</p>
+<h4 id="自然数的幂和">自然数的幂和<a hidden class="anchor" aria-hidden="true" href="#自然数的幂和">#</a></h4>
+<hr>
+<p>令 $f(n,k) = 1^k + 2^k + 3^k + \cdots + n^k$ （$n,k\in\mathbb{N^*}$），称为自然数的幂和。</p>
+<p>当 $k=1$ 时，$f(n,1) = 1 + 2 + 3 +\cdots + n = \frac{n(n+1)}{2}$ ，我们使用等差数列的求和公式可以轻易求出。
+一个自然的问题是，对于 $k\geq2$ ，上面的式子该如何求和。</p>
+<p>首先，我们再来回顾一下 $k=1$ 时是如何求和的。对于 $1+2+3+\cdots+n$，我们使用倒序相加，或者称为高斯求和的方法，把首尾两两配对，每一对的和都是 $n+1$ ，一共有 $\frac{n}{2}$ 对，所以求和的结果就是 $\frac{n(n+1)}{2}$ 。然而，这种方法并不适用于 $k\geq2$ 的情况，因为这时候首尾相加就不是定值了。所以，我们需要找到另一种更加通用和普适的方法。</p>
+$$
+\begin{align*}
+1 + 2 + 3 +\cdots+n &= \frac{1}{2}[(2^2-1^2)+(3^2-2^2)+\cdots+(n+1)^2-n^2]-\frac{n}{2}\\
+&=\frac{1}{2}[(n+1)^2-1]-\frac{n}{2}\\
+&=\frac{n(n+1)}{2}
+\end{align*}
+$$$$
+1^2 + 2^2 + 3^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6}
+$$$$
+n^2 = \frac{1}{3}[(n+1)^3-n^3]-n-\frac{1}{3}
+$$$$
+\begin{align*}
+1^2+2^2+3^2+\cdots+n^2 &= \frac{1}{3}[(n+1)^3-1]-\frac{n(n+1)}{2}-\frac{n}{3}\\
+&=\frac{n(n+1)(2n+1)}{6}
+\end{align*}
+$$$$
+1^3+2^3+3^3+\cdots+n^3=\frac{n^2(n+1)^2}{4}=\Big(\frac{n(n+1)}{2}\Big)^2
+$$<p>
+于是我们发现了一个惊人的恒等式：$1^3+2^3+3^3+\cdots+n^3 = (1+2+3+\cdots+n)^2$ 。以这个恒等式为背景，可以延申出下面这个题目：</p>
+
+
+<blockquote class="alert-blockquote alert-question">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Question</span>
+  </p>
+  <p>已知数列 $\{a_n\}$ ，前 $n$ 项和为 $S_n$，若$a_1=1$ 且 $a_1^3+a_2^3+a_3^3+\cdots+a_n^3$$=S_n^2$，求 $a_n$</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><p>不难看出，$a_n=n$</p>
+<h4 id="斐波那契数列">斐波那契数列<a hidden class="anchor" aria-hidden="true" href="#斐波那契数列">#</a></h4>
+<hr>
+<p>最著名的数列，没有之一。曾经也是考卷上的常客，现在考的少了是因为早在几十年前就考烂了。</p>
+$$
+F_n = \frac{1}{\sqrt{5}}\Big[\Big(\frac{\sqrt{5}+1}{2}\Big)^n-\Big(\frac{1-\sqrt{5}}{2}\Big)^n\Big]
+$$<p>
+斐波那契数列与黄金比例（黄金分割率） $\varphi = \frac{\sqrt{5}-1}{2}$ 有关。当 $n\to \infty$ 时，$\frac{F_{n}}{F_{n+1}}\to \varphi$ 。因此斐波那契数列也称为黄金分割数列。</p>
+<p>斐波那契数列的性质很多，不胜枚举，列举几个：</p>
+
+
+<blockquote class="alert-blockquote alert-example">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Example</span>
+  </p>
+  <ol>
+<li>$F_1+F_2+F_3+\cdots+F_n=F_{n+2}-1$</li>
+<li>$F_1^2+F_2^2+F_3^2+\cdots+F_n^2=F_n\cdot F_{n+1}$</li>
+<li>$F_1+F_3+F_5+\cdots+F_{2n-1}=F_{2n}$</li>
+<li>$F_2+F_4+F_6+\cdots+F_{2n}=F_{2n+1}-1$</li>
+<li>$F^2_n + F^2_{n+1}=F_{2n+1}$</li>
+<li>$F^2_{n+1}-F^2_{n-1}=F_{2n}$</li>
+</ol>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style>$$
+\begin{align*}
+F_{1}+F_2+F_3+\cdots+F_n&=F_1+F_2+F_2+F_3+\cdots+F_n-1\\
+&=F_3+F_2+F_3+\cdots+F_n-1\\
+&=F_4+F_3+F_4+\cdots+F_n-1\\
+&=F_5+F_4+\cdots+F_n-1\\
+&=\cdots\\
+&=F_{n+2}-1
+\end{align*}
+$$<p>
+这些公式只会出现在选择题中，其实相当于送分了，因为要选出正确选项的话，你不需要循规蹈矩地去证明它们，只需要代入几个特殊值(例如 $n=1,2,3,4$) 进去验证就行了。</p>
+<p>与斐波那契数列类似的，还有一个所谓的<strong>佩尔数列</strong>$\{P_n\}$，也叫白银分割数列。佩尔数列的定义如下：$P_1=0,P_2=1,P_{n+2}=2P_{n+1}+P_n$ 。它的性质是当 $n\to\infty$ 时，$\frac{P_{n+1}}{P_n}\to \sqrt{2}$ 。其中的 $\sqrt{2}$ 就是白银分割率。</p>
+<h4 id="调和级数">调和级数<a hidden class="anchor" aria-hidden="true" href="#调和级数">#</a></h4>
+<hr>
+<p>$a_n = \frac{1}{n}$ 称为<strong>调和数列</strong>，它的每一项是相邻两项的调和平均：$a_n = \frac{2}{\frac{1}{a_{n+1}}+\frac{1}{a_{n-1}}}$ 。
+$\{a_n\}$ 的前 $n$ 项和 $S_n=1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}$ 称为<strong>调和级数的部分和</strong>。当 $n\to\infty$ 时，和式
+$S=1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}+\cdots$ 称为<strong>调和级数</strong>。</p>
+<p>直观上看，$S_n$ 的每一项都越来越小，当 $n$ 足够大的时候，$\frac{1}{n}$ 可以忽略不计。那么调和级数 $S$ 会趋近于一个常数吗？答案是不会，它会达到正无穷。也就是 $S = \infty$ 。下面我们用导数来证明这个结论</p>
+$$
+1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n} \geq \ln(n+1)
+$$<p>
+即 $S_n \geq \ln{(n+1)}$ ，由于对数函数可以达到正无穷，故 $S_n$ 也会达到正无穷，证毕。</p>
+<p>上面这个结论，就是所谓的“调和级数发散”定理。它说明了，即使 $S_n$ 增长地越来越慢，但它仍然可以达到无穷。这跟对数函数很像。</p>
+$$
+ζ(s)=\frac{1}{1^s}+\frac{1}{2^s}+\frac{1}{3^s}+\cdots+\frac{1}{n^s}+\cdots \quad \quad (s \in \mathbb{C},n\in\mathbb{N}^*) 
+$$<p>
+根据调和级数发散定理，我们得到 $ζ(1)=\infty$ ，也很容易知道对任意 $s\in\mathbb{R},0<s< 1$ ，都有 $ζ(s)=\infty$ 。(因为当 $0 < s < 1$ 时，$\frac{1}{n^s} > \frac{1}{n}$)。</p>
+$$
+ζ(2)=1^2+\frac{1}{2^2}+\frac{1}{3^2}+\cdots+\frac{1}{n^2}+\cdots=\frac{\pi^2}{6}
+$$<p>
+上面这个等式就是著名的<strong>巴塞尔恒等式</strong>，由大数学家欧拉在28岁时证明。它与一些著名的数学问题有关，例如下面这个：</p>
+
+
+<blockquote class="alert-blockquote alert-question">
+  <p class="alert-heading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      
+    </svg>
+    <span>Question</span>
+  </p>
+  <p>在所有正整数中随机取两个数，求它们互质的概率</p>
+</blockquote>
+
+
+<style>
+  .alert-blockquote {
+    --title-color: #fff;
+    --content-color: inherit;
+    padding: 18px;
+    line-height: 24px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: var(--content-color);
+    border-left: none !important;
+  }
+
+  .alert-blockquote * {
+    color: var(--content-color) !important;
+  }
+
+  .alert-blockquote .alert-heading {
+    margin: -18px -18px 12px;
+    padding: 4px 18px;
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    color: var(--title-color) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .alert-blockquote .alert-heading svg {
+    width: 1em !important;
+    height: 1em !important;
+    margin-right: 0.5rem !important;
+    fill: currentColor !important;
+  }
+
+  .alert-blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .alert-blockquote.alert-note {
+    --title-background-color: #166dd0;
+    --content-background-color: #e7f2fa;
+  }
+
+  .alert-blockquote.alert-tip {
+    --title-background-color: #1a7f37;
+    --content-background-color: #efe;
+  }
+
+  .alert-blockquote.alert-important {
+    --title-background-color: #8250df;
+    --content-background-color: #f5f0ff;
+  }
+
+  .alert-blockquote.alert-warning {
+    --title-background-color: #9a6700;
+    --content-background-color: #fff8c5;
+  }
+
+  .alert-blockquote.alert-caution {
+    --title-background-color: #cf222e;
+    --content-background-color: #ffebe9;
+  }
+
+   
+  body.night .alert-blockquote {
+    --content-color: #d0d7dd;
+  }
+
+  body.night .alert-blockquote.alert-note {
+    --title-background-color: #58a6ff;
+    --content-background-color: #0d1d30;
+  }
+
+  body.night .alert-blockquote.alert-tip {
+    --title-background-color: #3fb950;
+    --content-background-color: #0f2a1b;
+  }
+
+  body.night .alert-blockquote.alert-important {
+    --title-background-color: #a371f7;
+    --content-background-color: #2a1d3f;
+  }
+
+  body.night .alert-blockquote.alert-warning {
+    --title-background-color: #d29922;
+    --content-background-color: #3b2300;
+  }
+
+  body.night .alert-blockquote.alert-caution {
+    --title-background-color: #f85149;
+    --content-background-color: #3d0c0c;
+  }
+
+  .alert-blockquote .alert-heading {
+    background: var(--title-background-color);
+  }
+
+  .alert-blockquote {
+    background: var(--content-background-color);
+  }
+</style><p>这个问题的答案是 $\frac{6}{\pi^2}$ ，也就是 $\frac{1}{ζ(2)}$ 。2023年新高考一卷有一道概率题，背景疑似是这个问题。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/%E6%95%B0%E5%88%97/">数列</a></li>
+      <li><a href="http://localhost:1313/tags/%E9%80%89%E4%BF%AE%E4%BA%8C/">选修二</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span><a href="https://maiden1969.github.io/">©2024 maiden1969</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+
+</body>
+
+</html>

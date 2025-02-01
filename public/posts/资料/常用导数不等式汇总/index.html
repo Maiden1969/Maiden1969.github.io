@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>常用导数不等式汇总 | Math1969</title>
+<meta name="keywords" content="导数, 选修二">
+<meta name="description" content="仅汇总，不作证明">
+<meta name="author" content="zkr">
+<link rel="canonical" href="http://localhost:1313/posts/%E8%B5%84%E6%96%99/%E5%B8%B8%E7%94%A8%E5%AF%BC%E6%95%B0%E4%B8%8D%E7%AD%89%E5%BC%8F%E6%B1%87%E6%80%BB/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.42c443ca8ee686a5a6f8e6144506b72332fff9f3c9384de07ded275d0ca12cc8.css" integrity="sha256-QsRDyo7mhqWm&#43;OYURQa3IzL/&#43;fPJOE3gfe0nXQyhLMg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/%E8%B5%84%E6%96%99/%E5%B8%B8%E7%94%A8%E5%AF%BC%E6%95%B0%E4%B8%8D%E7%AD%89%E5%BC%8F%E6%B1%87%E6%80%BB/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['$$', '$$']],  
+      inlineMath: [['$', '$']]      
+    }
+  };
+</script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Math1969 (Alt + H)">Math1969</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Math1969">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="个人主页">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="gridmask"></div>
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      常用导数不等式汇总
+    </h1>
+    <div class="post-meta"><span title='2025-01-31 12:59:46 +0800 CST'>一月 31, 2025</span>&nbsp;·&nbsp;zkr
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://www.hostize.com/zh/v/IKYVipvqJy">下载PDF</a><br>
+<br></p>
+<h2 id="指数函数类">指数函数类<a hidden class="anchor" aria-hidden="true" href="#指数函数类">#</a></h2>
+<hr>
+<h3 id="1-exgeq-x1">1. $e^x\geq x+1$<a hidden class="anchor" aria-hidden="true" href="#1-exgeq-x1">#</a></h3>
+<p>取等条件：$x=0$<br>
+备注：这是 $x=0$ 处的切线不等式</p>
+<h3 id="2-ex-geq-frac12x2--x--1xgeq0">2. $e^x \geq \frac{1}{2}x^2 + x + 1(x\geq0)$<a hidden class="anchor" aria-hidden="true" href="#2-ex-geq-frac12x2--x--1xgeq0">#</a></h3>
+<p>取等条件：$x=0$<br>
+备注：这是 $x=0$ 处对 $e^x$ 进行二阶泰勒展开得到的不等式，当 $x\leq0$ 时，不等号反向</p>
+<h3 id="3-ex-geq-frac16x3--frac12x2--x--1">3. $e^x \geq \frac{1}{6}x^3 + \frac{1}{2}x^2 + x + 1$<a hidden class="anchor" aria-hidden="true" href="#3-ex-geq-frac16x3--frac12x2--x--1">#</a></h3>
+<p>取等条件：$x = 0$<br>
+备注：这是 $x=0$ 处对 $e^x$ 进行三阶泰勒展开得到的不等式</p>
+<h3 id="3-ex-geq-ex">3. $e^x \geq ex$<a hidden class="anchor" aria-hidden="true" href="#3-ex-geq-ex">#</a></h3>
+<p>取等条件：$x=1$<br>
+备注：这是 $x=1$ 处的切线不等式</p>
+<h3 id="4-ex-geq-x2--1xgeq0">4. $e^x \geq x^2 + 1(x\geq0)$<a hidden class="anchor" aria-hidden="true" href="#4-ex-geq-x2--1xgeq0">#</a></h3>
+<p>取等条件：$x = 0$ <br>
+备注：这个不等式不是“最佳”的，事实上存在比 $1$ 更大的系数 $\lambda$ ，使得 $e^x\geq \lambda x^2+1(x\geq0)$，这里的 $\lambda$ 是函数 $\frac{e^x - 1}{x^2}$ 在 $x > 0$ 时的最小值，约为 $1.54414$</p>
+<h3 id="5-ex-geq-frace24x2xgeq0">5. $e^x \geq \frac{e^2}{4}x^2(x\geq0)$<a hidden class="anchor" aria-hidden="true" href="#5-ex-geq-frace24x2xgeq0">#</a></h3>
+<p>取等条件：$x = 2$</p>
+<h3 id="6-ex-leq-frac11-xx--1">6. $e^x \leq \frac{1}{1-x}(x < 1)$<a hidden class="anchor" aria-hidden="true" href="#6-ex-leq-frac11-xx--1">#</a></h3>
+<p>取等条件：$x = 0$<br>
+备注：这是最常用的向上估计 $e^x$ 的不等式，可以把 $e^x\geq x+1$ 中的 $x$ 替换成 $-x$ 得到</p>
+<h2 id="对数函数类">对数函数类<a hidden class="anchor" aria-hidden="true" href="#对数函数类">#</a></h2>
+<hr>
+<h3 id="1-1-frac1x-leq-lnx-leq-x---1">1. $1-\frac{1}{x} \leq \ln{x} \leq x - 1$<a hidden class="anchor" aria-hidden="true" href="#1-1-frac1x-leq-lnx-leq-x---1">#</a></h3>
+<p>取等条件：$x = 1$<br>
+备注：右侧为 $x=1$ 处的切线不等式，左侧可以在右侧不等式中把 $x$ 替换为 $\frac{1}{x}$ 得到</p>
+<h3 id="2-ln1x-geq-x---fracx22">2. $\ln{(1+x)} \geq x - \frac{x^2}{2}$<a hidden class="anchor" aria-hidden="true" href="#2-ln1x-geq-x---fracx22">#</a></h3>
+<p>取等条件：$x = 0$<br>
+备注：这是 $x=0$ 处对 $\ln{(1+x)}$ 进行二阶泰勒展开得到的不等式</p>
+<h3 id="3-lnx-leq-fracxe">3. $\ln{x} \leq \frac{x}{e}$<a hidden class="anchor" aria-hidden="true" href="#3-lnx-leq-fracxe">#</a></h3>
+<p>取等条件：$x = e$ <br>
+备注：这是 $x = 1$ 处的切线不等式</p>
+<h3 id="4-begincases-lnx-leq-frac2x-1x1--0--x-leq-1-lnx-geq-frac2x-1x1--xgeq-1--endcases">4. $\begin{cases} \ln{x} \leq \frac{2(x-1)}{x+1} & 0 < x \leq 1\\ \ln{x} \geq \frac{2(x-1)}{x+1} & x\geq 1  \end{cases}$<a hidden class="anchor" aria-hidden="true" href="#4-begincases-lnx-leq-frac2x-1x1--0--x-leq-1-lnx-geq-frac2x-1x1--xgeq-1--endcases">#</a></h3>
+<p>取等条件：$x = 1$<br>
+备注：本质是对数平均不等式：</p>
+$$
+\frac{a - b}{\ln{a} -\ln{b}} < \frac{a+b}{2}
+$$<br>  
+<h3 id="5-begincases-lnx-geq-frac12x-frac1x--0--x-leq-1-lnx-leq-frac12x---frac1x--xgeq-1--endcases">5. $\begin{cases} \ln{x} \geq \frac{1}{2}(x-\frac{1}{x}) & 0 < x \leq 1\\ \ln{x} \leq \frac{1}{2}(x - \frac{1}{x}) & x\geq 1  \end{cases}$<a hidden class="anchor" aria-hidden="true" href="#5-begincases-lnx-geq-frac12x-frac1x--0--x-leq-1-lnx-leq-frac12x---frac1x--xgeq-1--endcases">#</a></h3>
+<p>取等条件：$x = 1$</p>
+<h3 id="6-begincaseslnx-geq-sqrtx-frac1sqrtx--0--x-leq-1-lnx-leq-sqrtx---frac1sqrtx--xgeq-1---endcases">6. $\begin{cases}\ln{x} \geq \sqrt{x}-\frac{1}{\sqrt{x}} & 0 < x \leq 1\\ \ln{x} \leq \sqrt{x} - \frac{1}{\sqrt{x}} & x\geq 1   \end{cases}$<a hidden class="anchor" aria-hidden="true" href="#6-begincaseslnx-geq-sqrtx-frac1sqrtx--0--x-leq-1-lnx-leq-sqrtx---frac1sqrtx--xgeq-1---endcases">#</a></h3>
+<p>取等条件：$x = 1$<br>
+备注：本质是对数平均不等式：</p>
+$$
+\frac{a - b}{\ln{a} - \ln{b}} > \sqrt{ab}
+$$<p>也可以在不等式 $5.$ 中把 $x$ 替换为 $\sqrt{x}$ 得到。这个不等式比不等式 $5.$ 更精确。</p>
+<h2 id="三角函数类">三角函数类<a hidden class="anchor" aria-hidden="true" href="#三角函数类">#</a></h2>
+<hr>
+<h3 id="1-x---fracx36-leq-sinx-leq-xx-geq-0">1. $x - \frac{x^3}{6} \leq \sin{x} \leq x(x \geq 0)$<a hidden class="anchor" aria-hidden="true" href="#1-x---fracx36-leq-sinx-leq-xx-geq-0">#</a></h3>
+<p>取等条件：$x = 0$<br>
+备注：左侧是 $x=0$ 处对 $\sin{x}$ 进行二阶泰勒展开得到的，右侧是 $x=0$ 处的切线不等式 。当 $x\leq0$ 时，不等号反向</p>
+<h3 id="2-1---fracx22-leq-cosx-leq-1---fracx22--frac124x4">2. $1 - \frac{x^2}{2} \leq \cos{x} \leq 1 - \frac{x^2}{2} + \frac{1}{24}x^4$<a hidden class="anchor" aria-hidden="true" href="#2-1---fracx22-leq-cosx-leq-1---fracx22--frac124x4">#</a></h3>
+<p>取等条件：$x = 0$  <br>
+备注：左侧是 $x = 0$ 处对 $\cos{x}$ 进行二阶泰勒展开得到的，右侧是 $x=0$ 处对 $\cos{x}$ 进行四阶泰勒展开得到的</p>
+<h3 id="3-tanx-geq-x0leq-x--fracpi2">3. $\tan{x} \geq x(0\leq x < \frac{\pi}{2})$<a hidden class="anchor" aria-hidden="true" href="#3-tanx-geq-x0leq-x--fracpi2">#</a></h3>
+<p>取等条件：$x = 0$<br>
+备注：这是 $x = 0$ 处的切线不等式</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/%E5%AF%BC%E6%95%B0/">导数</a></li>
+      <li><a href="http://localhost:1313/tags/%E9%80%89%E4%BF%AE%E4%BA%8C/">选修二</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span><a href="https://maiden1969.github.io/">©2024 maiden1969</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+
+</body>
+
+</html>
