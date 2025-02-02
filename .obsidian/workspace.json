@@ -35,8 +35,7 @@
               "title": "HomePage"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,8 +189,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fe00fa4417ab3f21",
+  "active": "6a70a0307a903ab4",
   "lastOpenFiles": [
+    "home/HomePage.md",
     "content/posts/方法论/再论极值点偏移.md",
     "node_modules/mathjax/package.json",
     "node_modules/mathjax/es5/startup.js",
@@ -217,7 +217,6 @@
     "content/posts/方法论/论导数题中的数列不等式.md",
     "content/posts/2025m2d1h20m56s13.md",
     "content/posts/2025m2d1h20m56s12.md",
-    "home/HomePage.md",
     "content/posts/2025m2d1h10m53s13.md",
     "content/posts/2025m2d1h10m52s43.md",
     "content/posts/2025m1d31h17m4s19.md",
