@@ -4,67 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "475330780733c4b2",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "6a70a0307a903ab4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/试卷/高二上学期命题参考卷（自编）.md",
+                "file": "content/posts/方法论/再论极值点偏移.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "高二上学期命题参考卷（自编）"
-            }
-          },
-          {
-            "id": "e5cfdc8466f4957b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/方法论/论极值点偏移.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "论极值点偏移"
-            }
-          },
-          {
-            "id": "48aead85bd72a416",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/方法论/论导数题中的数列不等式.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "论导数题中的数列不等式"
-            }
-          },
-          {
-            "id": "e17cf6c7e26a1edc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/HomePage.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HomePage"
+              "title": "再论极值点偏移"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -218,28 +175,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e17cf6c7e26a1edc",
+  "active": "6a70a0307a903ab4",
   "lastOpenFiles": [
-    "content/posts/方法论/论导数题中的数列不等式.md",
-    "public/tags/数列不等式/index.xml",
-    "public/tags/数列不等式/page/1/index.html",
-    "public/tags/数列不等式/page/1",
-    "public/tags/数列不等式/page",
-    "public/tags/数列不等式/index.html",
-    "public/tags/数列不等式",
-    "public/tags/shuli/page/1/index.html",
-    "public/tags/shuli/page/1",
-    "public/posts/方法论/论导数题中的数列不等式/index.html",
-    "public/tags/shuli/page",
-    "home/HomePage.md",
-    "content/posts/方法论/论极值点偏移.md",
-    "content/posts/方法论/再论极值点偏移.md",
-    "content/posts/试卷/高二上学期命题参考卷（自编）.md",
-    "content/posts/集萃/集萃_1.md",
-    "content/posts/专题/直线与圆_题集1.md",
-    "content/posts/资料/必修一复习讲义.md",
+    "public/assets/css/stylesheet.1b053d2018601dcc9884a10d7b6816a5abf40b11dba3acdeb13b5ee8ef0031bc.css",
+    "public/assets/css/stylesheet.a1a71ca3aba9c05326d8e66370f2f715e3c26596c2cb90d0ed3eae7214b32f13.css",
+    "public/assets/css/stylesheet.4f0546ad286a55cc4f76625a322774f6c20d30b00c10e9395a542a5f2fd8833d.css",
+    "public/assets/css/stylesheet.327996c2b25b1597f190f9671ff3004301246416b43cdc3328cd34a911d141de.css",
+    "public/assets/css/stylesheet.410132cd15d3811e9a11438682d908ea5c919b3c3e0e3ac5733e79cdbd411673.css",
+    "public/assets/css/stylesheet.f647818b765c9f27c30c6e63373d2c4ef726e0936d041a9917fbb910d2c1d2d2.css",
+    "public/assets/css/stylesheet.5ccebefee66491d52c89185b89cc1985596ddbf4d00d8a0e57e3c4708f2777ec.css",
+    "public/assets/css/stylesheet.13876535ca468aac2dc3cee35c8393c791ece49b466cb174a18e3ab8560de73a.css",
+    "public/assets/css/stylesheet.fab2816b0f265d90ef105527addbd7a3125cb762bf62d21d66df7ad55aa354dc.css",
+    "public/assets/css/stylesheet.0f0455e04b55a6bdbb9fd2f6f5b7356f808f8b734a90b05bb50b20c265646e07.css",
+    "public/assets/css/stylesheet.8f1b30f45a9161d16531bf255df9d08e082f981085ee7d802446fdbf3e550b5c.css",
+    "node_modules/gsap/SECURITY.md",
+    "node_modules/gsap/README.md",
+    "node_modules/mathjax/README.md",
     "content/posts/资料/数列讲义.md",
+    "content/posts/方法论/论极值点偏移.md",
+    "content/posts/试卷/高二上学期命题参考卷（自编）.md",
+    "content/tags.md",
     "content/posts/资料/常用导数不等式汇总.md",
+    "content/posts/资料/必修一复习讲义.md",
+    "content/posts/专题/直线与圆_题集1.md",
+    "content/posts/集萃/集萃_1.md",
+    "content/posts/方法论/再论极值点偏移.md",
+    "content/posts/方法论/论导数题中的数列不等式.md",
+    "content/posts/2025m2d1h20m56s13.md",
+    "content/posts/2025m2d1h20m56s12.md",
+    "home/HomePage.md",
     "content/posts/2025m2d1h10m53s13.md",
     "content/posts/2025m2d1h10m52s43.md",
     "content/posts/2025m1d31h17m4s19.md",
@@ -250,12 +214,6 @@
     "content/posts/2025m1d31h14m24s44.md",
     "content/posts/2025m1d31h14m20s2.md",
     "content/posts/进站必看.md",
-    "content/about.md",
-    "content/search.md",
-    "content/archives.md",
-    "mathjax/README.md",
-    "mathjax/CONTRIBUTING.md",
-    "mj-tmp/README.md",
     "content/posts/直线与圆_题集1/t1.png",
     "content/posts/直线与圆_题集1/t2.png",
     "public/posts/直线与圆_题集1/t9.png",
