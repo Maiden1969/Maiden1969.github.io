@@ -13,16 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/试卷/高二上学期命题参考卷（自编）.md",
+                "file": "content/posts/专题/导数_题集1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "高二上学期命题参考卷（自编）"
+              "title": "导数_题集1"
             }
           },
           {
-            "id": "47815039a4bff70c",
+            "id": "74f97dfccda5d362",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 284.5
+    "width": 284.5,
+    "collapsed": true
   },
   "right": {
     "id": "cdf087a256891fa0",
@@ -189,11 +190,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47815039a4bff70c",
+  "active": "74f97dfccda5d362",
   "lastOpenFiles": [
-    "content/posts/试卷/高二上学期命题参考卷（自编）.md",
     "content/posts/专题/导数_题集1.md",
+    "public/avatar/avatar.jpg",
+    "public/avatar",
+    "static/avatar/avatar.jpg",
+    "static/avatar",
     "home/HomePage.md",
+    "public/posts/2025m2d3h15m52s23/index.html",
+    "public/posts/2025m2d3h15m52s23",
+    "content/posts/2025m2d3h15m52s23.md",
+    "content/posts/2025m2d3h15m25s41.md",
+    "content/posts/试卷/高二上学期命题参考卷（自编）.md",
     "content/posts/2025m2d3h8m2s30.md",
     "public/tags/隐零点/index.xml",
     "public/tags/隐零点/page/1/index.html",
@@ -201,10 +210,6 @@
     "public/tags/隐零点/page",
     "public/tags/隐零点/index.html",
     "public/tags/隐零点",
-    "public/tags/取点/index.xml",
-    "public/tags/取点/page/1/index.html",
-    "public/tags/取点/page/1",
-    "public/tags/取点/page",
     "content/posts/专题/直线与圆_题集1.md",
     "content/posts/资料/常用导数不等式汇总.md",
     "content/posts/进站必看.md",
@@ -225,17 +230,12 @@
     "content/posts/2025m1d31h17m4s19.md",
     "content/posts/2025m1d31h17m4s0.md",
     "Pasted image 20250131145742.png",
-    "posts/资料/常用导数不等式汇总.md",
-    "Excalidraw/Drawing 2025-01-31 14.54.03.excalidraw.md",
-    "content/posts/2025m1d31h14m24s44.md",
     "content/posts/直线与圆_题集1/t1.png",
     "content/posts/直线与圆_题集1/t2.png",
     "public/posts/直线与圆_题集1/t9.png",
     "content/posts/直线与圆_题集1/t9.png",
     "public/posts/直线与圆_题集1/t7_1.png",
     "content/posts/直线与圆_题集1/t7_1.png",
-    "public/posts/直线与圆_题集1/t5_3.png",
-    "content/posts/直线与圆_题集1/t5_3.png",
-    "public/posts/直线与圆_题集1/t5_2.png"
+    "public/posts/直线与圆_题集1/t5_3.png"
   ]
 }
