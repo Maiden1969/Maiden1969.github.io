@@ -23,3 +23,6 @@ color #fff
 class .self-btn
 ```
 
+> [!Note] NOTE
+> 123
+
