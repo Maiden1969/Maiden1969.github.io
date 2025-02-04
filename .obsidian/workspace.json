@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,24 +204,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bc01026f4bad0e6d",
+  "active": "74f97dfccda5d362",
   "lastOpenFiles": [
-    "content/posts/专题/导数_题集1.md",
+    "public/assets/css/stylesheet.eb606e4fea6a38355c77b692cd927ae1e82f03bcf39b805625ad569a073cb4db.css",
+    "public/assets/css/stylesheet.c14f63fb08a543ce11fb2083c7bbfecdb3d98970c92a6c0d6e3d73551ab03295.css",
+    "public/assets/css/stylesheet.faa8f16cbfc388ab67fe48fca501aae861638e58c6741776225935a04144e220.css",
+    "public/assets/css/stylesheet.ba88f39923c7782d8a655baa3e769ef6753808f0bdb7c0b5242bb0c22381b89f.css",
+    "public/assets/css/stylesheet.5fec44c3f8deb5350ffedfdb101d8e7e5764f91d30354dcd7de37f9ec3b3a376.css",
+    "public/assets/css/stylesheet.baf11d4673bfced97e0bfc9bca3e60fc5fa91f5803b0d68bb29637cc3aaf4ef0.css",
+    "public/assets/css/stylesheet.0845aa7926ef7284f66b380ccf288a23bf75927f2c1549022bf1f1e2549cfa9a.css",
+    "public/assets/css/stylesheet.bcb3d0594969980e12fc3efa54f5396f58122fa2a929058f3017948464d362e0.css",
+    "public/assets/css/stylesheet.e7cb0affa5921c306a4b414380f6246c0fa9c7663fe693c75b09f22f7037728d.css",
+    "public/assets/css/stylesheet.df917e41dd1b649dc9e19a96dafa3c4f87cd53a91f11b5f12e38e5b315029731.css",
+    "public/assets/css/stylesheet.9dfa89f6892a5035a2649a3fd9bb1860b1e1ba7fa0dbfd947eaa03e4f73e7a20.css",
     "home/HomePage.md",
-    "assets/icon/iconfont.woff2",
-    "assets/icon/iconfont.woff",
-    "assets/icon/iconfont.ttf",
-    "assets/icon/iconfont.json",
-    "assets/icon/iconfont.js",
-    "assets/icon/iconfont.css",
-    "assets/icon",
-    "assets/新建文件夹",
+    "content/posts/专题/导数_题集1.md",
     "public/icon/music.svg",
     "static/icon/music.svg",
     "public/icon/音乐.svg",
     "static/icon/音乐.svg",
-    "public/icon",
-    "static/icon",
     "content/posts/方法论/论“对数单身狗、指数找朋友”.md",
     "content/posts/专题/直线与圆_题集1.md",
     "content/posts/专题/Today's Summary.md",
