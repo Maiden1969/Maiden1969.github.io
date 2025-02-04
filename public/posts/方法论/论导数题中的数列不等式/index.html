@@ -68,6 +68,7 @@
 
 
 
+
 </head>
 
 <body class="" id="top">
@@ -195,104 +196,84 @@ $$<p>
 根据 $\ln{x} \leq x-1$ 知 $a_{n+1} - a_n > 0$，则 $\{a_n\}$ 单调递增，$a_n \geq a_1 = 1 - \ln{2} > 0$，得证。
 <br>
 一般来说，导数题的前几问会暗示你需要用什么不等式来证明最后一问的数列不等式。如果上面的例子放在考试里，可能这样出题：</p>
-
 <style type="text/css">
-    .notice-icon {
-        margin: 0.3em 0.5em 0.3em 0;
-        width:30px;
-        height:30px;
-    }
-    
+     
     .notice {
-        padding: 1em;
-        margin-bottom: 1em;
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: var(--content);
+        --content-background-color: var(--entry);
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #09C094;
+        --content-background-color: var(--entry);
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
         border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+        box-shadow: 0px 0px 5px 1px #333;
     }
 
     .notice p:last-child {
-        margin-bottom: 0;
+        margin-bottom: 0
     }
 
+     
     .notice-title {
-        margin: -1em -1em 0.75em !important;
-        padding: 0.25em 1em;
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
         border-radius: 4px 4px 0 0;
         font-weight: 700;
-        color: hsl(0, 0%, 100%);
+        color: var(--title-color);
+        background: var(--title-background-color);
     }
 
-    [data-theme="dark"] .notice-title {
-        color: hsl(0, 0%, 75%);
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
     }
 
-    .notice.notice-warning .notice-title {
-        background: hsl(0, 65%, 65%);
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
     }
 
-    [data-theme="dark"] .notice.notice-warning .notice-title {
-        background: hsl(0, 25%, 35%);
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
     }
+</style><div class="notice note" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+  <path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+</svg>
 
-    .notice.notice-warning {
-        background: hsl(0, 65%, 65%, 0.15);
-    }
-
-    [data-theme="dark"] .notice.notice-warning {
-        background: hsl(0, 25%, 35%, 0.15);
-    }
-
-    .notice.notice-info .notice-title {
-        background: hsl(30, 80%, 70%);
-    }
-
-    [data-theme="dark"] .notice.notice-info .notice-title {
-        background: hsl(30, 25%, 35%);
-    }
-
-    .notice.notice-info {
-        background: hsl(30, 80%, 70%, 0.15);
-    }
-
-    [data-theme="dark"] .notice.notice-info {
-        background: hsl(30, 25%, 35%, 0.15);
-    }
-
-    .notice.notice-note .notice-title {
-        background: hsl(200, 65%, 65%);
-    }
-
-    [data-theme="dark"] .notice.notice-note .notice-title {
-        background: hsl(200, 25%, 35%);
-    }
-
-    .notice.notice-note {
-        background: hsl(200, 65%, 65%, 0.15);
-    }
-
-    [data-theme="dark"] .notice.notice-note {
-        background: hsl(200, 25%, 35%, 0.15);
-    }
-
-    .notice.notice-tip .notice-title {
-        background: hsl(140, 65%, 65%);
-    }
-
-    [data-theme="dark"] .notice.notice-tip .notice-title {
-        background: hsl(140, 25%, 35%);
-    }
-
-    .notice.notice-tip {
-        background: hsl(140, 65%, 65%, 0.15);
-    }
-
-    [data-theme="dark"] .notice.notice-tip {
-        background: hsl(140, 25%, 35%, 0.15);
-    }
-</style>
-<div class="notice note" >
-    <p class="first notice-title"></p><p>已知函数 $f(x) = \ln{x} - ax + 1$.<br>
+        </span>问题</p><p>已知函数 $f(x) = \ln{x} - ax + 1$.<br>
 (1) 若 $f(x) \leq 0$ 恒成立，求 $a$ 的取值范围.<br>
-(2) 对任意 $n\in\mathbb{N^*}$，证明：$1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n} > \ln{(n+1)}$</p></div>   
+(2) 对任意 $n\in\mathbb{N^*}$，证明：$1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n} > \ln{(n+1)}$</p></div>
 
 <p>第一问其实暗示了不等式 $\ln{x} \leq x-1$，用来帮助你解决第二问，有些时候这种暗示比较隐晦，不容易找出。但是利用单调性的话，我们不需要任何提示就能直接证明数列不等式。<br>
 <br>
@@ -300,10 +281,14 @@ $$<p>
 <h2 id="0-起步使用放缩估计数列极限">0. 起步：使用放缩估计数列极限<a hidden class="anchor" aria-hidden="true" href="#0-起步使用放缩估计数列极限">#</a></h2>
 <hr>
 <p>一些比较困难的数列不等式，不能用单调性解决，需要放缩。下面是一个典型的例子：</p>
-
-
 <div class="notice note" >
-    <p class="first notice-title"></p><p>设 $n\in\mathbb{N^*}$，证明：$\frac{1}{1^2} + \frac{1}{2^2} + \cdots + \frac{1}{n^2} < 2$.</p></div>   
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+  <path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+</svg>
+
+        </span>问题</p><p>设 $n\in\mathbb{N^*}$，证明：$\frac{1}{1^2} + \frac{1}{2^2} + \cdots + \frac{1}{n^2} < 2$.</p></div>
 
 <p>如果令 $a_n = \frac{1}{1^2} + \frac{1}{2^2} + \cdots + \frac{1}{n^2}$，则 $a_n$ 显然是递增的，那么 $a_n$ 的最大值应该是 $n\to+\infty$ 时的极限值，即 $\lim_{n\to+\infty} a_n$ 。然而，高中范围内，我们无法求解此极限值。虽然不能求出极限的准确值，但我们可以通过不等式放缩，来对此极限值作估计，如下：</p>
 $$
@@ -321,13 +306,17 @@ $$
 $$<p>之后的第 $2.$ 节，我给出了若干案例，它们都不能用单调性直接解决，必须使用放缩来估计数列极限。</p>
 <h2 id="1-案例第一类">1. 案例（第一类）<a hidden class="anchor" aria-hidden="true" href="#1-案例第一类">#</a></h2>
 <hr>
-
-
 <div class="notice note" >
-    <p class="first notice-title"></p><p>(2022年新高考二卷)已知函数 $f(x) = xe^{ax} - e^x$.<br>
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+  <path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+</svg>
+
+        </span>问题</p><p>(2022年新高考二卷)已知函数 $f(x) = xe^{ax} - e^x$.<br>
 (1) 当 $a = 1$ 时，讨论 $f(x)$ 的单调性.<br>
 (2) 当 $x > 0$ 时，$f(x) < -1$，求 $a$ 的取值范围.<br>
-(3) 设 $n\in\mathbb{N^*}$，证明：$\frac{1}{\sqrt{1^2+1}} + \frac{1}{\sqrt{2^2+2}} + \cdots + \frac{1}{\sqrt{n^2+n}} > \ln{(n+1)}$.</p></div>   
+(3) 设 $n\in\mathbb{N^*}$，证明：$\frac{1}{\sqrt{1^2+1}} + \frac{1}{\sqrt{2^2+2}} + \cdots + \frac{1}{\sqrt{n^2+n}} > \ln{(n+1)}$.</p></div>
 
 <p>直接看第三问。题目中的不等式写成：</p>
 $$
@@ -342,16 +331,20 @@ $$
 a_{n+1} - a_n = \sqrt{x} - \frac{1}{\sqrt{x}} - \ln{x} 
 $$<p>
 根据常见不等式 $\ln{x} < \sqrt{x} - \frac{1}{\sqrt{x}},x > 1$，有 $a_{n+1} - a_n > 0$，则 $\{a_n\}$ 递增，$a_n\geq a_1 = \frac{\sqrt{2}}{2} - \ln{2} > 0$ <br>
-
-
 <div class="notice note" >
-    <p class="first notice-title"></p><p>(2010年湖北卷)已知函数 $f(x) = ax + \frac{b}{x} + c(a > 0)$ 的图像在点 $(1,f(1))$ 处的切线方程为 $y = x - 1$.<br>
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+  <path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+</svg>
+
+        </span>问题</p><p>(2010年湖北卷)已知函数 $f(x) = ax + \frac{b}{x} + c(a > 0)$ 的图像在点 $(1,f(1))$ 处的切线方程为 $y = x - 1$.<br>
 (1) 用 $a$ 表示出 $b,c$ .<br>
 (2) 若 $f(x)\geq \ln{x}$ 在 $[1,+\infty]$ 上恒成立，求 $a$ 的取值范围.<br>
 (3) 证明：</p>
 $$
 1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n} > \ln{(n+1)} + \frac{n}{2(n+1)}\quad (n\in\mathbb{N^*})
-$$</div>   
+$$</div>
 </p>
 <p><strong>解析：</strong><br>
 直接看第三问。设</p>
@@ -369,13 +362,17 @@ $$
 a_{n+1} - a_n = \frac{1}{2}(x-\frac{1}{x})-\ln x
 $$<p>
 根据常用不等式 $\ln x < \frac{1}{2}(x-\frac{1}{x}),x > 1$ ，知 $a_{n+1} - a_n > 0$，则 $\{a_n\}$ 递增，$a_n \geq a_1 = \frac{3}{4}-\ln 2 > 0$，得证。</p>
-
-
 <div class="notice note" >
-    <p class="first notice-title"></p><p>(2023年天津卷)已知函数 $f(x) = (\frac{1}{x} + \frac{1}{2})\ln{(x+1)}$.<br>
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+  <path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+</svg>
+
+        </span>问题</p><p>(2023年天津卷)已知函数 $f(x) = (\frac{1}{x} + \frac{1}{2})\ln{(x+1)}$.<br>
 (1) 求曲线 $y = f(x)$ 在 $x = 2$ 处切线的斜率.<br>
 (2) 当 $x > 0$ 时，证明：$f(x) > 1$.<br>
-(3) 证明：$\frac{5}{6} < \ln{n!} - (n+\frac{1}{2})\ln{(n)} + n \leq 1$.</p></div>   
+(3) 证明：$\frac{5}{6} < \ln{n!} - (n+\frac{1}{2})\ln{(n)} + n \leq 1$.</p></div>
 
 <p><strong>解析：</strong><br>
 直接看第三问。研究数列 $a_n = \ln{n!} - (n+\frac{1}{2})\ln{(n)} + n$ 的单调性，</p>
@@ -440,12 +437,16 @@ $$<p>
 上面这道题目，右边的不等式是常规的、能直接依据数列单调性解决的不等式；而左边的不等式，则是另一种类型，需要使用放缩，来对数列的极限进行估计，这就是下一节的内容：</p>
 <h2 id="2-案例第二类">2. 案例（第二类）<a hidden class="anchor" aria-hidden="true" href="#2-案例第二类">#</a></h2>
 <hr>
-
-
 <div class="notice note" >
-    <p class="first notice-title"></p><p>(2017年全国三卷)已知函数 $f(x) = x - 1 - a\ln{x}$.<br>
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+  <path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+</svg>
+
+        </span>问题</p><p>(2017年全国三卷)已知函数 $f(x) = x - 1 - a\ln{x}$.<br>
 (1) 若 $f(x) \geq 0$，求 $a$ 的值.<br>
-(2) 设 $m$ 为整数，且对于任意正整数 $n$ ，$(1+\frac{1}{2})(1+\frac{1}{2^2})\cdots(1+\frac{1}{2^n}) < m$，求 $m$ 的最小值.</p></div>   
+(2) 设 $m$ 为整数，且对于任意正整数 $n$ ，$(1+\frac{1}{2})(1+\frac{1}{2^2})\cdots(1+\frac{1}{2^n}) < m$，求 $m$ 的最小值.</p></div>
 
 <p><strong>解析：</strong><br>
 首先，数列 $a_n = (1+\frac{1}{2})(1+\frac{1}{2^2})\cdots(1+\frac{1}{2^n})$ 显然是递增的，于是本题需要估计极限值。<br>
@@ -463,16 +464,20 @@ $$
 $$<p>
 这就估计出了 $a_n$ 的极限值小于 $e$ ，又因为 $a_3 = \frac{135}{64} > 2$，则 $a_n$ 的极限值大于 $2$ ，小于 $e$ 。故 $m=3$ 。 (考试的时候不要在卷子上写极限两个字)</p>
 <br>
-
-
 <div class="notice note" >
-    <p class="first notice-title"></p><p>(2021年深圳二模)已知定义在 $\mathbb{R}$ 上的函数 $f(x) = x^2 + a\cos{x} + (a-2)e^{-x}$，$a\in\mathbb{R}$.<br>
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+  <path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+</svg>
+
+        </span>问题</p><p>(2021年深圳二模)已知定义在 $\mathbb{R}$ 上的函数 $f(x) = x^2 + a\cos{x} + (a-2)e^{-x}$，$a\in\mathbb{R}$.<br>
 (1) 当 $a=2$ 时，求 $f(x)$ 的极值.<br>
 (2) 若 $f(x)$ 在 $[0,\pi]$ 上单调递增，求实数 $a$ 的取值范围. <br>
 (3) 当 $n\in\mathbb{N^*}$ 时，证明：</p>
 $$
 \sum_{k=1}^{n} \frac{1}{(n+k)\tan{\frac{1}{n+k}}} > n - \frac{1}{4n+2}
-$$</div>   
+$$</div>
 
 <p><strong>解析：</strong><br>
 前两问比较简单，不讲。第一问就已经暗示了不等式</p>
