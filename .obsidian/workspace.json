@@ -35,8 +35,7 @@
               "title": "HomePage"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,10 +189,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9376352f32afd372",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "content/posts/题库.md",
     "home/HomePage.md",
+    "content/posts/题库.md",
     "public/tags/题库/page/1/index.html",
     "public/tags/题库/page/1",
     "public/tags/题库/page",
