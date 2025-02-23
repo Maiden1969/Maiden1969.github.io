@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "content/posts/专题/导数_题集3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "导数_题集3"
+            }
+          },
+          {
+            "id": "8ca8dc72c8f31cdb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "content/posts/资料/题库.md",
                 "mode": "source",
                 "source": false
@@ -22,21 +36,7 @@
             }
           },
           {
-            "id": "21c69d37c53de2bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/杂谈/一道经典的解三角形问题与外森比克不等式.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "一道经典的解三角形问题与外森比克不等式"
-            }
-          },
-          {
-            "id": "070326b7000b4b55",
+            "id": "bef91ac07b96ac10",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -47,20 +47,6 @@
               },
               "icon": "lucide-file",
               "title": "HomePage"
-            }
-          },
-          {
-            "id": "430791619fc728d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/search.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "search"
             }
           }
         ],
@@ -218,8 +204,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "070326b7000b4b55",
+  "active": "bef91ac07b96ac10",
   "lastOpenFiles": [
+    "content/posts/专题/导数_题集3.md",
+    "content/posts/专题/导数_题集2.md",
+    "content/posts/资料/题库.md",
+    "home/HomePage.md",
+    "public/posts/2025m2d22h21m37s20/index.html",
+    "public/posts/2025m2d22h21m37s20",
+    "content/posts/2025m2d22h21m37s20.md",
+    "content/posts/资料/数列讲义.md",
+    "content/search.md",
+    "content/posts/25年暑期自习.md",
+    "content/posts/专题/导数_题集1.md",
     "content/posts/杂谈/一道经典的解三角形问题与外森比克不等式.md",
     "public/tags/永恒的经典/page/1/index.html",
     "public/tags/永恒的经典/page/1",
@@ -229,17 +226,10 @@
     "public/tags/永恒的经典",
     "public/tags/传世经典/index.xml",
     "public/tags/传世经典/page/1/index.html",
-    "public/tags/传世经典/page/1",
-    "public/tags/传世经典/index.html",
-    "content/posts/资料/题库.md",
     "content/posts/杂谈/集萃_1.md",
-    "home/HomePage.md",
-    "content/search.md",
     "content/archives.md",
     "content/about.md",
     "content/posts/2025m2d22h16m44s1.md",
-    "content/posts/专题/导数_题集3.md",
-    "content/posts/专题/导数_题集1.md",
     "content/posts/资料/常用导数不等式汇总.md",
     "content/posts/进站必看.md",
     "content/posts/2025m2d21h18m6s26.md",
@@ -248,13 +238,10 @@
     "content/posts/2025m2d20h13m0s35.md",
     "content/posts/2025m2d19h21m53s30.md",
     "content/posts/2025m2d18h22m32s3.md",
-    "content/posts/资料/数列讲义.md",
     "content/posts/2025m2d18h17m57s56.md",
     "content/posts/2025m2d18h11m23s19.md",
     "content/posts/2025m2d18h10m41s33.md",
     "content/posts/方法论/论导数题中的数列不等式.md",
-    "content/posts/专题/导数_题集2.md",
-    "content/posts/2025m2d17h14m52s18.md",
     "icons/wolf-kit/warning.svg",
     "icons/wolf-kit/tip.svg",
     "icons/wolf-kit/note.svg",
