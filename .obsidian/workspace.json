@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,28 +204,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bef91ac07b96ac10",
+  "active": "8ca8dc72c8f31cdb",
   "lastOpenFiles": [
+    "public/assets/css/stylesheet.0ad94c2253460bb65d31ac998de064682e7a621c25b204f0f4cc9a72e4540a03.css",
+    "public/assets/css/stylesheet.fd5b3de61cf8e2380c0d10199723e38595c75373415175fd471500b7d9b2ecaa.css",
+    "public/assets/css/stylesheet.effcaa0233cf57c544e581179593c2a66f4187b00a4090b453192c2f7ac1c278.css",
+    "public/assets/css/stylesheet.2919cbbc013f9a807ba2a4754cedc345afdb55f180bab396aee1eb4a0bd12580.css",
+    "public/assets/css/stylesheet.c6ba4e1eccfa3a02bdb319e1730a41b0be8fdcb4d29d414764cdc0a4f06c9a73.css",
+    "public/assets/css/stylesheet.d9ff88ecc2cf4c043d43022e4167c2e87c9e96941f6c46e6f8a2129423f6c8ba.css",
+    "public/assets/css/stylesheet.4d3f912b1c7476b12989fdd434e0595ccf170dca94ea6b383d3c26c846562f75.css",
+    "public/assets/css/stylesheet.16ab0c44aa9797bdcf25f1468c495358d5c1127871996d13b1255446bba232b8.css",
+    "public/assets/css/stylesheet.a20344ba8e658c68dec5c4b61317b94479c189a38787ef9d3e1ace40a1eced49.css",
+    "public/assets/css/stylesheet.36ddb70109cdf33008df44e87edc8ffba5d6fb5008621b3f4c2588b2035ddae0.css",
+    "public/assets/css/stylesheet.6441e7c07947d7b50dfca39d25ceb848a5cd1d1ffef4ce8d0a7def835e9a837d.css",
     "content/posts/专题/导数_题集3.md",
     "content/posts/资料/题库.md",
     "home/HomePage.md",
     "content/posts/专题/导数_题集2.md",
-    "public/posts/2025m2d22h21m37s20/index.html",
-    "public/posts/2025m2d22h21m37s20",
     "content/posts/2025m2d22h21m37s20.md",
     "content/posts/资料/数列讲义.md",
     "content/search.md",
     "content/posts/25年暑期自习.md",
     "content/posts/专题/导数_题集1.md",
     "content/posts/杂谈/一道经典的解三角形问题与外森比克不等式.md",
-    "public/tags/永恒的经典/page/1/index.html",
-    "public/tags/永恒的经典/page/1",
-    "public/tags/永恒的经典/page",
-    "public/tags/永恒的经典/index.xml",
-    "public/tags/永恒的经典/index.html",
-    "public/tags/永恒的经典",
-    "public/tags/传世经典/index.xml",
-    "public/tags/传世经典/page/1/index.html",
     "content/posts/杂谈/集萃_1.md",
     "content/archives.md",
     "content/about.md",
@@ -241,7 +242,6 @@
     "content/posts/2025m2d18h17m57s56.md",
     "content/posts/2025m2d18h11m23s19.md",
     "content/posts/2025m2d18h10m41s33.md",
-    "content/posts/方法论/论导数题中的数列不等式.md",
     "icons/wolf-kit/warning.svg",
     "icons/wolf-kit/tip.svg",
     "icons/wolf-kit/note.svg",
