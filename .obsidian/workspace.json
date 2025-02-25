@@ -13,16 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/资料/题库.md",
+                "file": "content/posts/25年寒假自习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "题库"
+              "title": "25年寒假自习"
             }
           },
           {
-            "id": "19bfb8594fb0a4bd",
+            "id": "ded25e023e400b7d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "cdf087a256891fa0",
@@ -190,10 +189,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "19bfb8594fb0a4bd",
+  "active": "ded25e023e400b7d",
   "lastOpenFiles": [
+    "content/posts/25年寒假自习.md",
     "content/posts/资料/题库.md",
     "home/HomePage.md",
+    "content/posts/2025m2d25h19m52s5.md",
+    "content/posts/2025m2d25h13m48s47.md",
     "content/posts/2025m2d25h12m27s2.md",
     "content/posts/专题/导数_题集3.md",
     "public/assets/css/stylesheet.0ad94c2253460bb65d31ac998de064682e7a621c25b204f0f4cc9a72e4540a03.css",
@@ -210,7 +212,6 @@
     "content/posts/2025m2d22h21m37s20.md",
     "content/posts/资料/数列讲义.md",
     "content/search.md",
-    "content/posts/25年暑期自习.md",
     "content/posts/专题/导数_题集1.md",
     "content/posts/杂谈/一道经典的解三角形问题与外森比克不等式.md",
     "content/posts/杂谈/集萃_1.md",
@@ -226,8 +227,6 @@
     "content/posts/2025m2d19h21m53s30.md",
     "content/posts/2025m2d18h22m32s3.md",
     "content/posts/2025m2d18h17m57s56.md",
-    "content/posts/2025m2d18h11m23s19.md",
-    "content/posts/2025m2d18h10m41s33.md",
     "icons/wolf-kit/warning.svg",
     "icons/wolf-kit/tip.svg",
     "icons/wolf-kit/note.svg",
