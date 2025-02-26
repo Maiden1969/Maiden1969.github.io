@@ -27,6 +27,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "content/posts/资料/常用导数不等式汇总.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "常用导数不等式汇总"
+            }
+          },
+          {
+            "id": "d842d664df98e94a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "home/HomePage.md",
                 "mode": "source",
                 "source": false
@@ -36,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "cdf087a256891fa0",
@@ -189,14 +204,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b817bc5a222b8fb1",
+  "active": "d842d664df98e94a",
   "lastOpenFiles": [
+    "content/posts/资料/常用导数不等式汇总.md",
+    "home/HomePage.md",
     "content/posts/25年寒假自习.md",
     "content/posts/进站必看.md",
-    "home/HomePage.md",
     "content/posts/资料/题库.md",
     "content/posts/资料/数列讲义.md",
-    "content/posts/资料/常用导数不等式汇总.md",
     "content/posts/资料/必修一复习讲义.md",
     "content/posts/杂谈/好题推荐：一道质量极高的区间与不等式问题.md",
     "content/posts/杂谈/一道经典的解三角形问题与外森比克不等式.md",
