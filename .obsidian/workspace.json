@@ -35,7 +35,8 @@
               "title": "HomePage"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "cdf087a256891fa0",
@@ -189,8 +189,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "272a51bf55d7f723",
   "lastOpenFiles": [
+    "content/posts/方法论/论解析几何中的最大张角问题.md",
     "public/assets/css/stylesheet.598615d4ac92991e1e3479337ba4e85b6a8667f16c2b540eeea02a46551bcfbf.css",
     "public/assets/css/stylesheet.196f1e319357aa69d2f6075204d703297f30db59f720339f1c9631283a261e19.css",
     "public/assets/css/stylesheet.f4d9fd9720e3ef57122d7b20ce836f410052c27e4a2a88f4af7b89a2cc093103.css",
@@ -201,14 +202,12 @@
     "public/assets/css/stylesheet.0204774264c2e0d2cce36d7966292fb5cd7a22075ea58968b586c4ac702c2291.css",
     "public/assets/css/stylesheet.81c5a97bbf18d249805b1720ecd234003bcfb95fe5a8d3d77e1b45185f89700d.css",
     "public/assets/css/stylesheet.21f1b9ff3f3b5fce876d5a1d4d97b78caeac41d96b6bad017c015d77d6daceec.css",
-    "public/assets/css/stylesheet.c6038f8fb7e05614c0aa48b1601b43384969cf40081a7ed8156ff1b65ad9fc1a.css",
     "content/posts/杂谈/好题推荐：一道质量极高的区间与不等式问题.md",
     "home/HomePage.md",
     "content/posts/方法论/论极值点偏移.md",
     "content/posts/方法论/论“对数单身狗、指数找朋友”.md",
     "content/posts/方法论/论导数题中的数列不等式.md",
     "content/posts/方法论/再论极值点偏移.md",
-    "content/posts/方法论/论解析几何中的最大张角问题.md",
     "content/posts/资料/数列讲义.md",
     "content/posts/2025m2d27h11m12s28.md",
     "content/posts/2025m2d27h11m12s11.md",
