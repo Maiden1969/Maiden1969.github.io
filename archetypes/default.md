@@ -1,8 +1,8 @@
 +++
 date = '{{ .Date }}'
 summary = ''
-tags = []
-categories = []
+tags = ['']
+categories = ['']
 keywords = []
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 showtoc = true
