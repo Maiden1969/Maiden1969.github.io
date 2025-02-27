@@ -103,6 +103,11 @@ markup:
             - $
         enable: true
 
+frontmatter:
+    lastmod:
+        - lastmod
+        - :fileModTime
+        - :default
 
 
 
