@@ -52,6 +52,8 @@ outputs:
     - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
 
 params:
+  author: zkr
+  DateFormat: "2006-01-02"
   ShowPageNums: true
   ShowShareButtons: true
   ShowReadingTime: true
@@ -59,6 +61,16 @@ params:
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true 
   ShowWordCount: true
+  frontmatter:
+    lastmod:
+        - lastmod
+        - :fileModTime
+        - :default
+  ShowLastMod: true  #显示文章更新时间
+  ShowToc: true # 显示目录
+  hideFooter: false # 隐藏页脚
+  comments: true
+
   defaultTheme: dark
 
   # 搜索
@@ -97,6 +109,11 @@ markup:
         enable: true
 
 
+frontmatter:
+    lastmod:
+        - lastmod
+        - :fileModTime
+        - :default
 
 
 
