@@ -35,7 +35,8 @@
               "title": "HomePage"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "cdf087a256891fa0",
@@ -189,9 +189,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "f438dd9272b940da",
   "lastOpenFiles": [
+    "content/posts/2025m2d27h11m12s28.md",
     "home/HomePage.md",
+    "public/posts/2025m2d27h11m12s28/index.html",
+    "public/posts/2025m2d27h11m12s28",
+    "content/posts/2025m2d27h11m12s11.md",
+    "public/posts/2025m2d27h11m12s11/index.html",
+    "public/posts/2025m2d27h11m12s11",
     "content/posts/方法论/解析几何中的最大张角问题.md",
     "update.md",
     "content/posts/2025m2d27h9m51s48.md",
@@ -203,8 +209,6 @@
     "public/tags/解析几何/page",
     "public/tags/解析几何/index.html",
     "public/tags/解析几何",
-    "public/posts/方法论/解析几何中的最大张角问题/index.html",
-    "public/posts/方法论/解析几何中的最大张角问题",
     "content/posts/进站必看.md",
     "content/posts/杂谈/好题推荐：一道质量极高的区间与不等式问题.md",
     "content/posts/杂谈/一道经典的解三角形问题与外森比克不等式.md",
@@ -222,11 +226,6 @@
     "content/posts/专题/导数_题集2.md",
     "content/posts/专题/导数_题集3.md",
     "posts/方法论/论“对数单身狗、指数找朋友”.md",
-    "posts/方法论",
-    "posts",
-    "content/posts/2025m2d26h13m48s52.md",
-    "content/posts/试卷/高二上学期命题参考卷（自编）.md",
-    "content/posts/专题/直线与圆_题集1.md",
     "icons/wolf-kit/warning.svg",
     "icons/wolf-kit/tip.svg",
     "icons/wolf-kit/note.svg",

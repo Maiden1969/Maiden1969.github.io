@@ -20,6 +20,9 @@
     one : "已阅读：1 分钟"
     other: "已阅读：{{ .Count }} 分钟"
 
+- id: words
+  translation: "字数：{{.WordCount}} 字"
+
 - id: toc
   translation: "目录"
 
