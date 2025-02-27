@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/杂谈/好题推荐：一道质量极高的区间与不等式问题.md",
+                "file": "content/posts/方法论/论解析几何中的最大张角问题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "好题推荐：一道质量极高的区间与不等式问题"
+              "title": "论解析几何中的最大张角问题"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "HomePage"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,8 +189,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "272a51bf55d7f723",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/assets/css/stylesheet.598615d4ac92991e1e3479337ba4e85b6a8667f16c2b540eeea02a46551bcfbf.css",
+    "public/assets/css/stylesheet.196f1e319357aa69d2f6075204d703297f30db59f720339f1c9631283a261e19.css",
+    "public/assets/css/stylesheet.f4d9fd9720e3ef57122d7b20ce836f410052c27e4a2a88f4af7b89a2cc093103.css",
+    "public/assets/css/stylesheet.5c135db96fba616e030aeabfea9a1592135b76fb9cbab1d511e5738b27eeff7f.css",
+    "public/assets/css/stylesheet.db22f123a0588d202621f34d5803c4dddc5fc88ad1da54f2b074c4f049266adc.css",
+    "public/assets/css/stylesheet.ca92c0a1367c5bb243eba5ef84a98c8bc4da99cf5b501847379791d19d916899.css",
+    "public/assets/css/stylesheet.26a63199330aea39c3fa7e86e5bd062b6527597287c9d410292712c6ab1d2e6d.css",
+    "public/assets/css/stylesheet.0204774264c2e0d2cce36d7966292fb5cd7a22075ea58968b586c4ac702c2291.css",
+    "public/assets/css/stylesheet.81c5a97bbf18d249805b1720ecd234003bcfb95fe5a8d3d77e1b45185f89700d.css",
+    "public/assets/css/stylesheet.21f1b9ff3f3b5fce876d5a1d4d97b78caeac41d96b6bad017c015d77d6daceec.css",
+    "public/assets/css/stylesheet.c6038f8fb7e05614c0aa48b1601b43384969cf40081a7ed8156ff1b65ad9fc1a.css",
     "content/posts/杂谈/好题推荐：一道质量极高的区间与不等式问题.md",
     "home/HomePage.md",
     "content/posts/方法论/论极值点偏移.md",
@@ -200,22 +210,12 @@
     "content/posts/方法论/再论极值点偏移.md",
     "content/posts/方法论/论解析几何中的最大张角问题.md",
     "content/posts/资料/数列讲义.md",
-    "public/posts/方法论/论解析几何中的最大张角问题/index.html",
-    "public/posts/方法论/论解析几何中的最大张角问题",
     "content/posts/2025m2d27h11m12s28.md",
-    "public/posts/2025m2d27h11m12s28/index.html",
-    "public/posts/2025m2d27h11m12s28",
     "content/posts/2025m2d27h11m12s11.md",
-    "public/posts/2025m2d27h11m12s11/index.html",
-    "public/posts/2025m2d27h11m12s11",
     "update.md",
     "content/posts/2025m2d27h9m51s48.md",
     "content/posts/2025m2d27h9m50s29.md",
     "content/posts/资料/题库.md",
-    "public/tags/解析几何/index.xml",
-    "public/tags/解析几何/page/1/index.html",
-    "public/tags/解析几何/page/1",
-    "public/tags/解析几何/page",
     "content/posts/进站必看.md",
     "content/posts/杂谈/一道经典的解三角形问题与外森比克不等式.md",
     "content/posts/2025m2d26h23m7s52.md",
