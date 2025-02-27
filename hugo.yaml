@@ -61,11 +61,6 @@ params:
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true 
   ShowWordCount: true
-  frontmatter:
-    lastmod:
-        - lastmod
-        - :fileModTime
-        - :default
   ShowLastMod: true  #显示文章更新时间
   ShowToc: true # 显示目录
   hideFooter: false # 隐藏页脚
@@ -108,12 +103,6 @@ markup:
             - $
         enable: true
 
-
-frontmatter:
-    lastmod:
-        - lastmod
-        - :fileModTime
-        - :default
 
 
 
