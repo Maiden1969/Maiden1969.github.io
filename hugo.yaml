@@ -52,10 +52,10 @@ outputs:
     - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
 
 params:
-  author: zkr
+  author: 竹林大火
   DateFormat: "2006-01-02"
   ShowPageNums: true
-  ShowShareButtons: true
+  # ShowShareButtons: true
   ShowReadingTime: true
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
