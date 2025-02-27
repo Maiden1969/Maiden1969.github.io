@@ -35,8 +35,7 @@
               "title": "HomePage"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,11 +189,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f438dd9272b940da",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "home/HomePage.md",
     "content/posts/方法论/解析几何中的最大张角问题.md",
     "update.md",
-    "home/HomePage.md",
     "content/posts/2025m2d27h9m51s48.md",
     "content/posts/2025m2d27h9m50s29.md",
     "content/posts/资料/题库.md",

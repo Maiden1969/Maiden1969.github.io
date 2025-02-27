@@ -52,7 +52,7 @@ outputs:
     - JSON # necessary for search, 这里的配置修改好之后，一定要重新生成一下
 
 params:
-  author: 竹林大火
+  author: zkr
   DateFormat: "2006-01-02"
   ShowPageNums: true
   # ShowShareButtons: true

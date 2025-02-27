@@ -14,9 +14,8 @@
 
 - id: read_time
   translation:
-    one : "1 分钟"
-    other: "{{ .Count }} 分钟"
-
+    one : "已阅读：1 分钟"
+    other: "已阅读：{{ .Count }} 分钟"
 - id: toc
   translation: "目录"
 
