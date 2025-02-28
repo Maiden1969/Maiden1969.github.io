@@ -54,6 +54,7 @@ outputs:
 params:
   author: zkr
   DateFormat: "2006-01-02"
+  enableGitInfo: true
   ShowPageNums: true
   # ShowShareButtons: true
   # ShowReadingTime: true
