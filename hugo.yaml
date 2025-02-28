@@ -106,9 +106,14 @@ markup:
 
 frontmatter:
     lastmod:
+        - :git
         - lastmod
+        - date
+        - publishDate
         - :fileModTime
         - :default
+
+enableGitInfo: true
 
 
 
