@@ -44,7 +44,7 @@
 
 </head>
 
-<body class="list dark" id="top">
+<body class="list dark" id="top" data-barba="wrapper">
 <script>
     if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
@@ -114,7 +114,7 @@
     </nav>
 </header>
 <div class="gridmask"></div>
-    <main class="main"> 
+    <main class="main" data-barba="container" data-barba-namespace="home"> 
 <header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
     数列不等式
@@ -209,5 +209,7 @@
         pangu.spacingPage();
     });
 </script></body>
+
+
 
 </html>
