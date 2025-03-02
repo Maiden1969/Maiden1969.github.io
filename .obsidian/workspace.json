@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 230.5,
+    "collapsed": true
   },
   "right": {
     "id": "cdf087a256891fa0",
@@ -192,9 +193,9 @@
   "active": "bb8034d9605f970d",
   "lastOpenFiles": [
     "content/posts/进站必看.md",
+    "home/HomePage.md",
     "public/posts/进站必看app下载/index.html",
     "public/posts/进站必看app下载",
-    "home/HomePage.md",
     "public/posts/2025m3d2h11m5s31/index.html",
     "public/posts/2025m3d2h11m5s31",
     "content/posts/2025m3d2h11m5s31.md",
