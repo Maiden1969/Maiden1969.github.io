@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/专题/导数_题集3.md",
+                "file": "content/posts/资料/题库.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "导数_题集3"
+              "title": "题库"
             }
           }
         ]
@@ -177,6 +177,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "content/posts/杂谈/盘古之白.md",
+    "content/posts/专题/导数_题集3.md",
     "content/posts/资料/题库.md",
     "node_modules/@barba/core/dist/src/modules/Views.d.ts",
     "node_modules/@barba/core/dist/src/modules/Headers.d.ts",
@@ -195,7 +197,6 @@
     "home/HomePage.md",
     "content/posts/2025m3d1h11m13s16.md",
     "content/posts/杂谈/好题推荐：一道质量极高的区间与不等式问题.md",
-    "content/posts/杂谈/盘古之白.md",
     "content/posts/杂谈/一道经典的解三角形问题与外森比克不等式.md",
     "content/posts/方法论/再论极值点偏移.md",
     "content/posts/方法论/论解析几何中的最大张角问题.md",
