@@ -35,8 +35,7 @@
               "title": "HomePage"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,10 +189,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bb8034d9605f970d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "content/posts/进站必看.md",
     "home/HomePage.md",
+    "content/posts/进站必看.md",
     "public/posts/进站必看app下载/index.html",
     "public/posts/进站必看app下载",
     "public/posts/2025m3d2h11m5s31/index.html",
