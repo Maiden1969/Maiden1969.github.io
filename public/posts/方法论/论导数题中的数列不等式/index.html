@@ -566,12 +566,14 @@ $$<p>
   </a>
 </nav>
 
-  </footer><script type="module">
+  </footer><div id="waline"></div>
+<script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
     init({
         el: '#waline',
         serverURL: 'https://vercel.zkrmath.xyz',
+        dark: 'body.dark'
     });
 </script>
 </article>
