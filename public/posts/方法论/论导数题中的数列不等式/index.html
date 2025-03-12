@@ -40,6 +40,12 @@
 
 
 
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+  />
+
+
 
 </head>
 
@@ -560,7 +566,14 @@ $$<p>
   </a>
 </nav>
 
-  </footer>
+  </footer><script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    init({
+        el: '#waline',
+        serverURL: 'https://vercel.zkrmath.xyz',
+    });
+</script>
 </article>
     </main>
     
