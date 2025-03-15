@@ -40,6 +40,9 @@ languages:
         - name: 搜索
           pageRef: search/
           weight: 20
+        - name: 自测
+          pageRef: exam/
+          weight: 20
         - name: 作者
           pageRef: about/
           weight: 21

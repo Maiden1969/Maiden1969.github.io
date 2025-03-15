@@ -1,0 +1,374 @@
+{{- define "main" }}
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<style>
+    .exam-start{
+        position: absolute;
+        margin: auto;
+        inset: 0;
+        font-size: 2rem;
+        width: fit-content;
+        height: fit-content;
+    }
+    .exam-container{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        top: 15vh;left: 0;
+        width: 900vw;
+        height: max-content;
+        pointer-events: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .exam-question{
+        position: relative;
+        top: 0;bottom: 0;
+        width: 80vw;
+        display: block;
+    }
+    .exam-description{
+        text-indent: 2rem;
+        color: var(--primary);
+    }
+    .exam-option{
+        margin-top: 20px;
+        list-style-type: none;
+        line-height: 50px;
+    }
+    .exam-choice{
+        margin-top:25px;
+    }
+    .exam-button{
+        margin-right: 10px;
+        transition: .2s linear;
+        pointer-events: all;
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid var(--primary);
+
+    }
+    .exam-button:hover{
+        color:var(--theme);
+        background-color:var(--primary);
+    }
+    .exam-switch{
+        position: relative;
+        top:15px;
+    }
+    .exam-prev{
+        margin-right: 30px;
+    }
+    .exam-end{
+        margin-top:30px;
+        border: 1.5px solid var(--primary);
+        pointer-events: all;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bold;
+        transition: .5s ease;
+    }
+    .exam-end:hover{
+        box-shadow: var(--link) 0px 0px 100px 0px inset;
+        color: var(--theme);
+        border-color: var(--primary);
+    }
+</style>
+
+<button class="exam-start">
+    开始自测
+</button>
+
+<div class="exam-switch">
+    <button class="exam-prev">|<上一题</button>
+    <button class="exam-next">下一题>|</button>
+</div>
+
+<div class="exam-container">
+
+    <div class="exam-question">
+        <span class="exam-description">
+            已知集合 $A = \{x|-1\leq x\leq 1\}$，$B = \{a-1 \leq x \leq 2a-1\}$，若 $B\subseteq A$，则实数 $a$ 的取值范围是 $(\qquad\quad)$.    
+        </span>
+        <ul class="exam-option">
+            <li>$A.$ 这是第一个选项</li>
+            <li>$B.$ 这是第二个选项</li>
+            <li>$C.$ 这是第三个选项</li>
+            <li>$D.$ 这是第四个选项</li>
+        </ul>
+        <div class="exam-choice">
+            <button class="exam-button" style="--i:0;">$A$</button>
+            <button class="exam-button" style="--i:1;">$B$</button>
+            <button class="exam-button" style="--i:2;">$C$</button>
+            <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+    </div>
+
+    <div class="exam-question">
+        <span class="exam-description">这里是一个问题的描述：Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos distinctio doloribus architecto voluptatem dicta reprehenderit tempore error iste nemo, numquam voluptatum amet, reiciendis rerum incidunt expedita adipisci maiores aut?</span>
+        <ul class="exam-option">
+            <li>$A.$ 这是第一个选项</li>
+            <li>$B.$ 这是第二个选项</li>
+            <li>$C.$ 这是第三个选项</li>
+            <li>$D.$ 这是第四个选项</li>
+        </ul>
+        <div class="exam-choice">
+            <button class="exam-button" style="--i:0;">$A$</button>
+            <button class="exam-button" style="--i:1;">$B$</button>
+            <button class="exam-button" style="--i:2;">$C$</button>
+            <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+    </div>
+
+    <div class="exam-question">
+        <span class="exam-description">这里是一个问题的描述：Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos distinctio doloribus architecto voluptatem dicta reprehenderit tempore error iste nemo, numquam voluptatum amet, reiciendis rerum incidunt expedita adipisci maiores aut?</span>
+        <ul class="exam-option">
+            <li>$A.$ 这是第一个选项</li>
+            <li>$B.$ 这是第二个选项</li>
+            <li>$C.$ 这是第三个选项</li>
+            <li>$D.$ 这是第四个选项</li>
+        </ul>
+        <div class="exam-choice">
+            <button class="exam-button" style="--i:0;">$A$</button>
+            <button class="exam-button" style="--i:1;">$B$</button>
+            <button class="exam-button" style="--i:2;">$C$</button>
+            <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+    </div>
+
+    <div class="exam-question">
+        <span class="exam-description">这里是一个问题的描述：Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos distinctio doloribus architecto voluptatem dicta reprehenderit tempore error iste nemo, numquam voluptatum amet, reiciendis rerum incidunt expedita adipisci maiores aut?</span>
+        <ul class="exam-option">
+            <li>$A.$ 这是第一个选项</li>
+            <li>$B.$ 这是第二个选项</li>
+            <li>$C.$ 这是第三个选项</li>
+            <li>$D.$ 这是第四个选项</li>
+        </ul>
+        <div class="exam-choice">
+            <button class="exam-button" style="--i:0;">$A$</button>
+            <button class="exam-button" style="--i:1;">$B$</button>
+            <button class="exam-button" style="--i:2;">$C$</button>
+            <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+    </div>
+
+    <div class="exam-question">
+        <span class="exam-description">这里是一个问题的描述：Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos distinctio doloribus architecto voluptatem dicta reprehenderit tempore error iste nemo, numquam voluptatum amet, reiciendis rerum incidunt expedita adipisci maiores aut?</span>
+        <ul class="exam-option">
+            <li>$A.$ 这是第一个选项</li>
+            <li>$B.$ 这是第二个选项</li>
+            <li>$C.$ 这是第三个选项</li>
+            <li>$D.$ 这是第四个选项</li>
+        </ul>
+        <div class="exam-choice">
+            <button class="exam-button" style="--i:0;">$A$</button>
+            <button class="exam-button" style="--i:1;">$B$</button>
+            <button class="exam-button" style="--i:2;">$C$</button>
+            <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+    </div>
+
+    <div class="exam-question">
+        <span class="exam-description">这里是一个问题的描述：Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos distinctio doloribus architecto voluptatem dicta reprehenderit tempore error iste nemo, numquam voluptatum amet, reiciendis rerum incidunt expedita adipisci maiores aut?</span>
+        <ul class="exam-option">
+            <li>$A.$ 这是第一个选项</li>
+            <li>$B.$ 这是第二个选项</li>
+            <li>$C.$ 这是第三个选项</li>
+            <li>$D.$ 这是第四个选项</li>
+        </ul>
+        <div class="exam-choice">
+            <button class="exam-button" style="--i:0;">$A$</button>
+            <button class="exam-button" style="--i:1;">$B$</button>
+            <button class="exam-button" style="--i:2;">$C$</button>
+            <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+    </div>
+
+    <div class="exam-question">
+        <span class="exam-description">这里是一个问题的描述：Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos distinctio doloribus architecto voluptatem dicta reprehenderit tempore error iste nemo, numquam voluptatum amet, reiciendis rerum incidunt expedita adipisci maiores aut?</span>
+        <ul class="exam-option">
+            <li>$A.$ 这是第一个选项</li>
+            <li>$B.$ 这是第二个选项</li>
+            <li>$C.$ 这是第三个选项</li>
+            <li>$D.$ 这是第四个选项</li>
+        </ul>
+        <div class="exam-choice">
+            <button class="exam-button" style="--i:0;">$A$</button>
+            <button class="exam-button" style="--i:1;">$B$</button>
+            <button class="exam-button" style="--i:2;">$C$</button>
+            <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+    </div>
+
+    <div class="exam-question">
+        <span class="exam-description">这里是一个问题的描述：Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos distinctio doloribus architecto voluptatem dicta reprehenderit tempore error iste nemo, numquam voluptatum amet, reiciendis rerum incidunt expedita adipisci maiores aut?</span>
+        <ul class="exam-option">
+            <li>$A.$ 这是第一个选项</li>
+            <li>$B.$ 这是第二个选项</li>
+            <li>$C.$ 这是第三个选项</li>
+            <li>$D.$ 这是第四个选项</li>
+        </ul>
+        <div class="exam-choice">
+            <button class="exam-button" style="--i:0;">$A$</button>
+            <button class="exam-button" style="--i:1;">$B$</button>
+            <button class="exam-button" style="--i:2;">$C$</button>
+            <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+    </div>
+
+    <div class="exam-question">
+        <span class="exam-description">这里是一个问题的描述：Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos distinctio doloribus architecto voluptatem dicta reprehenderit tempore error iste nemo, numquam voluptatum amet, reiciendis rerum incidunt expedita adipisci maiores aut?</span>
+        <ul class="exam-option">
+            <li>$A.$ 这是第一个选项</li>
+            <li>$B.$ 这是第二个选项</li>
+            <li>$C.$ 这是第三个选项</li>
+            <li>$D.$ 这是第四个选项</li>
+        </ul>
+        <div class="exam-choice">
+            <button class="exam-button" style="--i:0;">$A$</button>
+            <button class="exam-button" style="--i:1;">$B$</button>
+            <button class="exam-button" style="--i:2;">$C$</button>
+            <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+        <div class="exam-end">提交</div>
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+    function check_each_answer(your_ans, real_ans){
+        if (your_ans.length !== real_ans.length)
+            return 0
+        for (var ans of real_ans){
+            if (your_ans.indexOf(ans) === -1)
+                return 0
+        }
+        return 1
+    }
+
+    function check_answer(your_ans_list, real_ans_list){
+        var credit = 0
+        for (let i = 0; i < real_ans_list.length; ++i){
+            credit += check_each_answer(your_ans_list[i], real_ans_list[i])
+        }
+        return credit
+    }
+
+    let index = 0
+    let choices = [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ]
+    let answers = [
+        [0],
+        [0],
+        [0],
+        [0],
+        [0],
+        [0],
+        [0],
+        [0],
+        [0]
+    ]
+
+    let exam_start = document.querySelector('.exam-start')
+    let exam_container = document.querySelector('.exam-container')
+    let exam_questions = document.querySelectorAll('.exam-question')
+    let exam_buttons = document.querySelectorAll('.exam-button')
+    let exam_switch = document.querySelector('.exam-switch')
+    let exam_prev_btn = document.querySelector('.exam-prev')
+    let exam_next_btn = document.querySelector('.exam-next')
+    let exam_choices = document.querySelectorAll('.exam-choice')
+    let exam_end = document.querySelector('.exam-end')
+
+
+    exam_switch.style.display = 'none'
+    exam_container.style.display = 'none'
+
+    exam_start.addEventListener('click', e=>{
+        exam_start.style.display = 'none'
+        exam_container.style.display = 'flex'
+        exam_switch.style.display = 'block'
+    })
+
+    exam_end.addEventListener('click', e=>{
+        let credit = check_answer(choices, answers)
+        if (credit === answers.length)
+            alert('全对!!!')
+        else
+            alert(`你错了${answers.length - credit}道题目！`)
+    })
+
+    exam_prev_btn.disabled = true
+    exam_prev_btn.style.opacity = '0.5'
+    exam_prev_btn.addEventListener('click', e=>{
+        if(index > 0){
+            index--;
+            if (index == 0){
+                exam_prev_btn.disabled = true
+                exam_prev_btn.style.opacity = '0.5'
+            }
+            if (index == 7){
+                 exam_next_btn.disabled = false
+                exam_next_btn.style.opacity = '1'
+            }
+            let offset = exam_questions[index+1].offsetLeft - exam_questions[index].offsetLeft
+            gsap.to(exam_container, {
+                x: -offset * index,
+                duration: 0.5,
+            })
+            
+        }
+    })
+
+    exam_next_btn.addEventListener('click', e=>{
+        if(index < 8){
+            index++;
+            if (index == 1){
+                exam_prev_btn.disabled = false
+                exam_prev_btn.style.opacity = '1'
+            }
+            if (index == 8){
+                exam_next_btn.disabled = true
+                exam_next_btn.style.opacity = '0.5'
+            }
+            let offset = exam_questions[index].offsetLeft - exam_questions[index-1].offsetLeft
+            gsap.to(exam_container, {
+                x: -offset * index,
+                duration: 0.5,
+            })
+        }
+    })
+
+    for (var button of exam_buttons){
+        let have_button = button
+        button.addEventListener('click', e=>{ 
+            var pos = +have_button.style.getPropertyValue('--i')
+            var find_pos = choices[index].indexOf(pos)
+            if (find_pos !== -1){
+                choices[index].splice(find_pos, 1)
+                have_button.style.setProperty('border-radius', '0%')
+            }
+            else{
+                choices[index].push(pos)  
+                have_button.style.setProperty('border-radius', '50%')
+            }
+        })
+    }
+
+
+
+
+</script>
+
+{{- end }}{{/* end main */}}
