@@ -83,6 +83,10 @@
         color: var(--theme);
         border-color: var(--primary);
     }
+    .exam-answer{
+        margin-top:20px;
+        white-space: pre-wrap;
+    }
 </style>
 
 <div class="exam-intro">你绝对无法全做对的九道易错题</div>
@@ -114,6 +118,10 @@
             <button class="exam-button" style="--i:2;">$C$</button>
             <button class="exam-button" style="--i:3;">$D$</button>
         </div>
+        <div class="exam-answer">
+答案：$A.$
+易错点：遗漏了 $B$ 为空集的情况。       
+        </div>
     </div>
 
     <div class="exam-question">
@@ -129,6 +137,10 @@
             <button class="exam-button" style="--i:1;">$B$</button>
             <button class="exam-button" style="--i:2;">$C$</button>
             <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+        <div class="exam-answer">
+答案：$B.$
+易错点：两个向量反向平行的情况需要排除。       
         </div>
     </div>
 
@@ -146,6 +158,10 @@
             <button class="exam-button" style="--i:2;">$C$</button>
             <button class="exam-button" style="--i:3;">$D$</button>
         </div>
+        <div class="exam-answer">
+答案：$D.$
+易错点：遗漏了直线平行于 $x$ 轴的情况。       
+        </div>
     </div>
 
     <div class="exam-question">
@@ -161,6 +177,10 @@
             <button class="exam-button" style="--i:1;">$B$</button>
             <button class="exam-button" style="--i:2;">$C$</button>
             <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+        <div class="exam-answer">
+答案：$B.$
+易错点：注意定义域。                 
         </div>
     </div>
 
@@ -178,6 +198,10 @@
             <button class="exam-button" style="--i:2;">$C$</button>
             <button class="exam-button" style="--i:3;">$D$</button>
         </div>
+        <div class="exam-answer">
+答案：$D.$
+易错点：直接作出 $|2x-a|$ 和 $x-1$ 的图像观察即可，不要去掉绝对值变成 $2x-a\geq x-1$ 或 $2x-a\leq 1-x$，这样容易犯“取等条件不一致”的错误，因为去掉绝对值变成 $2x-a\geq x-1$ 恒成立的前提条件是 $x\geq \frac{a}{2}$，那么转换成 $a\leq x + 1$ 恒成立时，就不能把 $x=1$ 代入了。
+        </div>
     </div>
 
     <div class="exam-question">
@@ -194,6 +218,10 @@
             <button class="exam-button" style="--i:2;">$C$</button>
             <button class="exam-button" style="--i:3;">$D$</button>
         </div>
+<div class="exam-answer">
+答案：$D.$
+易错点：求出对称轴，利用对称轴和对称中心来分析零点个数，不要用周期。       
+</div>
     </div>
 
     <div class="exam-question">
@@ -210,6 +238,10 @@
             <button class="exam-button" style="--i:2;">$C$</button>
             <button class="exam-button" style="--i:3;">$D$</button>
         </div>
+<div class="exam-answer">
+答案：$D.$
+易错点：根据课本的定义，极值需要大于或小于其两边的函数值，所以极值点不能是区间端点，故 $-3\pi \leq -\omega\pi + \frac{\pi}{6} < -2\pi$。       
+</div>
     </div>
 
     <div class="exam-question">
@@ -226,6 +258,10 @@
             <button class="exam-button" style="--i:2;">$C$</button>
             <button class="exam-button" style="--i:3;">$D$</button>
         </div>
+<div class="exam-answer">
+答案：$B.$
+易错点：遗漏了直线垂直 $x$ 轴的情况。       
+</div>
     </div>
 
     <div class="exam-question">
@@ -241,6 +277,10 @@
             <button class="exam-button" style="--i:1;">$B$</button>
             <button class="exam-button" style="--i:2;">$C$</button>
             <button class="exam-button" style="--i:3;">$D$</button>
+        </div>
+        <div class="exam-answer">
+答案：$C.$
+易错点：函数的定义域是 $[-1,1)$，不关于 $x$ 轴对称，因此非奇非偶。              
         </div>
         <div class="exam-end">提交</div>
     </div>  
@@ -299,6 +339,7 @@
     let exam_next_btn = document.querySelector('.exam-next')
     let exam_choices = document.querySelectorAll('.exam-choice')
     let exam_end = document.querySelector('.exam-end')
+    let exam_answers = document.querySelectorAll('.exam-answer')
 
 
     exam_switch.style.display = 'none'
@@ -316,7 +357,14 @@
             alert('全对!!!太强了!!!')
         else
             alert(`你错了${answers.length - credit}道题目!!!`)
+        for (var answer of exam_answers){
+            answer.style.display = 'block'
+        }
     })
+
+    for (var answer of exam_answers){
+        answer.style.display = 'none'
+    }
 
     exam_prev_btn.disabled = true
     exam_prev_btn.style.opacity = '0.5'
@@ -367,10 +415,14 @@
             if (find_pos !== -1){
                 choices[index].splice(find_pos, 1)
                 have_button.style.setProperty('border-radius', '0%')
+                have_button.style.setProperty('color', 'var(--primary)')
+                have_button.style.setProperty('background', 'var(--theme)')
             }
             else{
                 choices[index].push(pos)  
                 have_button.style.setProperty('border-radius', '50%')
+                have_button.style.setProperty('color', 'var(--theme)')
+                have_button.style.setProperty('background', 'var(--primary)')
             }
         })
     }
