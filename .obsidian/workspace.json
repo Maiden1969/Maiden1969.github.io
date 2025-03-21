@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/资料/题库.md",
+                "file": "content/posts/专题/「特别篇」三次函数_题集1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "题库"
+              "title": "「特别篇」三次函数_题集1"
             }
           },
           {
@@ -47,18 +47,6 @@
               },
               "icon": "lucide-file",
               "title": "HomePage"
-            }
-          },
-          {
-            "id": "74ebba7b1fa23433",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-03-21 20.06.10.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-03-21 20.06.10.excalidraw"
             }
           }
         ],
@@ -119,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5,
-    "collapsed": true
+    "width": 230.5
   },
   "right": {
     "id": "cdf087a256891fa0",
@@ -229,13 +216,16 @@
   },
   "active": "843741c7be4c1e0f",
   "lastOpenFiles": [
+    "content/posts/专题/「特别篇」三次函数_题集1.md",
     "content/posts/专题/解三角形_题集1.md",
-    "Pasted image 20250321200735.png",
-    "Excalidraw/Drawing 2025-03-21 20.06.10.excalidraw.md",
+    "Excalidraw/Drawing 2025-02-16 17.00.24.excalidraw.md",
+    "Excalidraw/Drawing 2025-02-16 17.01.37.excalidraw.md",
+    "Excalidraw/Drawing 2025-02-16 16.57.40.excalidraw.md",
     "content/posts/资料/题库.md",
     "home/HomePage.md",
+    "Pasted image 20250321200735.png",
+    "Excalidraw/Drawing 2025-03-21 20.06.10.excalidraw.md",
     "content/posts/2025m3d21h19m41s13.md",
-    "content/posts/专题/「特别篇」三次函数_题集1.md",
     "content/posts/2025m3d21h10m6s38.md",
     "Excalidraw/Drawing 2025-03-20 17.16.00.excalidraw.md",
     "Pasted image 20250320174938.png",
@@ -264,8 +254,6 @@
     "content/posts/专题/导数_题集1.md",
     "Excalidraw/Drawing 2025-03-18 21.23.50.excalidraw.md",
     "Excalidraw/Drawing 2025-03-18 21.19.31.excalidraw.md",
-    "content/posts/2025m3d18h20m34s1.md",
-    "content/posts/2025m3d17h9m46s49.md",
     "public/assets/css/stylesheet.6289a2382afd52f2e4e9d9309ae08eb51659d273542e88fb04aa28d0fdb3a4dc.css",
     "public/tags/自测/index.xml",
     "public/tags/自测/page/1/index.html",
