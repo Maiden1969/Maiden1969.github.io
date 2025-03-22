@@ -89,7 +89,7 @@
     }
 </style>
 
-<div class="exam-intro">你<span style="color:var(--primary);font-size:4rem">绝对</span>无法全做对的九道易错题</div>
+<div class="exam-intro">你<span style="color:var(--primary);font-size:4rem">绝对</span>无法全做对的九道<span style="color:var(--primary);font-size:4rem">易错题</span></div>
 
 <button class="exam-start">
     开始自测
@@ -286,7 +286,6 @@
     </div>  
 </div>
 
-
 <script type="text/javascript">
     function check_each_answer(your_ans, real_ans){
         if (your_ans.length !== real_ans.length)
@@ -341,6 +340,8 @@
     let exam_end = document.querySelector('.exam-end')
     let exam_answers = document.querySelectorAll('.exam-answer')
 
+    let answer_is_showed = false
+
 
     exam_switch.style.display = 'none'
     exam_container.style.display = 'none'
@@ -352,6 +353,11 @@
     })
 
     exam_end.addEventListener('click', e=>{
+        if(answer_is_showed){
+            alert('你不能再提交了!!!')
+            return null
+        }
+        answer_is_showed = true
         let credit = check_answer(choices, answers)
         if (credit === answers.length)
             alert('全对!!!太强了!!!')
@@ -426,10 +432,6 @@
             }
         })
     }
-
-
-
-
 </script>
 
 {{- end }}{{/* end main */}}
