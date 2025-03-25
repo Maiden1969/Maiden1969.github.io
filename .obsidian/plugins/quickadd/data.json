@@ -21,7 +21,7 @@
           "settings": {}
         }
       ],
-      "runOnStartup": true
+      "runOnStartup": false
     }
   ],
   "inputPrompt": "single-line",
