@@ -13,16 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/专题/三角函数_题集1.md",
+                "file": "content/posts/资料/题库.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "三角函数_题集1"
+              "title": "题库"
             }
           },
           {
-            "id": "a7c696ff4f1c296e",
+            "id": "ee066f2f6fa18ed1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/专题/数列_题集1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "数列_题集1"
+            }
+          },
+          {
+            "id": "dac007c72226fa72",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,23 +48,9 @@
               "icon": "lucide-file",
               "title": "HomePage"
             }
-          },
-          {
-            "id": "c91a7d842adef3e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/资料/题库.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "题库"
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -199,12 +199,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a7c696ff4f1c296e",
+  "active": "dac007c72226fa72",
   "lastOpenFiles": [
+    "content/posts/专题/数列_题集1.md",
+    "content/posts/资料/题库.md",
+    "content/posts/资料/数列讲义.md",
+    "home/HomePage.md",
     "content/posts/专题/三角函数_题集1.md",
     "content/posts/专题/解三角形_题集1.md",
-    "content/posts/资料/题库.md",
-    "home/HomePage.md",
     "content/search.md",
     "content/exam.md",
     "content/archives.md",
@@ -216,7 +218,6 @@
     "content/posts/专题/直线与圆_题集1.md",
     "content/posts/资料/必修一复习讲义.md",
     "content/posts/资料/常用导数不等式汇总.md",
-    "content/posts/资料/数列讲义.md",
     "content/posts/杂谈/构造共轭根式.md",
     "content/posts/专题/「特别篇」三次函数_题集1.md",
     "content/posts/资料/「数学通讯」.md",
@@ -231,7 +232,6 @@
     "public/posts/2025m3d22h23m31s53",
     "content/posts/2025m3d22h23m31s53.md",
     "public/posts/2025m3d22h20m40s18/index.html",
-    "public/posts/2025m3d22h20m40s18",
-    "content/posts/2025m3d22h20m40s18.md"
+    "public/posts/2025m3d22h20m40s18"
   ]
 }
