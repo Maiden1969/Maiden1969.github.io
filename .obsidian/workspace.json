@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/HomePage.md",
+                "file": "content/posts/专题/解三角形_题集1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HomePage"
+              "title": "解三角形_题集1"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "612c0e708b8ef239",
@@ -171,11 +172,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "home/HomePage.md",
     "public/posts/专题/三角函数_题集1未竟/index.html",
     "public/posts/专题/三角函数_题集1未竟",
     "public/posts/专题/数列_题集1未竟/index.html",
     "public/posts/专题/数列_题集1未竟",
-    "home/HomePage.md",
     "content/posts/专题/数列_题集1(未竟).md",
     "content/posts/专题/三角函数_题集1(未竟).md",
     "public/icon/iconfont.woff2",
@@ -184,7 +185,6 @@
     "public/icon/iconfont.json",
     "public/icon/iconfont.js",
     "public/icon/iconfont.css",
-    "static/icon/iconfont.woff2",
     "content/posts/资料/题库.md",
     "content/posts/资料/数列讲义.md",
     "content/posts/专题/解三角形_题集1.md",
