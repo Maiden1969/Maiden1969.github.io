@@ -570,6 +570,7 @@ $$<p>
   rel="stylesheet"
   href="https://ustc510.asia/waline/waline.css"
 />
+<script src="https://ustc510.aisa/mathjax/es5/tex-svg.js"></script>
 <div id="waline"></div>
 <script type="module">
     import { init } from 'https://ustc510.asia/waline/waline.js';
@@ -577,7 +578,13 @@ $$<p>
     init({
         el: '#waline',
         serverURL: 'https://ustc510.asia',   
-        dark: 'body.dark'
+        dark: 'body.dark',
+        texRenderer: (blockMode, tex) =>
+          window.MathJax.startup.adaptor.outerHTML(
+            window.MathJax.tex2svg(tex, {
+              display: blockMode,
+            }),
+          ),
     });
 </script>
 </article>
