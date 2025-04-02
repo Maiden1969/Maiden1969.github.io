@@ -13,16 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/易错题.md",
+                "file": "content/posts/进站必看.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "易错题"
+              "title": "进站必看"
             }
           },
           {
-            "id": "cece4056acb5ec39",
+            "id": "7febcff234804f0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "612c0e708b8ef239",
@@ -184,12 +185,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cece4056acb5ec39",
+  "active": "7febcff234804f0c",
   "lastOpenFiles": [
+    "content/posts/进站必看.md",
+    "home/HomePage.md",
+    "content/posts/评论区开放通知.md",
+    "public/posts/评论区开放通知/index.html",
+    "public/posts/评论区开放通知",
+    "public/posts/2025m4d2h9m12s36/index.html",
+    "public/posts/2025m4d2h9m12s36",
     "content/posts/易错题.md",
     "content/posts/杂谈/构造共轭根式.md",
     "content/posts/杂谈/好题推荐：一道质量极高的区间与不等式问题.md",
-    "home/HomePage.md",
     "README.md",
     "content/posts/专题/解三角形_题集1.md",
     "public/posts/专题/三角函数_题集1未竟/index.html",
@@ -200,10 +207,6 @@
     "content/posts/专题/三角函数_题集1(未竟).md",
     "public/icon/iconfont.woff2",
     "public/icon/iconfont.woff",
-    "public/icon/iconfont.ttf",
-    "public/icon/iconfont.json",
-    "public/icon/iconfont.js",
-    "public/icon/iconfont.css",
     "content/posts/资料/题库.md",
     "content/posts/资料/数列讲义.md",
     "content/search.md",
@@ -220,8 +223,6 @@
     "content/posts/资料/「数学通讯」.md",
     "Pasted image 20250325135152.png",
     "Excalidraw/Drawing 2025-03-25 13.50.46.excalidraw.md",
-    "content/posts/25年寒假自习.md",
-    "content/posts/2025m3d25h13m46s44.md",
-    "content/posts/2025m3d25h13m16s10.md"
+    "content/posts/25年寒假自习.md"
   ]
 }
