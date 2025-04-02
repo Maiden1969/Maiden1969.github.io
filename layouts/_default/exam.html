@@ -1,6 +1,23 @@
 {{- define "main" }}
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://ustc510.asia/gsap/gsap.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://ustc510.asia/waline/waline.css"
+/>
+<script src="https://ustc510.asia/mathjax/es5/tex-svg.js"></script>
+
 <style>
+    :root{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-y: visible;
+    }
+
+    body{
+        min-height: 100vh;
+        min-width: 100vw;
+    }
 
     .exam-intro{
         text-align: center;
@@ -21,12 +38,16 @@
     }
     .exam-container{
         position: relative;
-        display: flex;
+        display: none;
         justify-content: space-between;
         top: 8vh;left: 0;
         width: 900vw;
         height: max-content;
         pointer-events: none;
+    }
+    #waline{
+        position:relative;
+        transform:translateY(80px);
     }
     body{
         overflow-x: hidden;
@@ -64,6 +85,7 @@
     }
     .exam-switch{
         position: relative;
+        display: none;
         top:15px;
     }
     .exam-prev{
@@ -284,9 +306,15 @@
         </div>
         <div class="exam-end">提交</div>
     </div>  
-</div>
 
-<script type="text/javascript">
+
+    
+</div>
+<div id="waline"></div>
+
+<script type="module">
+    import {init} from "https://ustc510.asia/waline/waline.js"
+
     function check_each_answer(your_ans, real_ans){
         if (your_ans.length !== real_ans.length)
             return 0
@@ -340,6 +368,7 @@
     let exam_end = document.querySelector('.exam-end')
     let exam_answers = document.querySelectorAll('.exam-answer')
 
+
     let answer_is_showed = false
 
 
@@ -350,6 +379,17 @@
         exam_start.style.display = 'none'
         exam_container.style.display = 'flex'
         exam_switch.style.display = 'block'
+        init({
+            el: '#waline',
+            serverURL: 'https://ustc510.asia',   
+            dark: 'body.dark',
+            texRenderer: (blockMode, tex) =>
+              window.MathJax.startup.adaptor.outerHTML(
+                window.MathJax.tex2svg(tex, {
+                  display: blockMode,
+                }),
+              ),
+        });
     })
 
     exam_end.addEventListener('click', e=>{
@@ -433,5 +473,7 @@
         })
     }
 </script>
+
+
 
 {{- end }}{{/* end main */}}
