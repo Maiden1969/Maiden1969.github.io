@@ -4,20 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "272e5545d685b2e3",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "02655505fba463d8",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/进站必看.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "进站必看"
+            }
+          },
+          {
+            "id": "a2641ce615eb90ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/进站必看.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "进站必看"
+            }
+          },
+          {
+            "id": "0ec9077836569d34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/HomePage.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HomePage"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -74,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "612c0e708b8ef239",
@@ -166,35 +198,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "02655505fba463d8",
+  "active": "0ec9077836569d34",
   "lastOpenFiles": [
+    "content/posts/进站必看.md",
+    "content/posts/Latex教程.md",
+    "public/tags/latex/index.xml",
+    "public/tags/latex/page/1/index.html",
+    "public/tags/latex/page/1",
+    "public/tags/latex/page",
+    "public/tags/latex/index.html",
+    "public/tags/latex",
+    "public/posts/latex教程/index.html",
+    "public/posts/latex教程",
+    "home/HomePage.md",
+    "public/posts/2025m4d3h17m8s44/index.html",
+    "public/posts/2025m4d3h17m8s44",
     "Excalidraw/Drawing 2025-04-02 19.27.56.excalidraw.md",
     "Excalidraw/Drawing 2025-04-02 22.15.47.excalidraw.md",
     "Excalidraw/Drawing 2025-04-02 19.24.04.excalidraw.md",
     "content/posts/Multiboot2myMain 实验报告.md",
     "content/about.md",
-    "home/HomePage.md",
     "Excalidraw/Drawing 2025-04-02 21.22.57.excalidraw.md",
     "content/posts/专题/「特别篇」三次函数_题集1.md",
     "Excalidraw/Drawing 2025-04-02 19.21.26.excalidraw.md",
-    "Excalidraw",
-    "public/music/index.html",
-    "public/music",
     "content/music.md",
-    "layouts/_default/music.html",
-    "content/posts/进站必看.md",
     "content/posts/评论区开放通知.md",
-    "public/posts/评论区开放通知/index.html",
-    "public/posts/评论区开放通知",
-    "public/posts/2025m4d2h9m12s36/index.html",
-    "public/posts/2025m4d2h9m12s36",
     "content/posts/易错题.md",
     "content/posts/杂谈/构造共轭根式.md",
     "content/posts/杂谈/好题推荐：一道质量极高的区间与不等式问题.md",
     "README.md",
     "content/posts/专题/解三角形_题集1.md",
-    "public/posts/专题/三角函数_题集1未竟/index.html",
-    "public/posts/专题/三角函数_题集1未竟",
     "content/posts/专题/数列_题集1(未竟).md",
     "content/posts/专题/三角函数_题集1(未竟).md",
     "content/posts/资料/题库.md",
@@ -202,8 +235,6 @@
     "content/search.md",
     "content/exam.md",
     "content/archives.md",
-    "content/posts/专题/导数_题集4.md",
-    "content/posts/杂谈/盘古之白.md",
     "Pasted image 20250325135152.png"
   ]
 }
