@@ -33,10 +33,13 @@
 <script id="MathJax-script" async src="https://ustc510.asia/mathjax/es5/tex-mml-chtml.js"></script>
 <script>
   MathJax = {
+    options:{
+      ignoreHtmlClass: 'no-math'
+    },
     tex: {
       displayMath: [['$$', '$$']],  
       inlineMath: [['$', '$']]      
-    }
+    },
   };
 </script>
 
@@ -571,28 +574,29 @@ $$<p>
   </a>
 </nav>
 
-  </footer><link
-  rel="stylesheet"
-  href="https://ustc510.asia/waline/waline.css"
-/>
+  </footer><link rel="stylesheet" href="https://ustc510.asia/waline/waline.css" />
 <script src="https://ustc510.asia/mathjax/es5/tex-svg.js"></script>
-<div id="waline"></div>
+<div id="waline" class="no-math tex2jax_ignore"></div>
 <script type="module">
-    import { init } from 'https://ustc510.asia/waline/waline.js';
-
-    init({
+  import { init } from 'https://ustc510.asia/waline/waline.js';
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(() => {
+      init({
         el: '#waline',
-        serverURL: 'https://ustc510.asia',   
+        serverURL: 'https://ustc510.asia',
         dark: 'body.dark',
         texRenderer: (blockMode, tex) =>
-        window.MathJax.startup.adaptor.outerHTML(
-          window.MathJax.tex2svg(tex, {
-            display: blockMode,
-          }),
-        ),
-    });
+          window.MathJax.startup.adaptor.outerHTML(
+            window.MathJax.tex2svg(tex, {
+              display: blockMode,
+            }),
+          ),
+      });
+    }, 500)
+  })
 
-   
+
+
 </script>
 </article>
     </main>
