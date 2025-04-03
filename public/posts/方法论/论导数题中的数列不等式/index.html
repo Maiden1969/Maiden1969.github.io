@@ -114,6 +114,11 @@
                 </a>
             </li>
             <li>
+                <a href="http://localhost:1313/music/" title="音乐">
+                    <span>音乐</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/about/" title="个人主页">
                     <span>作者</span>
                 </a>
@@ -580,12 +585,14 @@ $$<p>
         serverURL: 'https://ustc510.asia',   
         dark: 'body.dark',
         texRenderer: (blockMode, tex) =>
-          window.MathJax.startup.adaptor.outerHTML(
-            window.MathJax.tex2svg(tex, {
-              display: blockMode,
-            }),
-          ),
+        window.MathJax.startup.adaptor.outerHTML(
+          window.MathJax.tex2svg(tex, {
+            display: blockMode,
+          }),
+        ),
     });
+
+   
 </script>
 </article>
     </main>

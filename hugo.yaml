@@ -43,6 +43,9 @@ languages:
         - name: 自测
           pageRef: exam/
           weight: 20
+        - name: 音乐
+          pageRef: music/
+          weight: 20
         - name: 作者
           pageRef: about/
           weight: 21
