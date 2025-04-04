@@ -13,30 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/进站必看.md",
+                "file": "content/posts/专题/导数_题集4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "进站必看"
+              "title": "导数_题集4"
             }
           },
           {
-            "id": "a2641ce615eb90ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/进站必看.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "进站必看"
-            }
-          },
-          {
-            "id": "0ec9077836569d34",
+            "id": "fa1b8d477807d28f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "612c0e708b8ef239",
@@ -198,8 +185,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0ec9077836569d34",
+  "active": "fa1b8d477807d28f",
   "lastOpenFiles": [
+    "content/posts/专题/导数_题集4.md",
+    "home/HomePage.md",
+    "content/posts/专题/三角函数_题集1(未竟).md",
     "content/posts/进站必看.md",
     "content/posts/Latex教程.md",
     "public/tags/latex/index.xml",
@@ -210,7 +200,6 @@
     "public/tags/latex",
     "public/posts/latex教程/index.html",
     "public/posts/latex教程",
-    "home/HomePage.md",
     "public/posts/2025m4d3h17m8s44/index.html",
     "public/posts/2025m4d3h17m8s44",
     "Excalidraw/Drawing 2025-04-02 19.27.56.excalidraw.md",
@@ -229,7 +218,6 @@
     "README.md",
     "content/posts/专题/解三角形_题集1.md",
     "content/posts/专题/数列_题集1(未竟).md",
-    "content/posts/专题/三角函数_题集1(未竟).md",
     "content/posts/资料/题库.md",
     "content/posts/资料/数列讲义.md",
     "content/search.md",
