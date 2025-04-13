@@ -13,30 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/专题/数列_题集1(未竟).md",
+                "file": "content/posts/专题/「特别篇」三次函数_题集2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "数列_题集1(未竟)"
+              "title": "「特别篇」三次函数_题集2"
             }
           },
           {
-            "id": "85ec7378c52a2c86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/专题/函数_题集1(未竟).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "函数_题集1(未竟)"
-            }
-          },
-          {
-            "id": "e887d5c8d91ab992",
+            "id": "d1d3cd7f533b0fec",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +36,7 @@
             }
           },
           {
-            "id": "0ec508264a271e7a",
+            "id": "2e727b39e1f2d863",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -64,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,8 +177,19 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "1d89df4d86afacea",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -213,12 +210,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e887d5c8d91ab992",
+  "active": "d1d3cd7f533b0fec",
   "lastOpenFiles": [
-    "content/posts/专题/函数_题集1(未竟).md",
+    "content/posts/专题/「特别篇」三次函数_题集2.md",
     "content/posts/资料/题库.md",
-    "content/posts/专题/数列_题集1(未竟).md",
+    "content/posts/专题/「特别篇」三次函数_题集1.md",
     "home/HomePage.md",
+    "Excalidraw/Drawing 2025-04-12 15.18.15.excalidraw.md",
+    "content/posts/专题/函数_题集1(未竟).md",
+    "content/posts/专题/数列_题集1(未竟).md",
     "content/posts/专题/解三角形_题集1.md",
     "content/posts/专题/三角函数_题集1(未竟).md",
     "content/posts/专题/导数_题集4.md",
@@ -244,13 +244,10 @@
     "content/posts/Multiboot2myMain 实验报告.md",
     "content/about.md",
     "Excalidraw/Drawing 2025-04-02 21.22.57.excalidraw.md",
-    "content/posts/专题/「特别篇」三次函数_题集1.md",
     "Excalidraw/Drawing 2025-04-02 19.21.26.excalidraw.md",
     "content/music.md",
     "content/posts/评论区开放通知.md",
     "content/posts/杂谈/构造共轭根式.md",
-    "content/posts/杂谈/好题推荐：一道质量极高的区间与不等式问题.md",
-    "README.md",
     "Pasted image 20250325135152.png"
   ]
 }
