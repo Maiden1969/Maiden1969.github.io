@@ -2,27 +2,104 @@
 
 <style>
     .music-container{
-        background-color: lightgreen;
         display: grid;
         grid-column: 1;
-        gap:30px;
-        width: 100%;
+        gap:80px;
+        width: 120%;
         height: max-content;
     }
     .music-card{
-        background-color: lightblue;
-        height: 500px;
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+        font-family: monospace;
     }
+    .music-cover{
+        width: 200px;
+        height: 200px;
+        box-shadow: 5px 5px 10px 0px black;
+    }
+    .music-content{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .strong-text{
+        font-size: 1.5rem;
+        background-color: var(--primary);
+        color: var(--theme);
+        font-weight: bold;
+    }
+    audio{
+        height: 30px;
+        width: 250px;
+    }
+    .music-name{
+        font-weight: bold; font-size:1.2rem;
+        text-align: center;
+    }
+    .music-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 </style>
 
 <div class="music-container">
     <div class="music-card">
-        <div class="music-cover"></div>
+        <img class="music-cover" src="https://ustc510.asia/image/绝对音乐.jpg" />
+        <div class="music-content">
+            <div class="music-desc">
+            <span class="music-name">Arabesque Romanesque</span>
+            <br>    
+            出自<span class="strong-text"> 絶対音楽 </span></div>
+            <audio controls src="https://ustc510.asia/mp3/Arabesque Romanesque.mp3"></audio>
+        </div>
     </div>
+    
     <div class="music-card">
-        
+        <img class="music-cover" src="https://ustc510.asia/image/绿野仙踪.jpg" />
+        <div class="music-content">
+            <div class="music-desc">
+            <span class="music-name">地球 (テラ) で</span>
+            <br>
+            出自<span class="strong-text">Fantasia </span></div>
+            <audio controls src="https://ustc510.asia/mp3/地球.mp3"></audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img class="music-cover" src="https://ustc510.asia/image/夜紫罗兰.jpg" />
+        <div class="music-content">
+            <div class="music-desc">
+            <span class="music-name">LAmour Looks Something Like You</span>
+            <br>
+            出自<span class="strong-text">Violetta Operatta </span></div>
+            <audio controls src="https://ustc510.asia/mp3/LAmour Looks Something Like You.mp3"></audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img class="music-cover" src="https://ustc510.asia/image/月蚀.jpg" />
+        <div class="music-content">
+            <div class="music-desc">
+            <span class="music-name">月蝕グランギニョル</span>
+            <br>
+            出自<span class="strong-text"> 月蚀グランギニョル</span>
+            </div>
+            <audio controls src="https://ustc510.asia/mp3/月蚀.mp3"></audio>
+        </div>
     </div>
 </div>
+
+<script type="text/javascript">
+  
+</script>
 
 
 

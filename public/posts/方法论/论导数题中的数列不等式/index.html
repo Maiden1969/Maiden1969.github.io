@@ -579,24 +579,17 @@ $$<p>
 <div id="waline" class="no-math tex2jax_ignore"></div>
 <script type="module">
   import { init } from 'https://ustc510.asia/waline/waline.js';
-  document.addEventListener('DOMContentLoaded', function () {
-    setTimeout(() => {
-      init({
-        el: '#waline',
-        serverURL: 'https://ustc510.asia',
-        dark: 'body.dark',
-        texRenderer: (blockMode, tex) =>
-          window.MathJax.startup.adaptor.outerHTML(
-            window.MathJax.tex2svg(tex, {
-              display: blockMode,
-            }),
-          ),
-      });
-    }, 500)
-  })
-
-
-
+  init({
+    el: '#waline',
+    serverURL: 'https://ustc510.asia',
+    dark: 'body.dark',
+    texRenderer: (blockMode, tex) =>
+      window.MathJax.startup.adaptor.outerHTML(
+        window.MathJax.tex2svg(tex, {
+          display: blockMode,
+        }),
+      ),
+  });
 </script>
 </article>
     </main>
