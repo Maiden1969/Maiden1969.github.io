@@ -70,74 +70,77 @@
     }
 </style>
 
-<div class="music-container">
-    <div class="music-card">
-        <img class="music-cover" src="https://ustc510.asia/image/绝对音乐.jpg" />
-        <div class="music-content">
-            <div class="music-desc">
-                <span class="music-name">Arabesque Romanesque</span>
-                <br>
-                <span>出自<span class="strong-text">絶対音楽</span></span>
-            </div>
-            <audio controls src="https://ustc510.asia/mp3/Arabesque Romanesque.mp3"></audio>
-        </div>
-    </div>
-
-
-    <div class="music-card">
-        <img class="music-cover" src="https://ustc510.asia/image/绿野仙踪.jpg" />
-        <div class="music-content">
-            <div class="music-desc">
-                <span class="music-name">地球 (テラ) で</span>
-                <br>
-                <span>出自<span class="strong-text">Fantasia </span></span>
-            </div>
-            <audio controls src="https://ustc510.asia/mp3/地球.mp3"></audio>
-        </div>
-    </div>
-
-    <div class="music-card">
-        <img class="music-cover" src="https://ustc510.asia/image/夜紫罗兰.jpg" />
-        <div class="music-content">
-            <div class="music-desc">
-                <span class="music-name">L'Amour Looks Something Like You</span>
-                <br>
-                <span>出自<span class="strong-text">Violetta Operatta</span></span>
-            </div>
-            <audio controls src="https://ustc510.asia/mp3/LAmour Looks Something Like You.mp3"></audio>
-        </div>
-    </div>
-
-    <div class="music-card">
-        <img class="music-cover" src="https://ustc510.asia/image/月蚀.jpg" />
-        <div class="music-content">
-            <div class="music-desc">
-                <span class="music-name">月蝕グランギニョル</span>
-                <br>
-                <span>出自<span class="strong-text">月蚀グランギニョル</span></span>
-            </div>
-            <audio controls src="https://ustc510.asia/mp3/月蚀.mp3"></audio>
-        </div>
-    </div>
-</div>
-
+<div class="music-container"></div>
 <div id="waline"></div>
 
 
 <script type="module">
-     import {init} from "https://ustc510.asia/waline/waline.js"
+    import {init} from "https://ustc510.asia/waline/waline.js"
+    let musics = [
+        {
+            cover: "https://ustc510.asia/image/绝对音乐.jpg",
+            name: "Arabesque Romanesque",
+            album: "絶対音楽",
+            src: "https://ustc510.asia/mp3/Arabesque Romanesque.mp3"
+        },
+        {
+            cover:"https://ustc510.asia/image/月蚀.jpg",
+            name: "月蝕グランギニョル",
+            album: "月蚀グランギニョル",
+            src: "https://ustc510.asia/mp3/月蚀.mp3"
+        },
+        {
+            cover: "https://ustc510.asia/image/绿野仙踪.jpg",
+            name: "地球 (テラ) で",
+            album: "Fantasia",
+            src: "https://ustc510.asia/mp3/地球.mp3"
+        },
+        {
+            cover:"https://ustc510.asia/image/夜紫罗兰.jpg",
+            name: "L'Amour Looks Something Like You",
+            album: "Violetta Operatta",
+            src: "https://ustc510.asia/mp3/LAmour Looks Something Like You.mp3"
+        },
+        {
+            cover: "https://ustc510.asia/image/九日.jpg",
+            name: "神农氏",
+            album: "九日 Nine sols",
+            src: "https://ustc510.asia/mp3/神农氏.mp3"
+        }
+    ]
 
-     init({
-        el: '#waline',
-        serverURL: 'https://ustc510.asia',   
-        dark: 'body.dark',
-        texRenderer: (blockMode, tex) =>
-          window.MathJax.startup.adaptor.outerHTML(
-            window.MathJax.tex2svg(tex, {
-              display: blockMode,
-            }),
-          ),
-    });
+    let container = document.querySelector('.music-container')
+
+    document.addEventListener('DOMContentLoaded',e=>{
+        for (let item of musics){
+            let card = document.createElement('div')
+            card.classList.add('music-card')
+            card.innerHTML = `
+                <img class="music-cover" src="${item.cover}"/>
+                <div class="music-content">
+                <div class="music-desc">
+                <span class="music-name">${item.name}</span>
+                <br>
+                <span>出自<span class="strong-text">${item.album}</span></span>
+                </div>
+                <audio controls src="${item.src}"></audio>
+                </div>
+            `
+            container.appendChild(card)
+
+            init({
+                el: '#waline',
+                serverURL: 'https://ustc510.asia',   
+                dark: 'body.dark',
+                texRenderer: (blockMode, tex) =>
+                  window.MathJax.startup.adaptor.outerHTML(
+                    window.MathJax.tex2svg(tex, {
+                      display: blockMode,
+                    }),
+                  ),
+            });
+        }
+    })
 </script>
 
 
